@@ -1,266 +1,647 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>NEXORA | Le offerte che valgono davvero</title>
+  <title>NEXORA | Offerte, prodotti e opportunità online</title>
 
-    <meta
-        name="description"
-        content="NEXORA seleziona e analizza prodotti e offerte online per aiutarti a trovare opportunità interessanti."
-    >
+  <meta
+    name="description"
+    content="NEXORA seleziona e analizza prodotti e offerte online per aiutarti a trovare opportunità interessanti in modo semplice e trasparente."
+  >
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f6f8fc;
-            color: #172033;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        header {
-            background: #ffffff;
-            padding: 22px 8%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid #e7eaf0;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f6f7fb;
+      color: #172033;
+      line-height: 1.6;
+    }
 
-        .logo {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 2px;
-        }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
 
-        .status {
-            font-size: 14px;
-            color: #687386;
-        }
+    .container {
+      width: min(1120px, 92%);
+      margin: 0 auto;
+    }
 
-        .hero {
-            min-height: 520px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 70px 20px;
-            background:
-                linear-gradient(
-                    135deg,
-                    #10182c,
-                    #263b73
-                );
-            color: white;
-        }
+    header {
+      background: rgba(255,255,255,0.98);
+      border-bottom: 1px solid #e8eaf0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
 
-        .hero-content {
-            max-width: 850px;
-        }
+    .navbar {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
 
-        .badge {
-            display: inline-block;
-            padding: 8px 16px;
-            border: 1px solid rgba(255,255,255,0.25);
-            border-radius: 30px;
-            margin-bottom: 25px;
-            font-size: 14px;
-        }
+    .brand {
+      font-size: 27px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      color: #253858;
+    }
 
-        h1 {
-            font-size: 54px;
-            margin-bottom: 18px;
-        }
+    nav {
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: #4e5d78;
+    }
 
-        .hero h2 {
-            font-size: 27px;
-            font-weight: 400;
-            margin-bottom: 24px;
-        }
+    nav a:hover {
+      color: #3457d5;
+    }
 
-        .hero p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #dce4f8;
-            max-width: 700px;
-            margin: auto;
-        }
+    .launch {
+      font-size: 13px;
+      background: #f1f4ff;
+      color: #3457d5;
+      padding: 8px 13px;
+      border-radius: 30px;
+    }
 
-        .categories {
-            padding: 70px 8%;
-            text-align: center;
-        }
+    .hero {
+      background:
+        radial-gradient(circle at top right, rgba(88,117,255,.38), transparent 35%),
+        linear-gradient(135deg, #101a45 0%, #173890 55%, #3457d5 100%);
+      color: white;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
 
-        .categories h2 {
-            font-size: 32px;
-            margin-bottom: 12px;
-        }
+    .hero-content {
+      max-width: 800px;
+      margin: auto;
+    }
 
-        .categories > p {
-            color: #687386;
-            margin-bottom: 40px;
-        }
+    .hero-label {
+      display: inline-block;
+      border: 1px solid rgba(255,255,255,.35);
+      padding: 8px 16px;
+      border-radius: 30px;
+      margin-bottom: 25px;
+      font-size: 14px;
+    }
 
-        .grid {
-            max-width: 1000px;
-            margin: auto;
-            display: grid;
-            grid-template-columns:
-                repeat(auto-fit, minmax(180px, 1fr));
-            gap: 18px;
-        }
+    .hero h1 {
+      font-size: clamp(48px, 8vw, 78px);
+      letter-spacing: 7px;
+      margin-bottom: 5px;
+    }
 
-        .card {
-            background: white;
-            padding: 28px 15px;
-            border-radius: 14px;
-            border: 1px solid #e8ebf2;
-            font-weight: 600;
-        }
+    .hero h2 {
+      font-size: clamp(25px, 4vw, 38px);
+      font-weight: 500;
+      margin-bottom: 22px;
+    }
 
-        .about {
-            background: white;
-            padding: 70px 8%;
-            text-align: center;
-        }
+    .hero p {
+      font-size: 18px;
+      max-width: 720px;
+      margin: 0 auto 34px;
+      color: #edf2ff;
+    }
 
-        .about-content {
-            max-width: 800px;
-            margin: auto;
-        }
+    .hero-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
 
-        .about h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+    .btn {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 9px;
+      font-weight: 700;
+      transition: .2s;
+    }
 
-        .about p {
-            color: #5e687a;
-            line-height: 1.8;
-            font-size: 17px;
-        }
+    .btn-primary {
+      background: white;
+      color: #2346b5;
+    }
 
-        footer {
-            padding: 35px 8%;
-            text-align: center;
-            color: #737d8f;
-            font-size: 13px;
-        }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+    }
 
-        footer p {
-            margin: 7px 0;
-        }
+    .btn-secondary {
+      border: 1px solid rgba(255,255,255,.5);
+      color: white;
+    }
 
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 40px;
-            }
+    section {
+      padding: 85px 0;
+    }
 
-            .hero h2 {
-                font-size: 22px;
-            }
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
 
-            header {
-                padding: 18px 5%;
-            }
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 8px;
+      color: #273751;
+    }
 
-            .status {
-                display: none;
-            }
-        }
-    </style>
+    .section-title p {
+      color: #6d7890;
+      max-width: 680px;
+      margin: auto;
+    }
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .category {
+      background: white;
+      border: 1px solid #e7eaf1;
+      border-radius: 16px;
+      padding: 30px 18px;
+      text-align: center;
+      font-weight: 700;
+      box-shadow: 0 8px 25px rgba(30,45,80,.05);
+      transition: .2s;
+    }
+
+    .category:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(30,45,80,.09);
+    }
+
+    .category span {
+      font-size: 29px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    #offerte {
+      background: white;
+    }
+
+    .offers {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .offer-card {
+      border: 1px solid #e7eaf1;
+      border-radius: 17px;
+      padding: 27px;
+      background: #fafbfe;
+    }
+
+    .offer-tag {
+      display: inline-block;
+      color: #3457d5;
+      background: #eaf0ff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 6px 10px;
+      border-radius: 20px;
+      margin-bottom: 15px;
+    }
+
+    .offer-card h3 {
+      margin-bottom: 10px;
+      font-size: 21px;
+    }
+
+    .offer-card p {
+      color: #6b768d;
+      font-size: 15px;
+      margin-bottom: 18px;
+    }
+
+    .coming {
+      font-size: 13px;
+      font-weight: 700;
+      color: #8993a7;
+    }
+
+    .how {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 25px;
+    }
+
+    .step {
+      text-align: center;
+      padding: 25px;
+    }
+
+    .step-number {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #3457d5;
+      color: white;
+      font-weight: 800;
+    }
+
+    .step h3 {
+      margin-bottom: 8px;
+    }
+
+    .step p {
+      color: #6c778d;
+      font-size: 15px;
+    }
+
+    .about {
+      background: #eef2fa;
+    }
+
+    .about-box {
+      max-width: 840px;
+      margin: auto;
+      background: white;
+      padding: 45px;
+      border-radius: 18px;
+      box-shadow: 0 15px 40px rgba(30,45,80,.06);
+    }
+
+    .about-box h2 {
+      margin-bottom: 18px;
+      font-size: 32px;
+    }
+
+    .about-box p {
+      color: #616d84;
+      margin-bottom: 15px;
+    }
+
+    .transparency {
+      margin-top: 25px;
+      background: #f6f8fc;
+      border-left: 4px solid #3457d5;
+      padding: 18px 20px;
+      border-radius: 7px;
+      font-size: 14px;
+      color: #59667f;
+    }
+
+    footer {
+      background: #11182c;
+      color: #d5d9e4;
+      padding: 55px 0 30px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 35px;
+      margin-bottom: 40px;
+    }
+
+    .footer-brand {
+      font-size: 22px;
+      font-weight: 800;
+      letter-spacing: 3px;
+      color: white;
+      margin-bottom: 10px;
+    }
+
+    footer h4 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p,
+    footer a {
+      color: #aeb7c9;
+      font-size: 14px;
+    }
+
+    footer a {
+      display: block;
+      margin-bottom: 7px;
+    }
+
+    .copyright {
+      border-top: 1px solid #2a334a;
+      padding-top: 25px;
+      text-align: center;
+      font-size: 13px;
+      color: #8f99ad;
+    }
+
+    .affiliate-note {
+      margin-top: 10px;
+    }
+
+    @media (max-width: 900px) {
+      nav {
+        display: none;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2,1fr);
+      }
+
+      .offers,
+      .how {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .categories {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 530px;
+      }
+
+      .hero h1 {
+        letter-spacing: 4px;
+      }
+
+      .about-box {
+        padding: 28px 22px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
 <header>
-    <div class="logo">NEXORA</div>
-    <div class="status">Italia • In fase di lancio</div>
+  <div class="container navbar">
+    <a href="#" class="brand">NEXORA</a>
+
+    <nav>
+      <a href="#offerte">Offerte</a>
+      <a href="#categorie">Categorie</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#chi-siamo">Chi siamo</a>
+    </nav>
+
+    <div class="launch">🇮🇹 Italia · In fase di lancio</div>
+  </div>
 </header>
 
-<section class="hero">
-    <div class="hero-content">
+<main>
 
-        <div class="badge">
-            Scopri • Confronta • Risparmia
+  <section class="hero">
+    <div class="container hero-content">
+      <div class="hero-label">Scopri · Confronta · Risparmia</div>
+
+      <h1>NEXORA</h1>
+      <h2>Le offerte che valgono davvero.</h2>
+
+      <p>
+        Selezioniamo e analizziamo prodotti e opportunità online
+        per aiutarti a trovare ciò che può davvero valere la pena,
+        in modo semplice e trasparente.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#offerte" class="btn btn-primary">Scopri le opportunità</a>
+        <a href="#come-funziona" class="btn btn-secondary">Come funziona</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="categorie">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Scopri nuove opportunità</h2>
+        <p>
+          Prodotti e offerte selezionati in diverse categorie.
+        </p>
+      </div>
+
+      <div class="categories">
+        <div class="category"><span>💻</span>Tecnologia</div>
+        <div class="category"><span>🏠</span>Casa</div>
+        <div class="category"><span>⚡</span>Elettrodomestici</div>
+        <div class="category"><span>✨</span>Salute &amp; Bellezza</div>
+        <div class="category"><span>🐾</span>Pet</div>
+        <div class="category"><span>👶</span>Bambini</div>
+        <div class="category"><span>🎁</span>Regali</div>
+        <div class="category"><span>🛍️</span>Lifestyle</div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section id="offerte">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Offerte selezionate</h2>
+        <p>
+          Stiamo preparando le prime selezioni NEXORA.
+          Le opportunità saranno pubblicate dopo la verifica dei nostri partner.
+        </p>
+      </div>
+
+      <div class="offers">
+
+        <article class="offer-card">
+          <div class="offer-tag">Tecnologia</div>
+          <h3>Prodotti tech selezionati</h3>
+          <p>
+            Analisi di prodotti, caratteristiche, prezzi e opportunità
+            provenienti dai nostri partner.
+          </p>
+          <div class="coming">Disponibile prossimamente</div>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-tag">Casa</div>
+          <h3>Casa &amp; elettrodomestici</h3>
+          <p>
+            Una selezione di prodotti utili per la casa valutati
+            considerando prezzo, funzionalità e convenienza.
+          </p>
+          <div class="coming">Disponibile prossimamente</div>
+        </article>
+
+        <article class="offer-card">
+          <div class="offer-tag">Lifestyle</div>
+          <h3>Moda, lifestyle e idee regalo</h3>
+          <p>
+            Opportunità interessanti selezionate tra moda,
+            accessori, benessere e idee regalo.
+          </p>
+          <div class="coming">Disponibile prossimamente</div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section id="come-funziona">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Come funziona NEXORA?</h2>
+        <p>
+          Il nostro obiettivo è rendere più semplice la scoperta
+          di prodotti e opportunità online.
+        </p>
+      </div>
+
+      <div class="how">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Selezioniamo</h3>
+          <p>
+            Cerchiamo prodotti, offerte e opportunità disponibili
+            presso negozi e partner online.
+          </p>
         </div>
 
-        <h1>NEXORA</h1>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Analizziamo</h3>
+          <p>
+            Consideriamo elementi come prezzo, sconto,
+            caratteristiche e informazioni disponibili.
+          </p>
+        </div>
 
-        <h2>
-            Le offerte che valgono davvero.
-        </h2>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Condividiamo</h3>
+          <p>
+            Presentiamo una selezione semplice da consultare
+            per aiutarti a valutare le opportunità.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about" id="chi-siamo">
+    <div class="container">
+
+      <div class="about-box">
+
+        <h2>Chi siamo</h2>
 
         <p>
-            Selezioniamo e analizziamo prodotti e offerte
-            online per aiutarti a trovare opportunità
-            interessanti in modo semplice e veloce.
+          NEXORA è un progetto digitale italiano dedicato alla scoperta
+          e alla selezione di prodotti, offerte e opportunità online.
         </p>
-
-    </div>
-</section>
-
-<section class="categories">
-
-    <h2>Scopri nuove opportunità</h2>
-
-    <p>
-        Prodotti selezionati in diverse categorie.
-    </p>
-
-    <div class="grid">
-
-        <div class="card">💻 Tecnologia</div>
-        <div class="card">🏠 Casa</div>
-        <div class="card">☕ Elettrodomestici</div>
-        <div class="card">✨ Salute & Bellezza</div>
-        <div class="card">🐾 Pet</div>
-        <div class="card">👶 Bambini</div>
-        <div class="card">🎁 Regali</div>
-        <div class="card">🛍️ Lifestyle</div>
-
-    </div>
-
-</section>
-
-<section class="about">
-
-    <div class="about-content">
-
-        <h2>Come funziona NEXORA?</h2>
 
         <p>
-            NEXORA nasce con l'obiettivo di semplificare
-            la scoperta delle migliori opportunità online.
-            Analizziamo elementi come prezzo, sconto,
-            recensioni e altri indicatori per selezionare
-            prodotti e offerte interessanti disponibili
-            presso i nostri partner.
+          Il nostro obiettivo è aiutare gli utenti a orientarsi tra
+          diverse alternative attraverso contenuti informativi,
+          confronti e selezioni curate.
         </p>
 
-    </div>
+        <p>
+          NEXORA è attualmente in fase di lancio e sta sviluppando
+          collaborazioni con piattaforme e brand attraverso programmi
+          di affiliazione.
+        </p>
 
-</section>
+        <div class="transparency">
+          <strong>Trasparenza:</strong>
+          alcuni collegamenti presenti su NEXORA potranno essere link di
+          affiliazione. Se un utente effettua un acquisto attraverso uno
+          di questi link, NEXORA potrebbe ricevere una commissione,
+          senza costi aggiuntivi per l'utente.
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
 
 <footer>
+  <div class="container">
 
-    <p>
-        © 2026 NEXORA. Tutti i diritti riservati.
-    </p>
+    <div class="footer-grid">
 
-    <p>
+      <div>
+        <div class="footer-brand">NEXORA</div>
+        <p>
+          Scopri, confronta e valuta opportunità online
+          selezionate con maggiore semplicità.
+        </p>
+      </div>
+
+      <div>
+        <h4>NEXORA</h4>
+        <a href="#categorie">Categorie</a>
+        <a href="#offerte">Offerte</a>
+        <a href="#come-funziona">Come funziona</a>
+        <a href="#chi-siamo">Chi siamo</a>
+      </div>
+
+      <div>
+        <h4>Informazioni</h4>
+        <a href="#chi-siamo">Trasparenza</a>
+        <a href="mailto:nexora.info@gmail.com">Contatti</a>
+      </div>
+
+    </div>
+
+    <div class="copyright">
+      © 2026 NEXORA. Tutti i diritti riservati.
+
+      <div class="affiliate-note">
         NEXORA può utilizzare link di affiliazione.
-        In caso di acquisto tramite tali link,
-        potremmo ricevere una commissione senza
-        costi aggiuntivi per l'utente.
-    </p>
+        In caso di acquisto tramite tali link, potremmo ricevere
+        una commissione senza costi aggiuntivi per l'utente.
+      </div>
+    </div>
 
+  </div>
 </footer>
 
 </body>
