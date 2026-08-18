@@ -33,3 +33,17 @@ def calcular_nexora_score(produto):
 
 
 print("NEXORA ROBOT iniciado com sucesso!")
+
+
+# Produtos para teste
+produtos = [
+    Produto("Smartwatch B", 79.90, 30, 4.7, 2500, 8),
+    Produto("Fone Bluetooth Y", 49.90, 25, 4.6, 1800, 10),
+    Produto("Aspirador Robo X", 199.90, 20, 4.5, 950, 7),
+]
+
+print("\n--- NEXORA DEALS ---")
+
+for produto in produtos:
+    score = calcular_nexora_score(produto)
+    print(produto.nome, "- Score:", score)
