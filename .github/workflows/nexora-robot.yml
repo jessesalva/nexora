@@ -3,6 +3,13 @@ name: NEXORA Robot
 on:
   workflow_dispatch:
 
+  push:
+    branches:
+      - main
+    paths:
+      - "robot/**"
+      - ".github/workflows/nexora-robot.yml"
+
 jobs:
   run-nexora-robot:
     runs-on: ubuntu-latest
@@ -14,7 +21,24 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.12'
+          python-version: "3.12"
 
       - name: Executar NEXORA Robot
         run: python robot/nexora_robot.py
+
+      - name: Verificar arquivo NEXORA Deals
+        run: |
+          if [ -f robot/nexora_deals.json ]; then
+            echo "nexora_deals.json criado com sucesso"
+            ls -lh robot/nexora_deals.json
+          else
+            echo "ERRO: nexora_deals.json nao foi criado"
+            exit 1
+          fi
+
+      - name: Salvar NEXORA Deals como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: nexora-deals
+          path: robot/nexora_deals.json
+          retention-days: 7
