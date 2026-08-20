@@ -2,13 +2,17 @@
 <html lang="it">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>NEXORA | Offerte, prodotti e opportunità online</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>NEXORA | Offerte e opportunità online</title>
 
   <meta
     name="description"
-    content="NEXORA seleziona e analizza prodotti e offerte online per aiutarti a trovare opportunità interessanti in modo semplice e trasparente."
+    content="NEXORA seleziona e analizza offerte e opportunità online per aiutarti a trovare occasioni interessanti in modo semplice e trasparente."
   >
 
   <style>
@@ -34,10 +38,17 @@
       color: inherit;
     }
 
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
     .container {
       width: min(1120px, 92%);
       margin: 0 auto;
     }
+
+    /* HEADER */
 
     header {
       background: rgba(255,255,255,0.98);
@@ -83,10 +94,22 @@
       border-radius: 30px;
     }
 
+    /* HERO */
+
     .hero {
       background:
-        radial-gradient(circle at top right, rgba(88,117,255,.38), transparent 35%),
-        linear-gradient(135deg, #101a45 0%, #173890 55%, #3457d5 100%);
+        radial-gradient(
+          circle at top right,
+          rgba(88,117,255,.38),
+          transparent 35%
+        ),
+        linear-gradient(
+          135deg,
+          #101a45 0%,
+          #173890 55%,
+          #3457d5 100%
+        );
+
       color: white;
       min-height: 600px;
       display: flex;
@@ -95,7 +118,7 @@
     }
 
     .hero-content {
-      max-width: 800px;
+      max-width: 820px;
       margin: auto;
     }
 
@@ -142,13 +165,13 @@
       transition: .2s;
     }
 
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
     .btn-primary {
       background: white;
       color: #2346b5;
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
     }
 
     .btn-secondary {
@@ -173,9 +196,11 @@
 
     .section-title p {
       color: #6d7890;
-      max-width: 680px;
+      max-width: 700px;
       margin: auto;
     }
+
+    /* CATEGORIAS */
 
     .categories {
       display: grid;
@@ -205,50 +230,174 @@
       margin-bottom: 10px;
     }
 
+    /* OFFERS */
+
     #offerte {
       background: white;
+    }
+
+    .offers-status {
+      text-align: center;
+      color: #758097;
+      font-size: 14px;
+      margin-top: -25px;
+      margin-bottom: 30px;
     }
 
     .offers {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 24px;
     }
 
     .offer-card {
-      border: 1px solid #e7eaf1;
-      border-radius: 17px;
-      padding: 27px;
-      background: #fafbfe;
+      border: 1px solid #e4e8f1;
+      border-radius: 18px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(25,40,75,.07);
+      transition: .25s;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .offer-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 38px rgba(25,40,75,.12);
+    }
+
+    .offer-image-wrapper {
+      height: 210px;
+      background: linear-gradient(135deg, #e7ecfa, #f4f6fb);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .offer-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .score-badge {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      background: rgba(17,24,44,.92);
+      color: white;
+      padding: 7px 11px;
+      border-radius: 30px;
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .offer-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
     }
 
     .offer-tag {
       display: inline-block;
+      align-self: flex-start;
       color: #3457d5;
       background: #eaf0ff;
       font-size: 12px;
       font-weight: 700;
       padding: 6px 10px;
       border-radius: 20px;
-      margin-bottom: 15px;
+      margin-bottom: 13px;
     }
 
     .offer-card h3 {
-      margin-bottom: 10px;
-      font-size: 21px;
+      font-size: 19px;
+      line-height: 1.35;
+      margin-bottom: 12px;
+      color: #202b42;
     }
 
-    .offer-card p {
-      color: #6b768d;
-      font-size: 15px;
+    .destination {
+      color: #657089;
+      font-size: 14px;
+      margin-bottom: 14px;
+    }
+
+    .travel-dates {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      font-size: 13px;
+      color: #5f6b83;
       margin-bottom: 18px;
     }
 
-    .coming {
-      font-size: 13px;
-      font-weight: 700;
-      color: #8993a7;
+    .date-box {
+      background: #f5f7fb;
+      padding: 7px 9px;
+      border-radius: 8px;
     }
+
+    .price-area {
+      margin-top: auto;
+      padding-top: 16px;
+      border-top: 1px solid #edf0f5;
+    }
+
+    .old-price {
+      color: #8993a7;
+      font-size: 13px;
+      text-decoration: line-through;
+    }
+
+    .offer-price {
+      font-size: 27px;
+      font-weight: 800;
+      color: #203c9d;
+      margin: 2px 0 4px;
+    }
+
+    .discount {
+      font-size: 13px;
+      color: #197247;
+      font-weight: 700;
+      margin-bottom: 13px;
+    }
+
+    .offer-button {
+      display: block;
+      width: 100%;
+      text-align: center;
+      background: #3457d5;
+      color: white;
+      font-weight: 700;
+      padding: 12px 14px;
+      border-radius: 9px;
+      transition: .2s;
+    }
+
+    .offer-button:hover {
+      background: #2748bd;
+    }
+
+    .affiliate-small {
+      font-size: 10px;
+      color: #929bad;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .loading-box,
+    .error-box {
+      grid-column: 1 / -1;
+      padding: 45px;
+      text-align: center;
+      background: #f7f9fd;
+      border-radius: 16px;
+      color: #6d7890;
+    }
+
+    /* COMO FUNZIONA */
 
     .how {
       display: grid;
@@ -283,6 +432,8 @@
       font-size: 15px;
     }
 
+    /* ABOUT */
+
     .about {
       background: #eef2fa;
     }
@@ -315,6 +466,8 @@
       font-size: 14px;
       color: #59667f;
     }
+
+    /* FOOTER */
 
     footer {
       background: #11182c;
@@ -400,6 +553,10 @@
       .about-box {
         padding: 28px 22px;
       }
+
+      .offer-image-wrapper {
+        height: 190px;
+      }
     }
   </style>
 </head>
@@ -408,7 +565,10 @@
 
 <header>
   <div class="container navbar">
-    <a href="#" class="brand">NEXORA</a>
+
+    <a href="#" class="brand">
+      NEXORA
+    </a>
 
     <nav>
       <a href="#offerte">Offerte</a>
@@ -417,185 +577,291 @@
       <a href="#chi-siamo">Chi siamo</a>
     </nav>
 
-    <div class="launch">🇮🇹 Italia · In fase di lancio</div>
+    <div class="launch">
+      🇮🇹 Italia
+    </div>
+
   </div>
 </header>
 
+
 <main>
+
+  <!-- HERO -->
 
   <section class="hero">
     <div class="container hero-content">
-      <div class="hero-label">Scopri · Confronta · Risparmia</div>
+
+      <div class="hero-label">
+        Scopri · Confronta · Risparmia
+      </div>
 
       <h1>NEXORA</h1>
-      <h2>Le offerte che valgono davvero.</h2>
+
+      <h2>
+        Le offerte che valgono davvero.
+      </h2>
 
       <p>
-        Selezioniamo e analizziamo prodotti e opportunità online
-        per aiutarti a trovare ciò che può davvero valere la pena,
-        in modo semplice e trasparente.
+        Analizziamo migliaia di opportunità online e selezioniamo
+        quelle che meritano maggiore attenzione.
       </p>
 
       <div class="hero-buttons">
-        <a href="#offerte" class="btn btn-primary">Scopri le opportunità</a>
-        <a href="#come-funziona" class="btn btn-secondary">Come funziona</a>
+
+        <a
+          href="#offerte"
+          class="btn btn-primary"
+        >
+          Scopri le offerte
+        </a>
+
+        <a
+          href="#come-funziona"
+          class="btn btn-secondary"
+        >
+          Come funziona
+        </a>
+
       </div>
     </div>
   </section>
 
+
+  <!-- CATEGORIE -->
 
   <section id="categorie">
     <div class="container">
 
       <div class="section-title">
-        <h2>Scopri nuove opportunità</h2>
+
+        <h2>
+          Scopri nuove opportunità
+        </h2>
+
         <p>
-          Prodotti e offerte selezionati in diverse categorie.
+          NEXORA sta ampliando progressivamente la propria
+          selezione di partner e categorie.
         </p>
+
       </div>
 
       <div class="categories">
-        <div class="category"><span>💻</span>Tecnologia</div>
-        <div class="category"><span>🏠</span>Casa</div>
-        <div class="category"><span>⚡</span>Elettrodomestici</div>
-        <div class="category"><span>✨</span>Salute &amp; Bellezza</div>
-        <div class="category"><span>🐾</span>Pet</div>
-        <div class="category"><span>👶</span>Bambini</div>
-        <div class="category"><span>🎁</span>Regali</div>
-        <div class="category"><span>🛍️</span>Lifestyle</div>
-      </div>
 
+        <div class="category">
+          <span>✈️</span>
+          Viaggi
+        </div>
+
+        <div class="category">
+          <span>💻</span>
+          Tecnologia
+        </div>
+
+        <div class="category">
+          <span>🏠</span>
+          Casa
+        </div>
+
+        <div class="category">
+          <span>✨</span>
+          Salute &amp; Bellezza
+        </div>
+
+        <div class="category">
+          <span>🍕</span>
+          Food
+        </div>
+
+        <div class="category">
+          <span>👟</span>
+          Sport
+        </div>
+
+        <div class="category">
+          <span>🎁</span>
+          Regali
+        </div>
+
+        <div class="category">
+          <span>🛍️</span>
+          Lifestyle
+        </div>
+
+      </div>
     </div>
   </section>
 
+
+  <!-- OFFERTE REALI -->
 
   <section id="offerte">
     <div class="container">
 
       <div class="section-title">
-        <h2>Offerte selezionate</h2>
+
+        <h2>
+          NEXORA Deals
+        </h2>
+
         <p>
-          Stiamo preparando le prime selezioni NEXORA.
-          Le opportunità saranno pubblicate dopo la verifica dei nostri partner.
+          Opportunità selezionate automaticamente dal NEXORA Robot
+          sulla base dei dati disponibili presso i nostri partner.
         </p>
-      </div>
-
-      <div class="offers">
-
-        <article class="offer-card">
-          <div class="offer-tag">Tecnologia</div>
-          <h3>Prodotti tech selezionati</h3>
-          <p>
-            Analisi di prodotti, caratteristiche, prezzi e opportunità
-            provenienti dai nostri partner.
-          </p>
-          <div class="coming">Disponibile prossimamente</div>
-        </article>
-
-        <article class="offer-card">
-          <div class="offer-tag">Casa</div>
-          <h3>Casa &amp; elettrodomestici</h3>
-          <p>
-            Una selezione di prodotti utili per la casa valutati
-            considerando prezzo, funzionalità e convenienza.
-          </p>
-          <div class="coming">Disponibile prossimamente</div>
-        </article>
-
-        <article class="offer-card">
-          <div class="offer-tag">Lifestyle</div>
-          <h3>Moda, lifestyle e idee regalo</h3>
-          <p>
-            Opportunità interessanti selezionate tra moda,
-            accessori, benessere e idee regalo.
-          </p>
-          <div class="coming">Disponibile prossimamente</div>
-        </article>
 
       </div>
+
+      <div
+        class="offers-status"
+        id="offers-status"
+      >
+        Aggiornamento delle offerte in corso...
+      </div>
+
+      <div
+        class="offers"
+        id="offers-container"
+      >
+
+        <div class="loading-box">
+          Caricamento delle migliori opportunità NEXORA...
+        </div>
+
+      </div>
+
     </div>
   </section>
 
+
+  <!-- COME FUNZIONA -->
 
   <section id="come-funziona">
     <div class="container">
 
       <div class="section-title">
-        <h2>Come funziona NEXORA?</h2>
+
+        <h2>
+          Come funziona NEXORA?
+        </h2>
+
         <p>
-          Il nostro obiettivo è rendere più semplice la scoperta
-          di prodotti e opportunità online.
+          Tecnologia e selezione automatizzata per rendere
+          più semplice la scoperta di opportunità online.
         </p>
+
       </div>
 
       <div class="how">
 
         <div class="step">
-          <div class="step-number">1</div>
-          <h3>Selezioniamo</h3>
+
+          <div class="step-number">
+            1
+          </div>
+
+          <h3>
+            Raccogliamo
+          </h3>
+
           <p>
-            Cerchiamo prodotti, offerte e opportunità disponibili
-            presso negozi e partner online.
+            Il NEXORA Robot analizza i dati messi
+            a disposizione dai nostri partner.
           </p>
+
         </div>
 
-        <div class="step">
-          <div class="step-number">2</div>
-          <h3>Analizziamo</h3>
-          <p>
-            Consideriamo elementi come prezzo, sconto,
-            caratteristiche e informazioni disponibili.
-          </p>
-        </div>
 
         <div class="step">
-          <div class="step-number">3</div>
-          <h3>Condividiamo</h3>
+
+          <div class="step-number">
+            2
+          </div>
+
+          <h3>
+            Analizziamo
+          </h3>
+
           <p>
-            Presentiamo una selezione semplice da consultare
-            per aiutarti a valutare le opportunità.
+            Le opportunità vengono confrontate utilizzando
+            criteri come prezzo e qualità dei dati disponibili.
           </p>
+
+        </div>
+
+
+        <div class="step">
+
+          <div class="step-number">
+            3
+          </div>
+
+          <h3>
+            Selezioniamo
+          </h3>
+
+          <p>
+            Il NEXORA Score ci aiuta a evidenziare
+            le opportunità più interessanti.
+          </p>
+
         </div>
 
       </div>
+
     </div>
   </section>
 
 
-  <section class="about" id="chi-siamo">
+  <!-- CHI SIAMO -->
+
+  <section
+    class="about"
+    id="chi-siamo"
+  >
+
     <div class="container">
 
       <div class="about-box">
 
-        <h2>Chi siamo</h2>
+        <h2>
+          Chi siamo
+        </h2>
 
         <p>
-          NEXORA è un progetto digitale italiano dedicato alla scoperta
-          e alla selezione di prodotti, offerte e opportunità online.
+          NEXORA è un progetto digitale italiano dedicato
+          alla scoperta e alla selezione di offerte e
+          opportunità online.
         </p>
 
         <p>
-          Il nostro obiettivo è aiutare gli utenti a orientarsi tra
-          diverse alternative attraverso contenuti informativi,
-          confronti e selezioni curate.
+          Utilizziamo strumenti automatizzati per analizzare
+          grandi quantità di dati e rendere più semplice
+          la scoperta di opportunità interessanti.
         </p>
 
         <p>
-          NEXORA è attualmente in fase di lancio e sta sviluppando
-          collaborazioni con piattaforme e brand attraverso programmi
+          NEXORA sta sviluppando collaborazioni con
+          piattaforme e brand attraverso programmi
           di affiliazione.
         </p>
 
         <div class="transparency">
-          <strong>Trasparenza:</strong>
-          alcuni collegamenti presenti su NEXORA potranno essere link di
-          affiliazione. Se un utente effettua un acquisto attraverso uno
-          di questi link, NEXORA potrebbe ricevere una commissione,
+
+          <strong>
+            Trasparenza:
+          </strong>
+
+          alcuni collegamenti presenti su NEXORA
+          sono link di affiliazione.
+
+          Se un utente effettua una prenotazione o
+          un acquisto attraverso uno di questi link,
+          NEXORA potrebbe ricevere una commissione,
           senza costi aggiuntivi per l'utente.
+
         </div>
 
       </div>
-
     </div>
   </section>
 
@@ -608,41 +874,450 @@
     <div class="footer-grid">
 
       <div>
-        <div class="footer-brand">NEXORA</div>
+
+        <div class="footer-brand">
+          NEXORA
+        </div>
+
         <p>
-          Scopri, confronta e valuta opportunità online
+          Scopri e confronta opportunità online
           selezionate con maggiore semplicità.
         </p>
+
       </div>
 
-      <div>
-        <h4>NEXORA</h4>
-        <a href="#categorie">Categorie</a>
-        <a href="#offerte">Offerte</a>
-        <a href="#come-funziona">Come funziona</a>
-        <a href="#chi-siamo">Chi siamo</a>
-      </div>
 
       <div>
-        <h4>Informazioni</h4>
-        <a href="#chi-siamo">Trasparenza</a>
-        <a href="mailto:nexora.info@gmail.com">Contatti</a>
+
+        <h4>
+          NEXORA
+        </h4>
+
+        <a href="#categorie">
+          Categorie
+        </a>
+
+        <a href="#offerte">
+          Offerte
+        </a>
+
+        <a href="#come-funziona">
+          Come funziona
+        </a>
+
+        <a href="#chi-siamo">
+          Chi siamo
+        </a>
+
+      </div>
+
+
+      <div>
+
+        <h4>
+          Informazioni
+        </h4>
+
+        <a href="#chi-siamo">
+          Trasparenza
+        </a>
+
+        <a href="mailto:nexora.info@gmail.com">
+          Contatti
+        </a>
+
       </div>
 
     </div>
 
+
     <div class="copyright">
-      © 2026 NEXORA. Tutti i diritti riservati.
+
+      © 2026 NEXORA.
+      Tutti i diritti riservati.
 
       <div class="affiliate-note">
-        NEXORA può utilizzare link di affiliazione.
-        In caso di acquisto tramite tali link, potremmo ricevere
-        una commissione senza costi aggiuntivi per l'utente.
+
+        NEXORA utilizza link di affiliazione.
+        In caso di acquisto o prenotazione
+        tramite tali link, potremmo ricevere
+        una commissione senza costi aggiuntivi
+        per l'utente.
+
       </div>
+
     </div>
 
   </div>
 </footer>
+
+
+<script>
+
+  const JSON_URL =
+    "robot/nexora_deals.json";
+
+
+  function escapeHTML(value) {
+
+    return String(value ?? "")
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+
+  }
+
+
+  function formatDate(value) {
+
+    if (!value) {
+      return "";
+    }
+
+    const parts = value.split("-");
+
+    if (parts.length !== 3) {
+      return value;
+    }
+
+    return `${parts[2]}/${parts[1]}/${parts[0]}`;
+
+  }
+
+
+  function formatPrice(
+    price,
+    currency = "EUR"
+  ) {
+
+    try {
+
+      return new Intl.NumberFormat(
+        "it-IT",
+        {
+          style: "currency",
+          currency: currency || "EUR"
+        }
+      ).format(price);
+
+    } catch {
+
+      return `${currency} ${Number(price).toFixed(2)}`;
+
+    }
+
+  }
+
+
+  function scoreLabel(score) {
+
+    const value =
+      Number(score || 0);
+
+    if (value >= 85) {
+      return "ECCELLENTE";
+    }
+
+    if (value >= 70) {
+      return "MOLTO BUONA";
+    }
+
+    if (value >= 55) {
+      return "BUONA";
+    }
+
+    return "SELEZIONATA";
+
+  }
+
+
+  function createCard(offer) {
+
+    const nome =
+      escapeHTML(offer.nome);
+
+    const destino =
+      escapeHTML(offer.destino);
+
+    const image =
+      escapeHTML(offer.imagem);
+
+    const link =
+      escapeHTML(offer.link);
+
+    const score =
+      Number(offer.nexora_score || 0);
+
+    const discount =
+      Number(offer.desconto_percentual || 0);
+
+    const price =
+      formatPrice(
+        Number(offer.preco || 0),
+        offer.moeda || "EUR"
+      );
+
+    let oldPriceHTML = "";
+
+    if (
+      offer.preco_original &&
+      Number(offer.preco_original) >
+      Number(offer.preco)
+    ) {
+
+      oldPriceHTML = `
+        <div class="old-price">
+          ${formatPrice(
+            Number(offer.preco_original),
+            offer.moeda || "EUR"
+          )}
+        </div>
+      `;
+
+    }
+
+
+    let discountHTML = "";
+
+    if (discount > 0) {
+
+      discountHTML = `
+        <div class="discount">
+          Risparmio ${discount.toFixed(0)}%
+        </div>
+      `;
+
+    }
+
+
+    let imageHTML = "";
+
+    if (image) {
+
+      imageHTML = `
+        <img
+          class="offer-image"
+          src="${image}"
+          alt="${nome}"
+          loading="lazy"
+          onerror="this.style.display='none'"
+        >
+      `;
+
+    }
+
+
+    return `
+
+      <article class="offer-card">
+
+        <div class="offer-image-wrapper">
+
+          ${imageHTML}
+
+          <div class="score-badge">
+            NEXORA ${score.toFixed(0)}/100
+          </div>
+
+        </div>
+
+
+        <div class="offer-body">
+
+          <div class="offer-tag">
+            ${scoreLabel(score)}
+          </div>
+
+
+          <h3>
+            ${nome}
+          </h3>
+
+
+          ${
+            destino
+              ? `
+                <div class="destination">
+                  📍 ${destino}
+                </div>
+              `
+              : ""
+          }
+
+
+          <div class="travel-dates">
+
+            ${
+              offer.ida
+                ? `
+                  <div class="date-box">
+                    ✈️ Andata:
+                    ${formatDate(offer.ida)}
+                  </div>
+                `
+                : ""
+            }
+
+            ${
+              offer.volta
+                ? `
+                  <div class="date-box">
+                    ↩️ Ritorno:
+                    ${formatDate(offer.volta)}
+                  </div>
+                `
+                : ""
+            }
+
+          </div>
+
+
+          <div class="price-area">
+
+            ${oldPriceHTML}
+
+            <div class="offer-price">
+              ${price}
+            </div>
+
+            ${discountHTML}
+
+
+            ${
+              link
+                ? `
+                  <a
+                    class="offer-button"
+                    href="${link}"
+                    target="_blank"
+                    rel="noopener sponsored"
+                  >
+                    Vedi l'offerta
+                  </a>
+                `
+                : ""
+            }
+
+
+            <div class="affiliate-small">
+              Link affiliato · Prezzo e disponibilità
+              possono cambiare sul sito del partner.
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    `;
+
+  }
+
+
+  async function loadOffers() {
+
+    const container =
+      document.getElementById(
+        "offers-container"
+      );
+
+    const status =
+      document.getElementById(
+        "offers-status"
+      );
+
+
+    try {
+
+      const response =
+        await fetch(
+          `${JSON_URL}?v=${Date.now()}`
+        );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          `HTTP ${response.status}`
+        );
+
+      }
+
+
+      const offers =
+        await response.json();
+
+
+      if (
+        !Array.isArray(offers) ||
+        offers.length === 0
+      ) {
+
+        throw new Error(
+          "Nessuna offerta disponibile"
+        );
+
+      }
+
+
+      /*
+       * Mostriamo le prime 12
+       * offerte selezionate
+       * dal NEXORA Robot.
+       */
+
+      const selected =
+        offers.slice(0, 12);
+
+
+      container.innerHTML =
+        selected
+          .map(createCard)
+          .join("");
+
+
+      status.textContent =
+        `${selected.length} opportunità selezionate dal NEXORA Robot`;
+
+
+    } catch (error) {
+
+      console.error(
+        "Errore caricamento NEXORA Deals:",
+        error
+      );
+
+
+      status.textContent =
+        "Aggiornamento delle offerte temporaneamente non disponibile.";
+
+
+      container.innerHTML = `
+
+        <div class="error-box">
+
+          Le offerte NEXORA sono in fase
+          di aggiornamento.
+
+          <br><br>
+
+          Riprova tra qualche minuto.
+
+        </div>
+
+      `;
+
+    }
+
+  }
+
+
+  loadOffers();
+
+</script>
 
 </body>
 </html>
