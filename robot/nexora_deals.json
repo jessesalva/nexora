@@ -27,9 +27,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -61,9 +64,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -95,9 +101,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -129,9 +138,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -163,9 +175,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -197,9 +212,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -231,9 +249,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -265,9 +286,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -299,9 +323,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 5,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -333,9 +360,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -367,9 +397,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 5,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -401,9 +434,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -435,9 +471,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -469,9 +508,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -503,9 +545,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -537,9 +582,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -571,9 +619,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -605,9 +656,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -639,9 +693,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   },
@@ -673,9 +730,12 @@
       "duracao": 7
     },
     "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
     "validacao_comercial": {
       "aprovada": true,
-      "motivos": []
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
     },
     "categoria_score": "EXCELENTE"
   }
