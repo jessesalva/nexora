@@ -34,6 +34,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 41,
+    "potencial_comercial": 100,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -71,6 +79,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 22,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -108,6 +124,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 38,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -145,6 +169,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 29,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -182,6 +214,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 41,
+    "potencial_comercial": 100,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -219,6 +259,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 41,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -256,6 +304,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 43,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -293,6 +348,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 34,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -330,6 +392,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -367,6 +437,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 34,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -404,6 +481,14 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 35,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -441,6 +526,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 24,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -478,6 +570,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 24,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -515,6 +614,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 77,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -552,6 +658,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 120,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -589,6 +702,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 18,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -626,6 +746,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 38,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -663,6 +790,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 50,
+    "potencial_comercial": 95,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -700,6 +834,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 51,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa"
+    ],
     "categoria_score": "EXCELENTE"
   },
   {
@@ -737,6 +878,13 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
+    "dias_ate_viagem": 38,
+    "potencial_comercial": 90,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
     "categoria_score": "EXCELENTE"
   }
 ]
