@@ -1287,6 +1287,7 @@ def executar():
 
     aprovadas = 0
     rejeitadas = 0
+    motivos_rejeicao = defaultdict(int)
 
     for oferta in ofertas:
 
@@ -1302,6 +1303,9 @@ def executar():
         else:
             rejeitadas += 1
 
+            for motivo in oferta["validacao_comercial"]["motivos"]:
+                motivos_rejeicao[motivo] += 1
+
     print()
     print("======= VALIDACAO COMERCIAL =======")
     print(
@@ -1313,6 +1317,17 @@ def executar():
     print(
         f"Ofertas rejeitadas: {rejeitadas}"
     )
+    print()
+    print("Motivos das rejeicoes:")
+
+    for motivo, quantidade in sorted(
+        motivos_rejeicao.items(),
+        key=lambda x: x[1],
+        reverse=True
+    ):
+        print(
+            f"- {motivo}: {quantidade}"
+        )
     print("===================================")
     print()
 
