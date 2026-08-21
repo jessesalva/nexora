@@ -1,5 +1,5 @@
 # ============================================================
-# NEXORA ROBOT 3.2
+# NEXORA ROBOT 3.3
 # Motor inteligente de oportunidades AWIN / lastminute.com
 # ============================================================
 
@@ -12,7 +12,7 @@ import statistics
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
-
+from datetime import datetime, date
 
 PASTA = Path(__file__).parent
 
@@ -844,41 +844,195 @@ def calcular_scores(ofertas):
 # ============================================================
 def validar_oferta_comercial(oferta):
     """
-    Valida se a oferta tem informacoes minimas
-    para ser considerada comercialmente utilizavel.
+    Valida se uma oferta possui condicoes minimas
+    para ser utilizada comercialmente pela NEXORA.
     """
 
     motivos = []
+    alertas = []
 
-    # Precisa ter preco valido
-    if not oferta.get("preco") or oferta["preco"] <= 0:
+    # ============================================
+    # 1. PRECO
+    # ============================================
+
+    preco = oferta.get("preco")
+
+    if preco is None or preco <= 0:
         motivos.append("preco_invalido")
 
-    # Precisa ter origem
-    if not oferta.get("origem"):
+    # Preco extremamente baixo pode ser real,
+    # mas merece verificacao antes da publicacao.
+    elif preco < 10:
+        alertas.append("preco_muito_baixo")
+
+
+    # ============================================
+    # 2. ORIGEM E DESTINO
+    # ============================================
+
+    origem = (oferta.get("origem") or "").strip()
+    destino = (oferta.get("destino") or "").strip()
+
+    if not origem:
         motivos.append("origem_ausente")
 
-    # Precisa ter destino
-    if not oferta.get("destino"):
+    if not destino:
         motivos.append("destino_ausente")
 
-    # Precisa ter datas
-    if not oferta.get("ida") or not oferta.get("volta"):
+    if (
+        origem
+        and destino
+        and origem.lower() == destino.lower()
+    ):
+        motivos.append("origem_igual_destino")
+
+
+    # ============================================
+    # 3. DATAS
+    # ============================================
+
+    ida_texto = (oferta.get("ida") or "").strip()
+    volta_texto = (oferta.get("volta") or "").strip()
+
+    data_ida = None
+    data_volta = None
+
+    if not ida_texto or not volta_texto:
+
         motivos.append("datas_incompletas")
 
-    # Precisa ter link de afiliado
-    if not oferta.get("link"):
-        motivos.append("link_ausente")
+    else:
 
-    # Analisa preco por dia quando disponivel
-    preco_dia = oferta.get("preco_por_dia")
+        try:
+            data_ida = datetime.strptime(
+                ida_texto,
+                "%Y-%m-%d"
+            ).date()
 
-    if preco_dia is not None and preco_dia <= 0:
+            data_volta = datetime.strptime(
+                volta_texto,
+                "%Y-%m-%d"
+            ).date()
+
+        except ValueError:
+            motivos.append("datas_invalidas")
+
+
+    # ============================================
+    # 4. VALIDACAO TEMPORAL
+    # ============================================
+
+    if data_ida and data_volta:
+
+        hoje = date.today()
+
+        if data_ida < hoje:
+            motivos.append("data_ida_passada")
+
+        if data_volta <= data_ida:
+            motivos.append("volta_anterior_ou_igual_ida")
+
+        else:
+
+            duracao_calculada = (
+                data_volta - data_ida
+            ).days
+
+            oferta["duracao_validada"] = (
+                duracao_calculada
+            )
+
+            # Menos de 1 dia nao faz sentido
+            if duracao_calculada < 1:
+                motivos.append("duracao_invalida")
+
+            # Viagens acima de 30 dias nao sao
+            # rejeitadas, mas recebem alerta
+            if duracao_calculada > 30:
+                alertas.append("duracao_muito_longa")
+
+
+    # ============================================
+    # 5. PRECO POR DIA
+    # ============================================
+
+    preco_dia = oferta.get(
+        "preco_por_dia"
+    )
+
+    if (
+        preco_dia is not None
+        and preco_dia <= 0
+    ):
         motivos.append("preco_dia_invalido")
 
+    if (
+        preco_dia is not None
+        and 0 < preco_dia < 5
+    ):
+        alertas.append(
+            "preco_dia_muito_baixo"
+        )
+
+
+    # ============================================
+    # 6. LINK DE AFILIADO
+    # ============================================
+
+    link = (
+        oferta.get("link") or ""
+    ).strip()
+
+    if not link:
+
+        motivos.append("link_ausente")
+
+    elif (
+        "awin1.com" not in link.lower()
+        and "awin.com" not in link.lower()
+    ):
+
+        motivos.append(
+            "link_afiliado_invalido"
+        )
+
+
+    # ============================================
+    # 7. IMAGEM
+    # ============================================
+
+    imagem = (
+        oferta.get("imagem") or ""
+    ).strip()
+
+    # Nao rejeitamos uma boa oferta sem imagem,
+    # mas sinalizamos para revisao.
+    if not imagem:
+        alertas.append("imagem_ausente")
+
+
+    # ============================================
+    # RESULTADO
+    # ============================================
+
     oferta["validacao_comercial"] = {
+
         "aprovada": len(motivos) == 0,
-        "motivos": motivos
+
+        "motivos": motivos,
+
+        "alertas": alertas,
+
+        "nivel": (
+            "APROVADA"
+            if len(motivos) == 0
+            and len(alertas) == 0
+
+            else "APROVADA_COM_ALERTA"
+            if len(motivos) == 0
+
+            else "REJEITADA"
+        )
     }
 
     return oferta
