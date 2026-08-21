@@ -1036,6 +1036,138 @@ def validar_oferta_comercial(oferta):
     }
 
     return oferta
+
+def calcular_potencial_comercial(oferta):
+    """
+    Calcula o potencial comercial da oferta.
+    Nota independente do NEXORA SCORE.
+    """
+
+    pontos = 0
+    sinais = []
+
+    preco = oferta.get("preco") or 0
+    preco_dia = oferta.get("preco_por_dia")
+    duracao = oferta.get("duracao_validada")
+
+    # ============================================
+    # 1. PRECO TOTAL - ate 30 pontos
+    # ============================================
+
+    if preco <= 100:
+        pontos += 30
+        sinais.append("preco_muito_atrativo")
+
+    elif preco <= 200:
+        pontos += 25
+        sinais.append("preco_atrativo")
+
+    elif preco <= 350:
+        pontos += 20
+
+    elif preco <= 500:
+        pontos += 15
+
+    elif preco <= 750:
+        pontos += 10
+
+    else:
+        pontos += 5
+
+
+    # ============================================
+    # 2. PRECO POR DIA - ate 30 pontos
+    # ============================================
+
+    if preco_dia:
+
+        if preco_dia <= 30:
+            pontos += 30
+            sinais.append("excelente_preco_dia")
+
+        elif preco_dia <= 50:
+            pontos += 25
+
+        elif preco_dia <= 75:
+            pontos += 20
+
+        elif preco_dia <= 100:
+            pontos += 15
+
+        else:
+            pontos += 5
+
+
+    # ============================================
+    # 3. DURACAO - ate 20 pontos
+    # ============================================
+
+    if duracao:
+
+        if 3 <= duracao <= 7:
+            pontos += 20
+            sinais.append("duracao_atrativa")
+
+        elif 2 <= duracao <= 10:
+            pontos += 15
+
+        elif duracao <= 14:
+            pontos += 10
+
+        else:
+            pontos += 5
+
+
+    # ============================================
+    # 4. ANTECEDENCIA - ate 20 pontos
+    # ============================================
+
+    ida_texto = oferta.get("ida")
+
+    if ida_texto:
+
+        try:
+
+            data_ida = datetime.strptime(
+                ida_texto,
+                "%Y-%m-%d"
+            ).date()
+
+            dias_ate_viagem = (
+                data_ida - date.today()
+            ).days
+
+            oferta["dias_ate_viagem"] = dias_ate_viagem
+
+            if 7 <= dias_ate_viagem <= 45:
+                pontos += 20
+                sinais.append("janela_compra_forte")
+
+            elif 46 <= dias_ate_viagem <= 90:
+                pontos += 15
+
+            elif dias_ate_viagem > 90:
+                pontos += 10
+
+            elif dias_ate_viagem >= 0:
+                pontos += 5
+
+        except ValueError:
+            pass
+
+
+    # ============================================
+    # RESULTADO
+    # ============================================
+
+    oferta["potencial_comercial"] = round(
+        pontos,
+        2
+    )
+
+    oferta["sinais_comerciais"] = sinais
+
+    return oferta
     
 def classificar_oferta(score):
 
@@ -1330,7 +1462,8 @@ def executar():
         )
     print("===================================")
     print()
-
+    for oferta in ofertas:
+        calcular_potencial_comercial(oferta)
     melhores = selecionar_melhores(
         ofertas_validadas
     )
