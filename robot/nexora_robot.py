@@ -1,5 +1,5 @@
-# NEXORA ROBOT 3.0
-# Motor inteligente de selecao de oportunidades reais da AWIN
+# NEXORA ROBOT 3.1
+# Analise inteligente de oportunidades reais da AWIN
 
 import csv
 import gzip
@@ -19,7 +19,7 @@ QUANTIDADE_DEALS = 20
 
 
 # ============================================================
-# CONVERSAO E NORMALIZACAO
+# UTILIDADES
 # ============================================================
 
 def converter_preco(valor):
@@ -44,55 +44,57 @@ def normalizar_texto(texto):
         return ""
 
     texto = texto.lower().strip()
-
     texto = re.sub(r"\s+", " ", texto)
 
     return texto
 
 
 def extrair_origem(nome):
-    """
-    Tenta descobrir a cidade de origem usando
-    a primeira parte do nome da oferta.
-    Exemplo:
-    Milano - Palermo - Hotel X
-    retorna Milano
-    """
-
     if not nome:
         return ""
 
     partes = [
-        parte.strip()
-        for parte in nome.split("-")
-        if parte.strip()
+        p.strip()
+        for p in nome.split("-")
+        if p.strip()
     ]
 
-    if partes:
-        return partes[0]
-
-    return ""
+    return partes[0] if partes else ""
 
 
 def extrair_produto(nome):
-    """
-    Tenta identificar hotel/produto principal.
-    Normalmente a ultima parte do nome da AWIN.
-    """
-
     if not nome:
         return ""
 
     partes = [
-        parte.strip()
-        for parte in nome.split("-")
-        if parte.strip()
+        p.strip()
+        for p in nome.split("-")
+        if p.strip()
     ]
 
-    if partes:
-        return partes[-1]
+    return partes[-1] if partes else nome.strip()
 
-    return nome.strip()
+
+def converter_data(valor):
+    if not valor:
+        return None
+
+    formatos = [
+        "%Y-%m-%d",
+        "%d/%m/%Y",
+        "%d-%m-%Y",
+    ]
+
+    for formato in formatos:
+        try:
+            return datetime.strptime(
+                valor,
+                formato
+            ).date()
+        except ValueError:
+            pass
+
+    return None
 
 
 # ============================================================
@@ -178,7 +180,7 @@ def carregar_ofertas():
 
 
 # ============================================================
-# LIMPEZA DE DUPLICADOS
+# DUPLICADOS
 # ============================================================
 
 def remover_duplicados(ofertas):
@@ -189,6 +191,7 @@ def remover_duplicados(ofertas):
         chave = (
             normalizar_texto(oferta["produto"]),
             normalizar_texto(oferta["origem"]),
+            normalizar_texto(oferta["destino"]),
             oferta["ida"],
             oferta["volta"],
             round(oferta["preco"], 2),
@@ -226,37 +229,29 @@ def calcular_desconto(oferta):
 
 
 # ============================================================
-# DATAS
+# DURAÇÃO
 # ============================================================
 
-def converter_data(valor):
-    if not valor:
+def calcular_duracao(oferta):
+    ida = converter_data(oferta["ida"])
+    volta = converter_data(oferta["volta"])
+
+    if not ida or not volta:
         return None
 
-    formatos = [
-        "%Y-%m-%d",
-        "%d/%m/%Y",
-        "%d-%m-%Y",
-    ]
+    dias = (volta - ida).days
 
-    for formato in formatos:
-        try:
-            return datetime.strptime(
-                valor,
-                formato
-            ).date()
-        except ValueError:
-            pass
+    if dias <= 0:
+        return None
 
-    return None
+    return dias
 
+
+# ============================================================
+# SCORE DE DATA
+# ============================================================
 
 def calcular_pontos_data(oferta):
-    """
-    Ate 10 pontos.
-    Favorece viagens futuras e relativamente proximas.
-    """
-
     data_ida = converter_data(
         oferta["ida"]
     )
@@ -266,17 +261,16 @@ def calcular_pontos_data(oferta):
 
     hoje = date.today()
 
-    dias = (data_ida - hoje).days
+    dias = (
+        data_ida - hoje
+    ).days
 
-    # Oferta vencida
     if dias < 0:
-        return -50
+        return -100
 
-    # Muito proxima
-    if dias <= 7:
+    if dias <= 15:
         return 7
 
-    # Excelente janela comercial
     if dias <= 60:
         return 10
 
@@ -293,12 +287,13 @@ def calcular_pontos_data(oferta):
 
 
 # ============================================================
-# SCORE DE PRECO
+# SCORE PRINCIPAL
 # ============================================================
 
 def calcular_scores(ofertas):
 
     por_destino = defaultdict(list)
+    por_rota = defaultdict(list)
 
     for oferta in ofertas:
 
@@ -307,112 +302,193 @@ def calcular_scores(ofertas):
             or "sem_destino"
         )
 
+        rota = (
+            normalizar_texto(oferta["origem"]),
+            destino,
+        )
+
         por_destino[destino].append(oferta)
+        por_rota[rota].append(oferta)
 
-    for destino, grupo in por_destino.items():
+    for oferta in ofertas:
 
-        grupo.sort(
+        destino = (
+            normalizar_texto(oferta["destino"])
+            or "sem_destino"
+        )
+
+        rota = (
+            normalizar_texto(oferta["origem"]),
+            destino,
+        )
+
+        grupo_destino = sorted(
+            por_destino[destino],
             key=lambda x: x["preco"]
         )
 
-        total = len(grupo)
+        grupo_rota = sorted(
+            por_rota[rota],
+            key=lambda x: x["preco"]
+        )
 
-        for posicao, oferta in enumerate(grupo):
+        # ====================================================
+        # 1. PREÇO NO DESTINO - ATÉ 25
+        # ====================================================
 
-            # ------------------------------------
-            # 1. PRECO COMPETITIVO
-            # Ate 35 pontos
-            # ------------------------------------
+        total_destino = len(
+            grupo_destino
+        )
 
-            if total == 1:
-                pontos_preco = 25
-            else:
-                percentil = (
-                    1
-                    - (
-                        posicao
-                        / (total - 1)
-                    )
+        posicao_destino = grupo_destino.index(
+            oferta
+        )
+
+        if total_destino <= 1:
+            pontos_preco_destino = 18
+        else:
+            percentil = (
+                1
+                - (
+                    posicao_destino
+                    / (total_destino - 1)
                 )
+            )
 
-                pontos_preco = (
-                    percentil * 35
+            pontos_preco_destino = (
+                percentil * 25
+            )
+
+        # ====================================================
+        # 2. PREÇO NA ROTA - ATÉ 20
+        # ====================================================
+
+        total_rota = len(
+            grupo_rota
+        )
+
+        posicao_rota = grupo_rota.index(
+            oferta
+        )
+
+        if total_rota <= 1:
+            pontos_preco_rota = 12
+        else:
+            percentil_rota = (
+                1
+                - (
+                    posicao_rota
+                    / (total_rota - 1)
                 )
-
-            # ------------------------------------
-            # 2. DESCONTO REAL
-            # Ate 25 pontos
-            # ------------------------------------
-
-            desconto = calcular_desconto(
-                oferta
             )
 
-            pontos_desconto = min(
-                desconto,
-                25
+            pontos_preco_rota = (
+                percentil_rota * 20
             )
 
-            # ------------------------------------
-            # 3. QUALIDADE DOS DADOS
-            # Ate 15 pontos
-            # ------------------------------------
+        # ====================================================
+        # 3. DESCONTO REAL - ATÉ 20
+        # ====================================================
 
-            pontos_dados = 0
+        desconto = calcular_desconto(
+            oferta
+        )
 
-            if oferta["destino"]:
-                pontos_dados += 3
+        pontos_desconto = min(
+            desconto,
+            20
+        )
 
-            if oferta["ida"]:
-                pontos_dados += 3
+        # ====================================================
+        # 4. QUALIDADE DOS DADOS - ATÉ 15
+        # ====================================================
 
-            if oferta["volta"]:
-                pontos_dados += 3
+        pontos_dados = 0
 
-            if oferta["imagem"]:
-                pontos_dados += 3
+        if oferta["destino"]:
+            pontos_dados += 3
 
-            if oferta["link"]:
-                pontos_dados += 3
+        if oferta["ida"]:
+            pontos_dados += 3
 
-            # ------------------------------------
-            # 4. DATA / URGENCIA
-            # Ate 10 pontos
-            # ------------------------------------
+        if oferta["volta"]:
+            pontos_dados += 3
 
-            pontos_data = calcular_pontos_data(
-                oferta
-            )
+        if oferta["imagem"]:
+            pontos_dados += 3
 
-            # ------------------------------------
-            # SCORE BASE
-            # Maximo inicial = 85
-            # Os 15 restantes serao usados
-            # na diversidade.
-            # ------------------------------------
+        if oferta["link"]:
+            pontos_dados += 3
 
-            score_base = (
-                pontos_preco
-                + pontos_desconto
-                + pontos_dados
-                + pontos_data
-            )
+        # ====================================================
+        # 5. DATA - ATÉ 10
+        # ====================================================
 
-            oferta["desconto_percentual"] = round(
-                desconto,
-                2
-            )
+        pontos_data = calcular_pontos_data(
+            oferta
+        )
 
-            oferta["score_base"] = round(
-                score_base,
-                2
-            )
+        # ====================================================
+        # 6. DURAÇÃO - ATÉ 10
+        # ====================================================
+
+        duracao = calcular_duracao(
+            oferta
+        )
+
+        if duracao is None:
+            pontos_duracao = 0
+
+        elif 2 <= duracao <= 4:
+            pontos_duracao = 10
+
+        elif 5 <= duracao <= 7:
+            pontos_duracao = 8
+
+        elif duracao == 1:
+            pontos_duracao = 5
+
+        elif 8 <= duracao <= 10:
+            pontos_duracao = 5
+
+        else:
+            pontos_duracao = 3
+
+        # ====================================================
+        # SCORE TOTAL
+        # ====================================================
+
+        score = (
+            pontos_preco_destino
+            + pontos_preco_rota
+            + pontos_desconto
+            + pontos_dados
+            + pontos_data
+            + pontos_duracao
+        )
+
+        score = min(
+            max(score, 0),
+            100
+        )
+
+        oferta["duracao_dias"] = duracao
+
+        oferta["desconto_percentual"] = round(
+            desconto,
+            2
+        )
+
+        oferta["nexora_score"] = round(
+            score,
+            2
+        )
 
     return ofertas
 
 
 # ============================================================
-# CLASSIFICACAO
+# CLASSIFICAÇÃO
 # ============================================================
 
 def classificar_oferta(score):
@@ -430,7 +506,7 @@ def classificar_oferta(score):
 
 
 # ============================================================
-# SELECAO INTELIGENTE
+# SELEÇÃO FINAL
 # ============================================================
 
 def selecionar_melhores(
@@ -440,7 +516,7 @@ def selecionar_melhores(
 
     ordenadas = sorted(
         ofertas,
-        key=lambda x: x["score_base"],
+        key=lambda x: x["nexora_score"],
         reverse=True
     )
 
@@ -448,7 +524,7 @@ def selecionar_melhores(
 
     produtos_usados = defaultdict(int)
     destinos_usados = defaultdict(int)
-    origens_usadas = defaultdict(int)
+    rotas_usadas = defaultdict(int)
 
     for oferta in ordenadas:
 
@@ -460,43 +536,24 @@ def selecionar_melhores(
             oferta["destino"]
         )
 
-        origem = normalizar_texto(
-            oferta["origem"]
+        rota = (
+            normalizar_texto(
+                oferta["origem"]
+            ),
+            destino,
         )
 
-        # Evita repeticao excessiva
-        # do mesmo hotel/produto
+        # Mesmo hotel/produto apenas uma vez
         if produto and produtos_usados[produto] >= 1:
             continue
 
-        # Maximo de 3 ofertas
-        # do mesmo destino
+        # Mesmo destino no máximo 3 vezes
         if destino and destinos_usados[destino] >= 3:
             continue
 
-        # Diversidade recebe ate 15 pontos
-        pontos_diversidade = 15
-
-        if destino and destinos_usados[destino] > 0:
-            pontos_diversidade -= 5
-
-        if origem and origens_usadas[origem] >= 3:
-            pontos_diversidade -= 3
-
-        score_final = (
-            oferta["score_base"]
-            + max(pontos_diversidade, 0)
-        )
-
-        score_final = min(
-            max(score_final, 0),
-            100
-        )
-
-        oferta["nexora_score"] = round(
-            score_final,
-            2
-        )
+        # Mesma rota no máximo 2 vezes
+        if rotas_usadas[rota] >= 2:
+            continue
 
         oferta["categoria_score"] = (
             classificar_oferta(
@@ -504,7 +561,9 @@ def selecionar_melhores(
             )
         )
 
-        resultado.append(oferta)
+        resultado.append(
+            oferta
+        )
 
         if produto:
             produtos_usados[produto] += 1
@@ -512,23 +571,16 @@ def selecionar_melhores(
         if destino:
             destinos_usados[destino] += 1
 
-        if origem:
-            origens_usadas[origem] += 1
+        rotas_usadas[rota] += 1
 
         if len(resultado) >= quantidade:
             break
-
-    # Ordena novamente pelo score final
-    resultado.sort(
-        key=lambda x: x["nexora_score"],
-        reverse=True
-    )
 
     return resultado
 
 
 # ============================================================
-# SALVAR JSON
+# JSON
 # ============================================================
 
 def salvar_json(ofertas):
@@ -548,14 +600,14 @@ def salvar_json(ofertas):
 
 
 # ============================================================
-# EXECUCAO
+# EXECUÇÃO
 # ============================================================
 
 def executar():
 
     print()
     print("====================================")
-    print("       NEXORA ROBOT 3.0")
+    print("       NEXORA ROBOT 3.1")
     print("====================================")
     print()
 
@@ -574,8 +626,7 @@ def executar():
     )
 
     print(
-        "Ofertas apos limpeza: "
-        f"{len(ofertas)}"
+        f"Ofertas apos limpeza: {len(ofertas)}"
     )
 
     ofertas = calcular_scores(
@@ -601,6 +652,7 @@ def executar():
     ):
 
         print()
+
         print(
             f"{posicao}. "
             f"NEXORA {oferta['nexora_score']}/100 "
@@ -621,6 +673,12 @@ def executar():
             print(
                 "Economia: "
                 f"{oferta['desconto_percentual']}%"
+            )
+
+        if oferta["duracao_dias"]:
+            print(
+                f"Duracao: "
+                f"{oferta['duracao_dias']} dias"
             )
 
         if oferta["origem"]:
