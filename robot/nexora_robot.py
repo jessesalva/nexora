@@ -842,7 +842,47 @@ def calcular_scores(ofertas):
 # ============================================================
 # CLASSIFICAÇÃO
 # ============================================================
+def validar_oferta_comercial(oferta):
+    """
+    Valida se a oferta tem informacoes minimas
+    para ser considerada comercialmente utilizavel.
+    """
 
+    motivos = []
+
+    # Precisa ter preco valido
+    if not oferta.get("preco") or oferta["preco"] <= 0:
+        motivos.append("preco_invalido")
+
+    # Precisa ter origem
+    if not oferta.get("origem"):
+        motivos.append("origem_ausente")
+
+    # Precisa ter destino
+    if not oferta.get("destino"):
+        motivos.append("destino_ausente")
+
+    # Precisa ter datas
+    if not oferta.get("ida") or not oferta.get("volta"):
+        motivos.append("datas_incompletas")
+
+    # Precisa ter link de afiliado
+    if not oferta.get("link"):
+        motivos.append("link_ausente")
+
+    # Analisa preco por dia quando disponivel
+    preco_dia = oferta.get("preco_por_dia")
+
+    if preco_dia is not None and preco_dia <= 0:
+        motivos.append("preco_dia_invalido")
+
+    oferta["validacao_comercial"] = {
+        "aprovada": len(motivos) == 0,
+        "motivos": motivos
+    }
+
+    return oferta
+    
 def classificar_oferta(score):
 
     if score >= 90:
@@ -1085,8 +1125,45 @@ def executar():
         ofertas
     )
 
+    # ============================================
+    # VALIDACAO COMERCIAL
+    # ============================================
+
+    ofertas_validadas = []
+
+    aprovadas = 0
+    rejeitadas = 0
+
+    for oferta in ofertas:
+
+        oferta = validar_oferta_comercial(
+            oferta
+        )
+
+        if oferta["validacao_comercial"]["aprovada"]:
+            aprovadas += 1
+            ofertas_validadas.append(
+                oferta
+            )
+        else:
+            rejeitadas += 1
+
+    print()
+    print("======= VALIDACAO COMERCIAL =======")
+    print(
+        f"Ofertas analisadas: {len(ofertas)}"
+    )
+    print(
+        f"Ofertas aprovadas: {aprovadas}"
+    )
+    print(
+        f"Ofertas rejeitadas: {rejeitadas}"
+    )
+    print("===================================")
+    print()
+
     melhores = selecionar_melhores(
-        ofertas
+        ofertas_validadas
     )
 
     salvar_json(
