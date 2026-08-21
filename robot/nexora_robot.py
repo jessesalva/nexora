@@ -1246,7 +1246,7 @@ def executar():
     )
 
     print(
-        "          NEXORA ROBOT 3.2"
+        "          NEXORA ROBOT 3.3"
     )
 
     print(
