@@ -1216,14 +1216,15 @@ def selecionar_melhores(
 
     ordenadas = sorted(
 
-        ofertas_validas,
+       ofertas_validas,
 
-        key=lambda x: (
-            x["nexora_score"],
-            -x["preco"]
-        ),
+       key=lambda x: (
+           x.get("potencial_comercial", 0),
+           x["nexora_score"],
+           -x["preco"]
+       ),
 
-        reverse=True
+       reverse=True
     )
 
     resultado = []
