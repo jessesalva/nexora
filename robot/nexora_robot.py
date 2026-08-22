@@ -1563,6 +1563,24 @@ def executar():
             "Composicao do NEXORA SCORE:"
         )
 
+        print(
+            f"Potencial comercial: "
+            f"{oferta.get('potencial_comercial', 0)}/100"
+        )
+
+        sinais = oferta.get(
+            "sinais_comerciais",
+            []
+        )
+
+        if sinais:
+            print(
+                "Sinais comerciais: "
+                + ", ".join(sinais)
+            )
+
+        print()
+
         detalhes = oferta[
             "score_detalhes"
         ]
