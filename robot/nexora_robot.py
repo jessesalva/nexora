@@ -1378,7 +1378,7 @@ def executar():
     )
 
     print(
-        "          NEXORA ROBOT 3.3"
+        "          NEXORA ROBOT 3.4"
     )
 
     print(
@@ -1462,8 +1462,15 @@ def executar():
         )
     print("===================================")
     print()
+    
+    # Calcula o potencial comercial
+    # de todas as ofertas aprovadas
+
     for oferta in ofertas:
-        calcular_potencial_comercial(oferta)
+        calcular_potencial_comercial(
+            oferta
+        ) 
+        
     melhores = selecionar_melhores(
         ofertas_validadas
     )
