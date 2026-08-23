@@ -14,6 +14,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 20.66,
+    "mediana_preco_produto": 92.61,
+    "anomalia_preco_percentual": 10.79,
+    "sinal_anomalia_preco": null,
     "desconto_percentual": 0,
     "nexora_score": 87.96,
     "score_detalhes": {
@@ -59,6 +62,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 25.86,
+    "mediana_preco_produto": 188.18,
+    "anomalia_preco_percentual": 45.03,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 87.8,
     "score_detalhes": {
@@ -104,6 +110,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 26.32,
+    "mediana_preco_produto": 202.56,
+    "anomalia_preco_percentual": 48.03,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 87.77,
     "score_detalhes": {
@@ -149,6 +158,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 27.35,
+    "mediana_preco_produto": 229.19,
+    "anomalia_preco_percentual": 52.26,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 87.7,
     "score_detalhes": {
@@ -194,6 +206,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 20.04,
+    "mediana_preco_produto": 77.63,
+    "anomalia_preco_percentual": -3.23,
+    "sinal_anomalia_preco": null,
     "desconto_percentual": 0,
     "nexora_score": 87.64,
     "score_detalhes": {
@@ -239,6 +254,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 26.06,
+    "mediana_preco_produto": 136.52,
+    "anomalia_preco_percentual": 23.64,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 87.61,
     "score_detalhes": {
@@ -284,6 +302,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 5,
     "preco_por_dia": 24.14,
+    "mediana_preco_produto": 157.84,
+    "anomalia_preco_percentual": 23.52,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 87.41,
     "score_detalhes": {
@@ -329,6 +350,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 20.6,
+    "mediana_preco_produto": 109.31,
+    "anomalia_preco_percentual": 24.61,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 86.96,
     "score_detalhes": {
@@ -374,6 +398,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 24.49,
+    "mediana_preco_produto": 139.88,
+    "anomalia_preco_percentual": 29.97,
+    "sinal_anomalia_preco": "preco_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 86.85,
     "score_detalhes": {
@@ -419,6 +446,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 7,
     "preco_por_dia": 18.21,
+    "mediana_preco_produto": 179.99,
+    "anomalia_preco_percentual": 29.17,
+    "sinal_anomalia_preco": "preco_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 86.23,
     "score_detalhes": {
@@ -464,6 +494,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 26.58,
+    "mediana_preco_produto": 135.45,
+    "anomalia_preco_percentual": 21.51,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 84.91,
     "score_detalhes": {
@@ -509,6 +542,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 29.49,
+    "mediana_preco_produto": 206.01,
+    "anomalia_preco_percentual": 42.75,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 83.9,
     "score_detalhes": {
@@ -554,6 +590,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 3,
     "preco_por_dia": 26.05,
+    "mediana_preco_produto": 129.17,
+    "anomalia_preco_percentual": 39.5,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 82.93,
     "score_detalhes": {
@@ -599,6 +638,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 27.21,
+    "mediana_preco_produto": 184.21,
+    "anomalia_preco_percentual": 40.92,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 82.72,
     "score_detalhes": {
@@ -644,6 +686,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 29.15,
+    "mediana_preco_produto": 134.2,
+    "anomalia_preco_percentual": 13.11,
+    "sinal_anomalia_preco": null,
     "desconto_percentual": 0,
     "nexora_score": 82.6,
     "score_detalhes": {
@@ -689,6 +734,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 23.29,
+    "mediana_preco_produto": 104.65,
+    "anomalia_preco_percentual": 10.99,
+    "sinal_anomalia_preco": null,
     "desconto_percentual": 0,
     "nexora_score": 82.04,
     "score_detalhes": {
@@ -734,6 +782,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 3,
     "preco_por_dia": 28.25,
+    "mediana_preco_produto": 116.4,
+    "anomalia_preco_percentual": 27.18,
+    "sinal_anomalia_preco": "preco_fora_do_padrao",
     "desconto_percentual": 0,
     "nexora_score": 81.61,
     "score_detalhes": {
@@ -779,6 +830,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 23.61,
+    "mediana_preco_produto": 118.28,
+    "anomalia_preco_percentual": 20.15,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 76.73,
     "score_detalhes": {
@@ -824,6 +878,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 27.34,
+    "mediana_preco_produto": 109.35,
+    "anomalia_preco_percentual": 0.0,
+    "sinal_anomalia_preco": null,
     "desconto_percentual": 0,
     "nexora_score": 74.24,
     "score_detalhes": {
@@ -869,6 +926,9 @@
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
     "preco_por_dia": 29.67,
+    "mediana_preco_produto": 143.47,
+    "anomalia_preco_percentual": 17.29,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
     "desconto_percentual": 0,
     "nexora_score": 70.02,
     "score_detalhes": {
