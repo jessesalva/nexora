@@ -1,5 +1,5 @@
 # ============================================================
-# NEXORA ROBOT 3.3
+# NEXORA ROBOT 4.0
 # Motor inteligente de oportunidades AWIN / lastminute.com
 # ============================================================
 
@@ -449,6 +449,11 @@ def calcular_scores(ofertas):
         list
     )
 
+    # Historico de precos por produto/hotel
+    por_produto = defaultdict(
+        list
+    )
+
     # --------------------------------------------------------
     # Preparar dados
     # --------------------------------------------------------
@@ -513,6 +518,17 @@ def calcular_scores(ofertas):
         ].append(
             oferta["preco"]
         )
+        
+        produto = normalizar_texto(
+            oferta["produto"]
+        )
+
+        if produto:
+            por_produto[
+                produto
+            ].append(
+                oferta["preco"]
+            )
 
     # Mediana apenas para diagnóstico
     mediana_global = statistics.median(
@@ -543,6 +559,82 @@ def calcular_scores(ofertas):
             ),
 
             destino
+        )
+
+        # ====================================================
+        # ANALISE DE ANOMALIA DE PRECO DO PRODUTO/HOTEL
+        # ====================================================
+
+        produto = normalizar_texto(
+            oferta["produto"]
+        )
+
+        grupo_produto = (
+            por_produto.get(
+                produto,
+                []
+            )
+        )
+
+        mediana_produto = None
+        anomalia_preco = 0
+        sinal_anomalia = None
+
+        # Exigimos pelo menos 3 precos
+        # para evitar conclusoes com pouca amostra.
+        if len(grupo_produto) >= 3:
+
+            mediana_produto = statistics.median(
+                grupo_produto
+            )
+
+            if mediana_produto > 0:
+
+                anomalia_preco = (
+                    (
+                        mediana_produto
+                        - preco
+                    )
+                    / mediana_produto
+                ) * 100
+
+                # Valores positivos significam
+                # que o preco atual esta abaixo
+                # da mediana daquele produto.
+                if anomalia_preco >= 35:
+
+                    sinal_anomalia = (
+                        "preco_muito_fora_do_padrao"
+                    )
+
+                elif anomalia_preco >= 25:
+
+                    sinal_anomalia = (
+                        "preco_fora_do_padrao"
+                    )
+
+                elif anomalia_preco >= 15:
+
+                    sinal_anomalia = (
+                        "preco_abaixo_da_mediana"
+                    )
+
+        oferta["mediana_preco_produto"] = (
+            round(
+                mediana_produto,
+                2
+            )
+            if mediana_produto
+            else None
+        )
+
+        oferta["anomalia_preco_percentual"] = round(
+            anomalia_preco,
+            2
+        )
+
+        oferta["sinal_anomalia_preco"] = (
+            sinal_anomalia
         )
 
         # ====================================================
@@ -1479,7 +1571,7 @@ def executar():
     )
 
     print(
-        "          NEXORA ROBOT 3.4"
+        "          NEXORA ROBOT 4.0"
     )
 
     print(
@@ -1663,6 +1755,29 @@ def executar():
         print(
             "Composicao do NEXORA SCORE:"
         )
+
+        if oferta.get(
+            "mediana_preco_produto"
+        ):
+
+            print(
+                f"Mediana do produto: EUR "
+                f"{oferta['mediana_preco_produto']:.2f}"
+            )
+
+            print(
+                f"Diferenca da mediana: "
+                f"{oferta['anomalia_preco_percentual']:.2f}%"
+            )
+
+            if oferta.get(
+                "sinal_anomalia_preco"
+            ):
+
+                print(
+                    f"Anomalia: "
+                    f"{oferta['sinal_anomalia_preco']}"
+                )
 
         print(
             f"Potencial comercial: "
