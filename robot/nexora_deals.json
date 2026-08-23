@@ -45,6 +45,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 26.97,
+    "ranking_final": 78.22,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -93,6 +95,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 100,
+    "ranking_final": 87.89,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -141,6 +145,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 100,
+    "ranking_final": 87.87,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -189,6 +195,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 100,
+    "ranking_final": 87.84,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -237,6 +245,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 0,
+    "ranking_final": 74.0,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -285,6 +295,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 59.1,
+    "ranking_final": 81.65,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -333,6 +345,8 @@
       "duracao_atrativa",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 58.8,
+    "ranking_final": 81.8,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -381,6 +395,8 @@
       "duracao_ideal",
       "boa_antecedencia"
     ],
+    "nota_anomalia": 61.52,
+    "ranking_final": 81.96,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -429,6 +445,8 @@
       "duracao_ideal",
       "boa_antecedencia"
     ],
+    "nota_anomalia": 74.92,
+    "ranking_final": 83.91,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -477,6 +495,8 @@
       "duracao_atrativa",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 72.93,
+    "ranking_final": 82.67,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -525,6 +545,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 53.78,
+    "ranking_final": 79.37,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -573,6 +595,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 100,
+    "ranking_final": 85.75,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -621,6 +645,8 @@
       "duracao_atrativa",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 98.75,
+    "ranking_final": 85.32,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -669,6 +695,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 100,
+    "ranking_final": 85.1,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -717,6 +745,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 32.77,
+    "ranking_final": 74.95,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -765,6 +795,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 27.47,
+    "ranking_final": 75.04,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -813,6 +845,8 @@
       "duracao_atrativa",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 67.95,
+    "ranking_final": 79.98,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -861,6 +895,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 50.37,
+    "ranking_final": 75.56,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -909,6 +945,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 0,
+    "ranking_final": 65.43,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -957,6 +995,8 @@
       "duracao_ideal",
       "janela_compra_forte"
     ],
+    "nota_anomalia": 43.22,
+    "ranking_final": 69.59,
     "categoria_score": "BOA"
   }
 ]
