@@ -1347,6 +1347,74 @@ def calcular_potencial_comercial(oferta):
     oferta["sinais_comerciais"] = sinais
 
     return oferta
+
+def calcular_ranking_final(oferta):
+    """
+    Combina os tres sinais principais da NEXORA:
+
+    1. NEXORA SCORE
+    2. Potencial comercial
+    3. Anomalia de preco
+
+    Resultado final: 0 a 100.
+    """
+
+    nexora_score = oferta.get(
+        "nexora_score",
+        0
+    )
+
+    potencial = oferta.get(
+        "potencial_comercial",
+        0
+    )
+
+    anomalia = oferta.get(
+        "anomalia_preco_percentual",
+        0
+    )
+
+    # --------------------------------------------
+    # ANOMALIA NORMALIZADA
+    # --------------------------------------------
+
+    # 40% ou mais abaixo da mediana
+    # recebe nota maxima neste componente.
+
+    if anomalia <= 0:
+        nota_anomalia = 0
+
+    else:
+        nota_anomalia = min(
+            anomalia / 40 * 100,
+            100
+        )
+
+    # --------------------------------------------
+    # RANKING FINAL
+    # --------------------------------------------
+
+    # 55% = qualidade geral da oferta
+    # 30% = potencial comercial
+    # 15% = oportunidade fora do padrao
+
+    ranking = (
+        nexora_score * 0.55
+        + potencial * 0.30
+        + nota_anomalia * 0.15
+    )
+
+    oferta["nota_anomalia"] = round(
+        nota_anomalia,
+        2
+    )
+
+    oferta["ranking_final"] = round(
+        ranking,
+        2
+    )
+
+    return oferta
     
 def classificar_oferta(score):
 
@@ -1660,9 +1728,14 @@ def executar():
     # de todas as ofertas aprovadas
 
     for oferta in ofertas:
+
         calcular_potencial_comercial(
             oferta
-        ) 
+        )
+
+        calcular_ranking_final(
+           oferta
+        )
         
     melhores = selecionar_melhores(
         ofertas_validadas
