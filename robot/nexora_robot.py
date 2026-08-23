@@ -1430,6 +1430,19 @@ def selecionar_melhores(
         ):
             break
 
+    # Garante que o resultado final
+    # fique ordenado pelo NEXORA SCORE
+
+    resultado = sorted(
+        resultado,
+        key=lambda x: (
+            x["nexora_score"],
+            x.get("potencial_comercial", 0),
+            -x["preco"]
+        ),
+        reverse=True
+    )
+
     return resultado
 
 
