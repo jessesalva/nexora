@@ -1040,7 +1040,16 @@ def validar_oferta_comercial(oferta):
 def calcular_potencial_comercial(oferta):
     """
     Calcula o potencial comercial da oferta.
+
     Nota independente do NEXORA SCORE.
+
+    Objetivo:
+    - evitar excesso de ofertas com 100/100
+    - diferenciar melhor ofertas muito semelhantes
+    - valorizar preço por dia
+    - valorizar duração comercial
+    - considerar antecedência
+    - reservar parte da nota para desconto real
     """
 
     pontos = 0
@@ -1049,73 +1058,114 @@ def calcular_potencial_comercial(oferta):
     preco = oferta.get("preco") or 0
     preco_dia = oferta.get("preco_por_dia")
     duracao = oferta.get("duracao_validada")
+    desconto = oferta.get("desconto_percentual") or 0
+
 
     # ============================================
-    # 1. PRECO TOTAL - ate 30 pontos
+    # 1. PRECO TOTAL - ate 25 pontos
     # ============================================
 
-    if preco <= 100:
-        pontos += 30
+    if preco <= 75:
+        pontos += 25
+        sinais.append("preco_excepcional")
+
+    elif preco <= 100:
+        pontos += 23
         sinais.append("preco_muito_atrativo")
 
-    elif preco <= 200:
-        pontos += 25
+    elif preco <= 125:
+        pontos += 21
+        sinais.append("preco_muito_atrativo")
+
+    elif preco <= 150:
+        pontos += 19
         sinais.append("preco_atrativo")
 
-    elif preco <= 350:
-        pontos += 20
+    elif preco <= 200:
+        pontos += 17
+        sinais.append("preco_atrativo")
 
-    elif preco <= 500:
-        pontos += 15
+    elif preco <= 300:
+        pontos += 14
 
-    elif preco <= 750:
+    elif preco <= 450:
         pontos += 10
 
+    elif preco <= 650:
+        pontos += 7
+
     else:
-        pontos += 5
+        pontos += 4
 
 
     # ============================================
     # 2. PRECO POR DIA - ate 30 pontos
     # ============================================
 
-    if preco_dia:
+    if preco_dia is not None:
 
-        if preco_dia <= 30:
+        if preco_dia <= 20:
             pontos += 30
+            sinais.append("preco_dia_excepcional")
+
+        elif preco_dia <= 25:
+            pontos += 28
             sinais.append("excelente_preco_dia")
 
-        elif preco_dia <= 50:
-            pontos += 25
+        elif preco_dia <= 30:
+            pontos += 26
+            sinais.append("excelente_preco_dia")
 
-        elif preco_dia <= 75:
-            pontos += 20
+        elif preco_dia <= 35:
+            pontos += 24
+            sinais.append("bom_preco_dia")
+
+        elif preco_dia <= 45:
+            pontos += 21
+            sinais.append("bom_preco_dia")
+
+        elif preco_dia <= 60:
+            pontos += 17
+
+        elif preco_dia <= 80:
+            pontos += 12
 
         elif preco_dia <= 100:
-            pontos += 15
+            pontos += 8
 
         else:
-            pontos += 5
+            pontos += 4
 
 
     # ============================================
-    # 3. DURACAO - ate 20 pontos
+    # 3. DURACAO - ate 15 pontos
     # ============================================
 
     if duracao:
 
-        if 3 <= duracao <= 7:
-            pontos += 20
+        if duracao == 4:
+            pontos += 15
+            sinais.append("duracao_ideal")
+
+        elif duracao in (3, 5):
+            pontos += 14
             sinais.append("duracao_atrativa")
 
-        elif 2 <= duracao <= 10:
-            pontos += 15
+        elif duracao in (6, 7):
+            pontos += 12
+            sinais.append("duracao_atrativa")
 
-        elif duracao <= 14:
+        elif duracao == 2:
             pontos += 10
 
-        else:
+        elif 8 <= duracao <= 10:
+            pontos += 9
+
+        elif 11 <= duracao <= 14:
             pontos += 5
+
+        else:
+            pontos += 2
 
 
     # ============================================
@@ -1139,26 +1189,63 @@ def calcular_potencial_comercial(oferta):
 
             oferta["dias_ate_viagem"] = dias_ate_viagem
 
-            if 7 <= dias_ate_viagem <= 45:
+            if 14 <= dias_ate_viagem <= 45:
                 pontos += 20
                 sinais.append("janela_compra_forte")
 
-            elif 46 <= dias_ate_viagem <= 90:
-                pontos += 15
+            elif 46 <= dias_ate_viagem <= 75:
+                pontos += 17
+                sinais.append("boa_antecedencia")
 
-            elif dias_ate_viagem > 90:
-                pontos += 10
+            elif 7 <= dias_ate_viagem <= 13:
+                pontos += 16
+                sinais.append("oportunidade_curto_prazo")
 
-            elif dias_ate_viagem >= 0:
-                pontos += 5
+            elif 76 <= dias_ate_viagem <= 120:
+                pontos += 12
+
+            elif dias_ate_viagem > 120:
+                pontos += 8
+
+            elif 0 <= dias_ate_viagem <= 6:
+                pontos += 6
+                sinais.append("ultima_hora")
 
         except ValueError:
             pass
 
 
     # ============================================
+    # 5. DESCONTO REAL - ate 10 pontos
+    # ============================================
+
+    if desconto >= 30:
+        pontos += 10
+        sinais.append("desconto_excepcional")
+
+    elif desconto >= 20:
+        pontos += 8
+        sinais.append("desconto_forte")
+
+    elif desconto >= 15:
+        pontos += 6
+        sinais.append("bom_desconto")
+
+    elif desconto >= 10:
+        pontos += 4
+
+    elif desconto >= 5:
+        pontos += 2
+
+
+    # ============================================
     # RESULTADO
     # ============================================
+
+    pontos = min(
+        pontos,
+        100
+    )
 
     oferta["potencial_comercial"] = round(
         pontos,
