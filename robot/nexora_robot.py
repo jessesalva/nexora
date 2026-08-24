@@ -1826,6 +1826,18 @@ def executar():
         print()
 
         print(
+            f"Ranking final: "
+            f"{oferta.get('ranking_final', 0)}/100"
+        )
+
+        print(
+            f"Nota de anomalia: "
+            f"{oferta.get('nota_anomalia', 0)}/100"
+        )
+
+        print()
+
+        print(
             "Composicao do NEXORA SCORE:"
         )
 
