@@ -37,7 +37,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -87,7 +87,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -137,7 +137,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -187,7 +187,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -197,56 +197,6 @@
     ],
     "nota_anomalia": 100,
     "ranking_final": 87.84,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Pescara - Ksamil - Green Garden Villa",
-    "produto": "Green Garden Villa",
-    "origem": "Pescara",
-    "destino": "Ksamil",
-    "preco": 80.14,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-01",
-    "volta": "2026-10-05",
-    "imagem": "https://hotels.staticroot.com/uhit8jg6s8jgbrcvlo4p.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45655720211&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 20.04,
-    "mediana_preco_produto": 77.63,
-    "anomalia_preco_percentual": -3.23,
-    "sinal_anomalia_preco": null,
-    "desconto_percentual": 0,
-    "nexora_score": 87.64,
-    "score_detalhes": {
-      "preco_global": 19.97,
-      "preco_por_dia": 20.0,
-      "destino": 14.67,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 482.25,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "motivos": [],
-      "alertas": [],
-      "nivel": "APROVADA"
-    },
-    "dias_ate_viagem": 39,
-    "potencial_comercial": 86,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 0,
-    "ranking_final": 74.0,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -287,7 +237,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -337,7 +287,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -347,6 +297,56 @@
     ],
     "nota_anomalia": 58.8,
     "ranking_final": 81.8,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Milano - Ksamil - Green Garden Villa",
+    "produto": "Green Garden Villa",
+    "origem": "Milano",
+    "destino": "Ksamil",
+    "preco": 83.61,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-08",
+    "volta": "2026-10-13",
+    "imagem": "https://hotels.staticroot.com/uhit8jg6s8jgbrcvlo4p.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45532287250&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 5,
+    "preco_por_dia": 16.72,
+    "mediana_preco_produto": 77.63,
+    "anomalia_preco_percentual": -7.7,
+    "sinal_anomalia_preco": null,
+    "desconto_percentual": 0,
+    "nexora_score": 87.3,
+    "score_detalhes": {
+      "preco_global": 19.96,
+      "preco_por_dia": 20.0,
+      "destino": 14.35,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 482.25,
+    "duracao_validada": 5,
+    "validacao_comercial": {
+      "aprovada": true,
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "preco_dia_excepcional",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 0,
+    "ranking_final": 74.11,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -387,7 +387,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 75,
+    "dias_ate_viagem": 74,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -437,7 +437,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 75,
+    "dias_ate_viagem": 74,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -447,56 +447,6 @@
     ],
     "nota_anomalia": 74.92,
     "ranking_final": 83.91,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Pisa - Castelsardo - Hotel Residence La Baia",
-    "produto": "Hotel Residence La Baia",
-    "origem": "Pisa",
-    "destino": "Castelsardo",
-    "preco": 127.48,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-22",
-    "volta": "2026-09-29",
-    "imagem": "https://hotels.staticroot.com/uiysuhujggmcmbxfypbd.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45083620018&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 7,
-    "preco_por_dia": 18.21,
-    "mediana_preco_produto": 179.99,
-    "anomalia_preco_percentual": 29.17,
-    "sinal_anomalia_preco": "preco_fora_do_padrao",
-    "desconto_percentual": 0,
-    "nexora_score": 86.23,
-    "score_detalhes": {
-      "preco_global": 19.52,
-      "preco_por_dia": 20.0,
-      "destino": 14.71,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 482.25,
-    "duracao_validada": 7,
-    "validacao_comercial": {
-      "aprovada": true,
-      "motivos": [],
-      "alertas": [],
-      "nivel": "APROVADA"
-    },
-    "dias_ate_viagem": 30,
-    "potencial_comercial": 81,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "preco_dia_excepcional",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 72.93,
-    "ranking_final": 82.67,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -537,7 +487,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -587,7 +537,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -637,7 +587,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -687,7 +637,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -737,7 +687,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -787,7 +737,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -837,7 +787,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -847,6 +797,56 @@
     ],
     "nota_anomalia": 67.95,
     "ranking_final": 79.98,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Pescara - Ksamil - Inada Hotel Ksamil",
+    "produto": "Inada Hotel Ksamil",
+    "origem": "Pescara",
+    "destino": "Ksamil",
+    "preco": 119.71,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-01",
+    "volta": "2026-10-05",
+    "imagem": "https://hotels.staticroot.com/nngwr63t4sbrgndx95jm.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45676857032&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 4,
+    "preco_por_dia": 29.93,
+    "mediana_preco_produto": null,
+    "anomalia_preco_percentual": 0,
+    "sinal_anomalia_preco": null,
+    "desconto_percentual": 0,
+    "nexora_score": 78.55,
+    "score_detalhes": {
+      "preco_global": 19.64,
+      "preco_por_dia": 19.86,
+      "destino": 12.72,
+      "rota": 3.33,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 482.25,
+    "duracao_validada": 4,
+    "validacao_comercial": {
+      "aprovada": true,
+      "motivos": [],
+      "alertas": [],
+      "nivel": "APROVADA"
+    },
+    "dias_ate_viagem": 38,
+    "potencial_comercial": 82,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_ideal",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 0,
+    "ranking_final": 67.8,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -887,7 +887,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -937,7 +937,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -987,7 +987,7 @@
       "alertas": [],
       "nivel": "APROVADA"
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
