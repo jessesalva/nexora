@@ -7,15 +7,15 @@ on:
     branches:
       - main
     paths:
-      - "robot/**"
+      - "robot/nexora_robot.py"
       - ".github/workflows/nexora-robot.yml"
-
-permissions:
-  contents: write
 
 jobs:
   run-nexora-robot:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Baixar projeto
@@ -26,32 +26,52 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Executar NEXORA Robot
-        run: python robot/nexora_robot.py
-
-      - name: Verificar arquivo NEXORA Deals
+      - name: Baixar feed atualizado da AWIN
+        env:
+          AWIN_FEED_URL: ${{ secrets.AWIN_FEED_URL }}
         run: |
-          if [ -f robot/nexora_deals.json ]; then
-            echo "nexora_deals.json criado com sucesso"
-            ls -lh robot/nexora_deals.json
-          else
-            echo "ERRO: nexora_deals.json nao foi criado"
+          echo "Baixando feed atualizado da AWIN..."
+
+          if [ -z "$AWIN_FEED_URL" ]; then
+            echo "ERRO: Secret AWIN_FEED_URL nao encontrado."
             exit 1
           fi
 
-      - name: Salvar NEXORA Deals no repositorio
+          curl \
+            --fail \
+            --location \
+            --retry 3 \
+            --retry-delay 5 \
+            "$AWIN_FEED_URL" \
+            --output "robot/12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
+
+          echo "Feed baixado."
+
+      - name: Verificar feed AWIN
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          echo "Verificando arquivo..."
 
-          git add robot/nexora_deals.json
+          test -s "robot/12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
 
-          if git diff --cached --quiet; then
-            echo "Nenhuma alteracao no nexora_deals.json"
-          else
-            git commit -m "Atualiza NEXORA Deals automaticamente [skip ci]"
-            git push
+          gzip -t "robot/12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
+
+          echo "Feed AWIN valido."
+
+          ls -lh "robot/12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
+
+      - name: Executar NEXORA Robot
+        run: |
+          python robot/nexora_robot.py
+
+      - name: Verificar arquivo NEXORA Deals
+        run: |
+          if [ ! -f "robot/nexora_deals.json" ]; then
+            echo "ERRO: nexora_deals.json nao foi criado."
+            exit 1
           fi
+
+          echo "nexora_deals.json criado com sucesso."
+          ls -lh robot/nexora_deals.json
 
       - name: Salvar NEXORA Deals como artefato
         uses: actions/upload-artifact@v4
@@ -59,3 +79,17 @@ jobs:
           name: nexora-deals
           path: robot/nexora_deals.json
           retention-days: 7
+
+      - name: Atualizar NEXORA Deals no repositorio
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add robot/nexora_deals.json
+
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteracao no NEXORA Deals."
+          else
+            git commit -m "Atualiza NEXORA Deals automaticamente [skip ci]"
+            git push
+          fi
