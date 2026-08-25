@@ -1463,13 +1463,14 @@ def selecionar_melhores(
 
     ordenadas = sorted(
 
-       ofertas_validas,
+        ofertas_validas,
 
-       key=lambda x: (
-           x.get("potencial_comercial", 0),
-           x["nexora_score"],
-           -x["preco"]
-       ),
+        key=lambda x: (
+            x.get("ranking_final", 0),
+            x["nexora_score"],
+            x.get("potencial_comercial", 0),
+            -x["preco"]
+        ),
 
        reverse=True
     )
@@ -1596,6 +1597,7 @@ def selecionar_melhores(
     resultado = sorted(
         resultado,
         key=lambda x: (
+            x.get("ranking_final", 0),
             x["nexora_score"],
             x.get("potencial_comercial", 0),
             -x["preco"]
