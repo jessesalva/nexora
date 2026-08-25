@@ -1033,291 +1033,363 @@
   }
 
 
-  function createCard(offer) {
+ function createCard(offer) {
 
-    const nome =
-      escapeHTML(offer.nome);
+   const nome =
+     escapeHTML(offer.nome);
 
-    const destino =
-      escapeHTML(offer.destino);
+   const destino =
+     escapeHTML(offer.destino);
 
-    const image =
-      escapeHTML(offer.imagem);
+   const image =
+     escapeHTML(offer.imagem);
 
-    const link =
-      escapeHTML(offer.link);
+   const link =
+     escapeHTML(offer.link);
 
-    const score =
-      Number(offer.nexora_score || 0);
+   const score =
+     Number(offer.nexora_score || 0);
 
-    const discount =
-      Number(offer.desconto_percentual || 0);
+   const discount =
+     Number(offer.desconto_percentual || 0);
 
-    const price =
-      formatPrice(
-        Number(offer.preco || 0),
-        offer.moeda || "EUR"
-      );
+   const price =
+     formatPrice(
+       Number(offer.preco || 0),
+       offer.moeda || "EUR"
+     );
 
-    let oldPriceHTML = "";
+   const pricePerDay =
+     offer.preco_por_dia
+       ? formatPrice(
+           Number(offer.preco_por_dia),
+           offer.moeda || "EUR"
+         )
+       : "";
 
-    if (
-      offer.preco_original &&
-      Number(offer.preco_original) >
-      Number(offer.preco)
-    ) {
+   const duration =
+     Number(
+       offer.duracao_dias ||
+       offer.duracao_validada ||
+       0
+     );
 
-      oldPriceHTML = `
-        <div class="old-price">
-          ${formatPrice(
-            Number(offer.preco_original),
-            offer.moeda || "EUR"
-          )}
-        </div>
-      `;
+   const finalRanking =
+     Number(
+       offer.ranking_final ||
+       offer.nexora_score ||
+       0
+     );
 
-    }
+   const topDeal =
+     finalRanking >= 85;
 
+   let oldPriceHTML = "";
 
-    let discountHTML = "";
+   if (
+     offer.preco_original &&
+     Number(offer.preco_original) >
+     Number(offer.preco)
+   ) {
 
-    if (discount > 0) {
+     oldPriceHTML = `
+       <div class="old-price">
+         ${formatPrice(
+           Number(offer.preco_original),
+           offer.moeda || "EUR"
+         )}
+       </div>
+     `;
 
-      discountHTML = `
-        <div class="discount">
-          Risparmio ${discount.toFixed(0)}%
-        </div>
-      `;
+   }
 
-    }
 
+   let discountHTML = "";
 
-    let imageHTML = "";
+   if (discount > 0) {
 
-    if (image) {
+     discountHTML = `
+       <div class="discount">
+         Risparmio ${discount.toFixed(0)}%
+       </div>
+     `;
 
-      imageHTML = `
-        <img
-          class="offer-image"
-          src="${image}"
-          alt="${nome}"
-          loading="lazy"
-          onerror="this.style.display='none'"
-        >
-      `;
+   }
 
-    }
 
+   let imageHTML = "";
 
-    return `
+   if (image) {
 
-      <article class="offer-card">
+     imageHTML = `
+       <img
+         class="offer-image"
+         src="${image}"
+         alt="${nome}"
+         loading="lazy"
+         onerror="this.style.display='none'"
+       >
+     `;
 
-        <div class="offer-image-wrapper">
+   }
 
-          ${imageHTML}
 
-          <div class="score-badge">
-            NEXORA ${score.toFixed(0)}/100
-          </div>
+   let pricePerDayHTML = "";
 
-        </div>
+   if (pricePerDay) {
 
+     pricePerDayHTML = `
+       <div
+         style="
+           font-size:14px;
+           color:#657089;
+           margin-bottom:4px;
+           font-weight:600;
+         "
+       >
+         ${pricePerDay} al giorno
+       </div>
+     `;
 
-        <div class="offer-body">
+   }
 
-          <div class="offer-tag">
-            ${scoreLabel(score)}
-          </div>
 
+   let durationHTML = "";
 
-          <h3>
-            ${nome}
-          </h3>
+   if (duration) {
 
+     durationHTML = `
+       <div
+         style="
+           font-size:13px;
+           color:#657089;
+           margin-bottom:12px;
+         "
+       >
+         🗓️ ${duration} giorni
+       </div>
+     `;
 
-          ${
-            destino
-              ? `
-                <div class="destination">
-                  📍 ${destino}
-                </div>
-              `
-              : ""
-          }
+   }
 
 
-          <div class="travel-dates">
+   return `
 
-            ${
-              offer.ida
-                ? `
-                  <div class="date-box">
-                    ✈️ Andata:
-                    ${formatDate(offer.ida)}
-                  </div>
-                `
-                : ""
-            }
+     <article class="offer-card">
 
-            ${
-              offer.volta
-                ? `
-                  <div class="date-box">
-                    ↩️ Ritorno:
-                    ${formatDate(offer.volta)}
-                  </div>
-                `
-                : ""
-            }
+       <div class="offer-image-wrapper">
 
-          </div>
+         ${imageHTML}
 
+         <div class="score-badge">
+           NEXORA ${score.toFixed(0)}/100
+         </div>
 
-          <div class="price-area">
+       </div>
 
-            ${oldPriceHTML}
 
-            <div class="offer-price">
-              ${price}
-            </div>
+       <div class="offer-body">
 
-            ${discountHTML}
+         <div class="offer-tag">
+           ${
+             topDeal
+               ? "🔥 NEXORA TOP DEAL"
+               : scoreLabel(score)
+           }
+         </div>
 
 
-            ${
-              link
-                ? `
-                  <a
-                    class="offer-button"
-                    href="${link}"
-                    target="_blank"
-                    rel="noopener sponsored"
-                  >
-                    Vedi l'offerta
-                  </a>
-                `
-                : ""
-            }
+         <h3>
+           ${nome}
+         </h3>
 
 
-            <div class="affiliate-small">
-              Link affiliato · Prezzo e disponibilità
-              possono cambiare sul sito del partner.
-            </div>
+         ${
+           destino
+             ? `
+               <div class="destination">
+                 📍 ${destino}
+               </div>
+             `
+             : ""
+         }
 
-          </div>
 
-        </div>
+         <div class="travel-dates">
 
-      </article>
+           ${
+             offer.ida
+               ? `
+                 <div class="date-box">
+                   ✈️ Andata:
+                   ${formatDate(offer.ida)}
+                 </div>
+               `
+               : ""
+           }
 
-    `;
+           ${
+             offer.volta
+               ? `
+                 <div class="date-box">
+                   ↩️ Ritorno:
+                   ${formatDate(offer.volta)}
+                 </div>
+               `
+               : ""
+           }
 
-  }
+         </div>
 
 
-  async function loadOffers() {
+         <div class="price-area">
 
-    const container =
-      document.getElementById(
-        "offers-container"
-      );
+           ${oldPriceHTML}
 
-    const status =
-      document.getElementById(
-        "offers-status"
-      );
+           <div class="offer-price">
+             ${price}
+           </div>
 
+           ${pricePerDayHTML}
 
-    try {
+           ${durationHTML}
 
-      const response =
-        await fetch(
-          `${JSON_URL}?v=${Date.now()}`
-        );
+           ${discountHTML}
 
 
-      if (!response.ok) {
+           ${
+             link
+               ? `
+                 <a
+                   class="offer-button"
+                   href="${link}"
+                   target="_blank"
+                   rel="noopener sponsored"
+                 >
+                   Vedi l'offerta
+                 </a>
+               `
+               : ""
+           }
 
-        throw new Error(
-          `HTTP ${response.status}`
-        );
 
-      }
+           <div class="affiliate-small">
+             Link affiliato · Prezzo e disponibilità
+             possono cambiare sul sito del partner.
+           </div>
 
+         </div>
 
-      const offers =
-        await response.json();
+       </div>
 
+     </article>
 
-      if (
-        !Array.isArray(offers) ||
-        offers.length === 0
-      ) {
+   `;
 
-        throw new Error(
-          "Nessuna offerta disponibile"
-        );
+ }
 
-      }
 
+   async function loadOffers() {
 
-      /*
-       * Mostriamo le prime 12
-       * offerte selezionate
-       * dal NEXORA Robot.
-       */
+     const container =
+       document.getElementById(
+         "offers-container"
+       );
 
-      const selected =
-        offers.slice(0, 12);
+     const status =
+       document.getElementById(
+         "offers-status"
+       );
 
 
-      container.innerHTML =
-        selected
-          .map(createCard)
-          .join("");
+     try {
 
+       const response =
+         await fetch(
+           `${JSON_URL}?v=${Date.now()}`
+         );
 
-      status.textContent =
-        `${selected.length} opportunità selezionate dal NEXORA Robot`;
 
+       if (!response.ok) {
 
-    } catch (error) {
+         throw new Error(
+           `HTTP ${response.status}`
+         );
 
-      console.error(
-        "Errore caricamento NEXORA Deals:",
-        error
-      );
+       }
 
 
-      status.textContent =
-        "Aggiornamento delle offerte temporaneamente non disponibile.";
+       const offers =
+         await response.json();
 
 
-      container.innerHTML = `
+       if (
+         !Array.isArray(offers) ||
+         offers.length === 0
+       ) {
 
-        <div class="error-box">
+         throw new Error(
+           "Nessuna offerta disponibile"
+         );
 
-          Le offerte NEXORA sono in fase
-          di aggiornamento.
+       }
 
-          <br><br>
 
-          Riprova tra qualche minuto.
+       /*
+        * Mostriamo le prime 12
+        * offerte selezionate
+        * dal NEXORA Robot.
+        */
 
-        </div>
+       const selected =
+         offers.slice(0, 12);
 
-      `;
 
-    }
+       container.innerHTML =
+         selected
+           .map(createCard)
+           .join("");
 
-  }
 
+       status.textContent =
+         `${selected.length} opportunità selezionate dal NEXORA Robot`;
 
-  loadOffers();
 
-</script>
+     } catch (error) {
 
-</body>
-</html>
+       console.error(
+         "Errore caricamento NEXORA Deals:",
+         error
+       );
+
+
+       status.textContent =
+         "Aggiornamento delle offerte temporaneamente non disponibile.";
+
+
+       container.innerHTML = `
+
+         <div class="error-box">
+
+           Le offerte NEXORA sono in fase
+           di aggiornamento.
+
+           <br><br>
+
+           Riprova tra qualche minuto.
+
+         </div>
+
+       `;
+
+     }
+
+   }
+
+
+   loadOffers();
+
+ </script>
+
+ </body>
+ </html>
