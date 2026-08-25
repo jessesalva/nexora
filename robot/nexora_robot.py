@@ -1,6 +1,6 @@
 # ============================================================
-# NEXORA ROBOT 4.0
-# Motor inteligente de oportunidades AWIN / lastminute.com
+# NEXORA ROBOT 4.1
+# Motor inteligente de descoberta de oportunidades AWIN
 # ============================================================
 
 import csv
@@ -9,22 +9,29 @@ import json
 import re
 import statistics
 
+from bisect import bisect_left
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
-from datetime import datetime, date
+
+
+# ============================================================
+# CONFIGURACAO
+# ============================================================
 
 PASTA = Path(__file__).parent
 
 ARQUIVO_FEED = (
-    PASTA /
-    "12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
+    PASTA
+    / "12374-42501-it_IT-Lastminute_IT_DP.csv.gz"
 )
 
 ARQUIVO_SAIDA = (
-    PASTA /
-    "nexora_deals.json"
+    PASTA
+    / "nexora_deals.json"
 )
+
+FORNECEDOR = "lastminute.com"
 
 QUANTIDADE_DEALS = 20
 
@@ -84,7 +91,6 @@ def converter_data(valor):
     for formato in formatos:
 
         try:
-
             return datetime.strptime(
                 valor,
                 formato
@@ -131,7 +137,7 @@ def extrair_produto(nome):
 
 
 # ============================================================
-# CARREGAR FEED
+# LEITURA DO FEED
 # ============================================================
 
 def carregar_ofertas():
@@ -155,10 +161,7 @@ def carregar_ofertas():
                 linha.get("search_price")
             )
 
-            if preco is None:
-                continue
-
-            if preco <= 0:
+            if preco is None or preco <= 0:
                 continue
 
             preco_original = converter_preco(
@@ -194,54 +197,64 @@ def carregar_ofertas():
 
             oferta = {
 
-                "nome": nome,
+                "nome":
+                    nome,
 
-                "produto": produto,
+                "produto":
+                    produto,
 
-                "origem": origem,
+                "origem":
+                    origem,
 
-                "destino": destino,
+                "destino":
+                    destino,
 
-                "preco": preco,
+                "preco":
+                    preco,
 
                 "preco_original":
                     preco_original,
 
-                "moeda": (
-                    linha.get("currency")
-                    or "EUR"
-                ).strip(),
+                "moeda":
+                    (
+                        linha.get("currency")
+                        or "EUR"
+                    ).strip(),
 
-                "ida": (
-                    linha.get(
-                        "Travel:departure_date"
-                    )
-                    or ""
-                ).strip(),
+                "ida":
+                    (
+                        linha.get(
+                            "Travel:departure_date"
+                        )
+                        or ""
+                    ).strip(),
 
-                "volta": (
-                    linha.get(
-                        "Travel:return_date"
-                    )
-                    or ""
-                ).strip(),
+                "volta":
+                    (
+                        linha.get(
+                            "Travel:return_date"
+                        )
+                        or ""
+                    ).strip(),
 
-                "imagem": (
-                    linha.get(
-                        "merchant_image_url"
-                    )
-                    or ""
-                ).strip(),
+                "imagem":
+                    (
+                        linha.get(
+                            "merchant_image_url"
+                        )
+                        or ""
+                    ).strip(),
 
-                "link": (
-                    linha.get(
-                        "aw_deep_link"
-                    )
-                    or ""
-                ).strip(),
+                "link":
+                    (
+                        linha.get(
+                            "aw_deep_link"
+                        )
+                        or ""
+                    ).strip(),
 
                 "fornecedor":
-                    "lastminute.com"
+                    FORNECEDOR
             }
 
             ofertas.append(
@@ -286,7 +299,6 @@ def remover_duplicados(ofertas):
         )
 
         if chave not in unicas:
-
             unicas[chave] = oferta
 
     return list(
@@ -295,7 +307,7 @@ def remover_duplicados(ofertas):
 
 
 # ============================================================
-# DURAÇÃO
+# DURACAO
 # ============================================================
 
 def calcular_duracao(oferta):
@@ -354,30 +366,33 @@ def calcular_desconto(oferta):
 
 
 # ============================================================
-# PERCENTIL DE PREÇO
-# Quanto menor o preço, maior a nota.
+# PERCENTIL DE PRECO
+# Quanto menor o preco, maior a nota.
 # ============================================================
 
 def calcular_percentil_preco(
     preco,
-    precos
+    precos_ordenados
 ):
 
-    if not precos:
+    if not precos_ordenados:
         return 0.5
 
-    if len(precos) == 1:
+    total = len(
+        precos_ordenados
+    )
+
+    if total == 1:
         return 0.5
 
-    menores = sum(
-        1
-        for valor in precos
-        if valor < preco
+    posicao = bisect_left(
+        precos_ordenados,
+        preco
     )
 
     percentil = (
-        menores /
-        (len(precos) - 1)
+        posicao
+        / (total - 1)
     )
 
     resultado = (
@@ -386,7 +401,10 @@ def calcular_percentil_preco(
 
     return max(
         0,
-        min(resultado, 1)
+        min(
+            resultado,
+            1
+        )
     )
 
 
@@ -404,7 +422,8 @@ def calcular_pontos_data(oferta):
         return 0
 
     dias = (
-        data_ida - date.today()
+        data_ida
+        - date.today()
     ).days
 
     if dias < 0:
@@ -429,17 +448,568 @@ def calcular_pontos_data(oferta):
 
 
 # ============================================================
-# SCORE 3.2
+# VALIDACAO COMERCIAL
+# ============================================================
+
+def validar_oferta_comercial(oferta):
+
+    motivos = []
+    alertas = []
+
+    preco = oferta.get(
+        "preco"
+    )
+
+    if (
+        preco is None
+        or preco <= 0
+    ):
+        motivos.append(
+            "preco_invalido"
+        )
+
+    elif preco < 10:
+
+        alertas.append(
+            "preco_muito_baixo"
+        )
+
+
+    origem = (
+        oferta.get("origem")
+        or ""
+    ).strip()
+
+    destino = (
+        oferta.get("destino")
+        or ""
+    ).strip()
+
+
+    if not origem:
+        motivos.append(
+            "origem_ausente"
+        )
+
+    if not destino:
+        motivos.append(
+            "destino_ausente"
+        )
+
+    if (
+        origem
+        and destino
+        and origem.lower()
+        == destino.lower()
+    ):
+        motivos.append(
+            "origem_igual_destino"
+        )
+
+
+    ida_texto = (
+        oferta.get("ida")
+        or ""
+    ).strip()
+
+    volta_texto = (
+        oferta.get("volta")
+        or ""
+    ).strip()
+
+
+    data_ida = converter_data(
+        ida_texto
+    )
+
+    data_volta = converter_data(
+        volta_texto
+    )
+
+
+    if not data_ida or not data_volta:
+
+        motivos.append(
+            "datas_invalidas_ou_incompletas"
+        )
+
+    else:
+
+        hoje = date.today()
+
+        if data_ida < hoje:
+
+            motivos.append(
+                "data_ida_passada"
+            )
+
+        if data_volta <= data_ida:
+
+            motivos.append(
+                "volta_anterior_ou_igual_ida"
+            )
+
+        else:
+
+            duracao = (
+                data_volta
+                - data_ida
+            ).days
+
+            oferta[
+                "duracao_validada"
+            ] = duracao
+
+            if duracao > 30:
+
+                alertas.append(
+                    "duracao_muito_longa"
+                )
+
+
+    preco_dia = oferta.get(
+        "preco_por_dia"
+    )
+
+    if (
+        preco_dia is not None
+        and preco_dia <= 0
+    ):
+        motivos.append(
+            "preco_dia_invalido"
+        )
+
+    if (
+        preco_dia is not None
+        and 0 < preco_dia < 5
+    ):
+        alertas.append(
+            "preco_dia_muito_baixo"
+        )
+
+
+    link = (
+        oferta.get("link")
+        or ""
+    ).strip()
+
+    if not link:
+
+        motivos.append(
+            "link_ausente"
+        )
+
+    elif (
+        "awin1.com"
+        not in link.lower()
+        and "awin.com"
+        not in link.lower()
+    ):
+
+        motivos.append(
+            "link_afiliado_invalido"
+        )
+
+
+    imagem = (
+        oferta.get("imagem")
+        or ""
+    ).strip()
+
+    if not imagem:
+
+        alertas.append(
+            "imagem_ausente"
+        )
+
+
+    if motivos:
+
+        nivel = "REJEITADA"
+
+    elif alertas:
+
+        nivel = (
+            "APROVADA_COM_ALERTA"
+        )
+
+    else:
+
+        nivel = "APROVADA"
+
+
+    oferta[
+        "validacao_comercial"
+    ] = {
+
+        "aprovada":
+            len(motivos) == 0,
+
+        "nivel":
+            nivel,
+
+        "motivos":
+            motivos,
+
+        "alertas":
+            alertas
+    }
+
+    return oferta
+
+
+# ============================================================
+# POTENCIAL COMERCIAL
+# ============================================================
+
+def calcular_potencial_comercial(oferta):
+
+    pontos = 0
+    sinais = []
+
+    preco = (
+        oferta.get("preco")
+        or 0
+    )
+
+    preco_dia = oferta.get(
+        "preco_por_dia"
+    )
+
+    duracao = (
+        oferta.get(
+            "duracao_validada"
+        )
+        or oferta.get(
+            "duracao_dias"
+        )
+    )
+
+    desconto = (
+        oferta.get(
+            "desconto_percentual"
+        )
+        or 0
+    )
+
+
+    # --------------------------------------------------------
+    # PRECO TOTAL - 25
+    # --------------------------------------------------------
+
+    if preco <= 75:
+
+        pontos += 25
+
+        sinais.append(
+            "preco_excepcional"
+        )
+
+    elif preco <= 100:
+
+        pontos += 23
+
+        sinais.append(
+            "preco_muito_atrativo"
+        )
+
+    elif preco <= 125:
+
+        pontos += 21
+
+        sinais.append(
+            "preco_muito_atrativo"
+        )
+
+    elif preco <= 150:
+
+        pontos += 19
+
+        sinais.append(
+            "preco_atrativo"
+        )
+
+    elif preco <= 200:
+
+        pontos += 17
+
+        sinais.append(
+            "preco_atrativo"
+        )
+
+    elif preco <= 300:
+
+        pontos += 14
+
+    elif preco <= 450:
+
+        pontos += 10
+
+    elif preco <= 650:
+
+        pontos += 7
+
+    else:
+
+        pontos += 4
+
+
+    # --------------------------------------------------------
+    # PRECO POR DIA - 30
+    # --------------------------------------------------------
+
+    if preco_dia is not None:
+
+        if preco_dia <= 20:
+
+            pontos += 30
+
+            sinais.append(
+                "preco_dia_excepcional"
+            )
+
+        elif preco_dia <= 25:
+
+            pontos += 28
+
+            sinais.append(
+                "excelente_preco_dia"
+            )
+
+        elif preco_dia <= 30:
+
+            pontos += 26
+
+            sinais.append(
+                "excelente_preco_dia"
+            )
+
+        elif preco_dia <= 35:
+
+            pontos += 24
+
+            sinais.append(
+                "bom_preco_dia"
+            )
+
+        elif preco_dia <= 45:
+
+            pontos += 21
+
+            sinais.append(
+                "bom_preco_dia"
+            )
+
+        elif preco_dia <= 60:
+
+            pontos += 17
+
+        elif preco_dia <= 80:
+
+            pontos += 12
+
+        elif preco_dia <= 100:
+
+            pontos += 8
+
+        else:
+
+            pontos += 4
+
+
+    # --------------------------------------------------------
+    # DURACAO - 15
+    # --------------------------------------------------------
+
+    if duracao:
+
+        if duracao == 4:
+
+            pontos += 15
+
+            sinais.append(
+                "duracao_ideal"
+            )
+
+        elif duracao in (3, 5):
+
+            pontos += 14
+
+            sinais.append(
+                "duracao_atrativa"
+            )
+
+        elif duracao in (6, 7):
+
+            pontos += 12
+
+            sinais.append(
+                "duracao_atrativa"
+            )
+
+        elif duracao == 2:
+
+            pontos += 10
+
+        elif 8 <= duracao <= 10:
+
+            pontos += 9
+
+        elif 11 <= duracao <= 14:
+
+            pontos += 5
+
+        else:
+
+            pontos += 2
+
+
+    # --------------------------------------------------------
+    # ANTECEDENCIA - 20
+    # --------------------------------------------------------
+
+    data_ida = converter_data(
+        oferta.get("ida")
+    )
+
+    if data_ida:
+
+        dias_ate_viagem = (
+            data_ida
+            - date.today()
+        ).days
+
+        oferta[
+            "dias_ate_viagem"
+        ] = dias_ate_viagem
+
+
+        if 14 <= dias_ate_viagem <= 45:
+
+            pontos += 20
+
+            sinais.append(
+                "janela_compra_forte"
+            )
+
+        elif 46 <= dias_ate_viagem <= 75:
+
+            pontos += 17
+
+            sinais.append(
+                "boa_antecedencia"
+            )
+
+        elif 7 <= dias_ate_viagem <= 13:
+
+            pontos += 16
+
+            sinais.append(
+                "oportunidade_curto_prazo"
+            )
+
+        elif 76 <= dias_ate_viagem <= 120:
+
+            pontos += 12
+
+        elif dias_ate_viagem > 120:
+
+            pontos += 8
+
+        elif 0 <= dias_ate_viagem <= 6:
+
+            pontos += 6
+
+            sinais.append(
+                "ultima_hora"
+            )
+
+
+    # --------------------------------------------------------
+    # DESCONTO REAL - 10
+    # --------------------------------------------------------
+
+    if desconto >= 30:
+
+        pontos += 10
+
+        sinais.append(
+            "desconto_excepcional"
+        )
+
+    elif desconto >= 20:
+
+        pontos += 8
+
+        sinais.append(
+            "desconto_forte"
+        )
+
+    elif desconto >= 15:
+
+        pontos += 6
+
+        sinais.append(
+            "bom_desconto"
+        )
+
+    elif desconto >= 10:
+
+        pontos += 4
+
+    elif desconto >= 5:
+
+        pontos += 2
+
+
+    oferta[
+        "potencial_comercial"
+    ] = round(
+        min(pontos, 100),
+        2
+    )
+
+    oferta[
+        "sinais_comerciais"
+    ] = sinais
+
+    return oferta
+
+
+# ============================================================
+# CLASSIFICACAO
+# ============================================================
+
+def classificar_oferta(score):
+
+    if score >= 90:
+        return "EXCEPCIONAL"
+
+    if score >= 82:
+        return "EXCELENTE"
+
+    if score >= 72:
+        return "MUITO BOA"
+
+    if score >= 60:
+        return "BOA"
+
+    return "REGULAR"
+
+
+# ============================================================
+# CALCULO DE SCORE + ANOMALIA
 # ============================================================
 
 def calcular_scores(ofertas):
 
-    precos_globais = [
+    precos_globais = sorted([
         oferta["preco"]
         for oferta in ofertas
-    ]
+    ])
 
     precos_por_dia_globais = []
+
 
     por_destino = defaultdict(
         list
@@ -449,13 +1019,21 @@ def calcular_scores(ofertas):
         list
     )
 
-    # Historico de precos por produto/hotel
     por_produto = defaultdict(
         list
     )
 
+    por_produto_duracao = defaultdict(
+        list
+    )
+
+    por_produto_origem_duracao = defaultdict(
+        list
+    )
+
+
     # --------------------------------------------------------
-    # Preparar dados
+    # PREPARAR DADOS
     # --------------------------------------------------------
 
     for oferta in ofertas:
@@ -464,9 +1042,10 @@ def calcular_scores(ofertas):
             oferta
         )
 
-        oferta["duracao_dias"] = (
-            duracao
-        )
+        oferta[
+            "duracao_dias"
+        ] = duracao
+
 
         if duracao:
 
@@ -479,17 +1058,25 @@ def calcular_scores(ofertas):
 
             preco_dia = None
 
-        oferta["preco_por_dia"] = (
-            round(preco_dia, 2)
+
+        oferta[
+            "preco_por_dia"
+        ] = (
+            round(
+                preco_dia,
+                2
+            )
             if preco_dia
             else None
         )
+
 
         if preco_dia:
 
             precos_por_dia_globais.append(
                 preco_dia
             )
+
 
         destino = (
             normalizar_texto(
@@ -498,14 +1085,22 @@ def calcular_scores(ofertas):
             or "sem_destino"
         )
 
+
+        origem = normalizar_texto(
+            oferta["origem"]
+        )
+
+
+        produto = normalizar_texto(
+            oferta["produto"]
+        )
+
+
         rota = (
-
-            normalizar_texto(
-                oferta["origem"]
-            ),
-
+            origem,
             destino
         )
+
 
         por_destino[
             destino
@@ -513,30 +1108,80 @@ def calcular_scores(ofertas):
             oferta["preco"]
         )
 
+
         por_rota[
             rota
         ].append(
             oferta["preco"]
         )
-        
-        produto = normalizar_texto(
-            oferta["produto"]
-        )
+
 
         if produto:
+
             por_produto[
                 produto
             ].append(
                 oferta["preco"]
             )
 
-    # Mediana apenas para diagnóstico
+
+        if produto and duracao:
+
+            por_produto_duracao[
+                (
+                    produto,
+                    duracao
+                )
+            ].append(
+                oferta["preco"]
+            )
+
+
+        if (
+            produto
+            and origem
+            and duracao
+        ):
+
+            por_produto_origem_duracao[
+                (
+                    produto,
+                    origem,
+                    duracao
+                )
+            ].append(
+                oferta["preco"]
+            )
+
+
+    precos_por_dia_globais.sort()
+
+
+    for grupo in por_destino.values():
+        grupo.sort()
+
+    for grupo in por_rota.values():
+        grupo.sort()
+
+    for grupo in por_produto.values():
+        grupo.sort()
+
+    for grupo in por_produto_duracao.values():
+        grupo.sort()
+
+    for grupo in (
+        por_produto_origem_duracao.values()
+    ):
+        grupo.sort()
+
+
     mediana_global = statistics.median(
         precos_globais
     )
 
+
     # --------------------------------------------------------
-    # Calcular score individual
+    # SCORE INDIVIDUAL
     # --------------------------------------------------------
 
     for oferta in ofertas:
@@ -545,6 +1190,7 @@ def calcular_scores(ofertas):
             "preco"
         ]
 
+
         destino = (
             normalizar_texto(
                 oferta["destino"]
@@ -552,22 +1198,73 @@ def calcular_scores(ofertas):
             or "sem_destino"
         )
 
-        rota = (
 
-            normalizar_texto(
-                oferta["origem"]
-            ),
-
-            destino
+        origem = normalizar_texto(
+            oferta["origem"]
         )
 
-        # ====================================================
-        # ANALISE DE ANOMALIA DE PRECO DO PRODUTO/HOTEL
-        # ====================================================
 
         produto = normalizar_texto(
             oferta["produto"]
         )
+
+
+        duracao = oferta.get(
+            "duracao_dias"
+        )
+
+
+        rota = (
+            origem,
+            destino
+        )
+
+
+        # ====================================================
+        # REFERENCIA DO PRODUTO
+        #
+        # Preferencia:
+        #
+        # 1. mesmo produto + origem + duracao
+        # 2. mesmo produto + duracao
+        # 3. mesmo produto
+        #
+        # Isso reduz falsos positivos.
+        # ====================================================
+
+        grupo_referencia = []
+        tipo_referencia = None
+        confianca_anomalia = "BAIXA"
+
+
+        chave_completa = (
+            produto,
+            origem,
+            duracao
+        )
+
+
+        chave_duracao = (
+            produto,
+            duracao
+        )
+
+
+        grupo_completo = (
+            por_produto_origem_duracao.get(
+                chave_completa,
+                []
+            )
+        )
+
+
+        grupo_duracao = (
+            por_produto_duracao.get(
+                chave_duracao,
+                []
+            )
+        )
+
 
         grupo_produto = (
             por_produto.get(
@@ -576,17 +1273,59 @@ def calcular_scores(ofertas):
             )
         )
 
+
+        if len(grupo_completo) >= 3:
+
+            grupo_referencia = (
+                grupo_completo
+            )
+
+            tipo_referencia = (
+                "produto_origem_duracao"
+            )
+
+            confianca_anomalia = "ALTA"
+
+
+        elif len(grupo_duracao) >= 3:
+
+            grupo_referencia = (
+                grupo_duracao
+            )
+
+            tipo_referencia = (
+                "produto_duracao"
+            )
+
+            confianca_anomalia = "MEDIA"
+
+
+        elif len(grupo_produto) >= 3:
+
+            grupo_referencia = (
+                grupo_produto
+            )
+
+            tipo_referencia = (
+                "produto"
+            )
+
+            confianca_anomalia = "BAIXA"
+
+
         mediana_produto = None
         anomalia_preco = 0
         sinal_anomalia = None
 
-        # Exigimos pelo menos 3 precos
-        # para evitar conclusoes com pouca amostra.
-        if len(grupo_produto) >= 3:
 
-            mediana_produto = statistics.median(
-                grupo_produto
+        if grupo_referencia:
+
+            mediana_produto = (
+                statistics.median(
+                    grupo_referencia
+                )
             )
+
 
             if mediana_produto > 0:
 
@@ -598,9 +1337,7 @@ def calcular_scores(ofertas):
                     / mediana_produto
                 ) * 100
 
-                # Valores positivos significam
-                # que o preco atual esta abaixo
-                # da mediana daquele produto.
+
                 if anomalia_preco >= 35:
 
                     sinal_anomalia = (
@@ -619,7 +1356,10 @@ def calcular_scores(ofertas):
                         "preco_abaixo_da_mediana"
                     )
 
-        oferta["mediana_preco_produto"] = (
+
+        oferta[
+            "mediana_preco_produto"
+        ] = (
             round(
                 mediana_produto,
                 2
@@ -628,18 +1368,39 @@ def calcular_scores(ofertas):
             else None
         )
 
-        oferta["anomalia_preco_percentual"] = round(
+
+        oferta[
+            "anomalia_preco_percentual"
+        ] = round(
             anomalia_preco,
             2
         )
 
-        oferta["sinal_anomalia_preco"] = (
-            sinal_anomalia
+
+        oferta[
+            "sinal_anomalia_preco"
+        ] = sinal_anomalia
+
+
+        oferta[
+            "confianca_anomalia"
+        ] = confianca_anomalia
+
+
+        oferta[
+            "tipo_referencia_preco"
+        ] = tipo_referencia
+
+
+        oferta[
+            "amostra_referencia"
+        ] = len(
+            grupo_referencia
         )
 
+
         # ====================================================
-        # 1. PREÇO GLOBAL
-        # Máximo: 20 pontos
+        # 1. PRECO GLOBAL - 20
         # ====================================================
 
         percentil_global = (
@@ -650,17 +1411,19 @@ def calcular_scores(ofertas):
         )
 
         pontos_global = (
-            percentil_global * 20
+            percentil_global
+            * 20
         )
 
+
         # ====================================================
-        # 2. PREÇO POR DIA
-        # Máximo: 20 pontos
+        # 2. PRECO POR DIA - 20
         # ====================================================
 
         preco_dia = oferta[
             "preco_por_dia"
         ]
+
 
         if preco_dia:
 
@@ -672,16 +1435,17 @@ def calcular_scores(ofertas):
             )
 
             pontos_dia = (
-                percentil_dia * 20
+                percentil_dia
+                * 20
             )
 
         else:
 
             pontos_dia = 0
 
+
         # ====================================================
-        # 3. COMPETITIVIDADE NO DESTINO
-        # Máximo: 15 pontos
+        # 3. DESTINO - 15
         # ====================================================
 
         grupo_destino = (
@@ -690,31 +1454,26 @@ def calcular_scores(ofertas):
             ]
         )
 
+
         if len(
             grupo_destino
         ) >= 2:
 
-            percentil_destino = (
+            pontos_destino = (
                 calcular_percentil_preco(
                     preco,
                     grupo_destino
                 )
-            )
-
-            pontos_destino = (
-                percentil_destino
                 * 15
             )
 
         else:
 
-            # Não premiamos excessivamente
-            # destinos sem comparação.
             pontos_destino = 7.5
 
+
         # ====================================================
-        # 4. COMPETITIVIDADE NA ROTA
-        # Máximo: 10 pontos
+        # 4. ROTA - 10
         # ====================================================
 
         grupo_rota = (
@@ -723,19 +1482,16 @@ def calcular_scores(ofertas):
             ]
         )
 
+
         if len(
             grupo_rota
         ) >= 2:
 
-            percentil_rota = (
+            pontos_rota = (
                 calcular_percentil_preco(
                     preco,
                     grupo_rota
                 )
-            )
-
-            pontos_rota = (
-                percentil_rota
                 * 10
             )
 
@@ -743,28 +1499,28 @@ def calcular_scores(ofertas):
 
             pontos_rota = 5
 
+
         # ====================================================
-        # 5. DESCONTO REAL
-        # Máximo: 12 pontos
+        # 5. DESCONTO - 12
         # ====================================================
 
-        desconto = (
-            calcular_desconto(
-                oferta
-            )
+        desconto = calcular_desconto(
+            oferta
         )
+
 
         pontos_desconto = min(
             desconto * 0.6,
             12
         )
 
+
         # ====================================================
-        # 6. QUALIDADE DOS DADOS
-        # Máximo: 8 pontos
+        # 6. QUALIDADE DOS DADOS - 8
         # ====================================================
 
         pontos_dados = 0
+
 
         if oferta["destino"]:
             pontos_dados += 1
@@ -784,9 +1540,9 @@ def calcular_scores(ofertas):
         if oferta["link"]:
             pontos_dados += 2
 
+
         # ====================================================
-        # 7. DATA
-        # Máximo: 8 pontos
+        # 7. DATA - 8
         # ====================================================
 
         pontos_data = (
@@ -795,14 +1551,10 @@ def calcular_scores(ofertas):
             )
         )
 
-        # ====================================================
-        # 8. DURAÇÃO
-        # Máximo: 7 pontos
-        # ====================================================
 
-        duracao = oferta[
-            "duracao_dias"
-        ]
+        # ====================================================
+        # 8. DURACAO - 7
+        # ====================================================
 
         if duracao is None:
 
@@ -832,8 +1584,9 @@ def calcular_scores(ofertas):
 
             pontos_duracao = 2
 
+
         # ====================================================
-        # TOTAL
+        # NEXORA SCORE
         # ====================================================
 
         score = (
@@ -848,10 +1601,15 @@ def calcular_scores(ofertas):
             + pontos_duracao
         )
 
+
         score = max(
             0,
-            min(score, 100)
+            min(
+                score,
+                100
+            )
         )
+
 
         oferta[
             "desconto_percentual"
@@ -860,6 +1618,7 @@ def calcular_scores(ofertas):
             2
         )
 
+
         oferta[
             "nexora_score"
         ] = round(
@@ -867,7 +1626,7 @@ def calcular_scores(ofertas):
             2
         )
 
-        # Explicação da pontuação
+
         oferta[
             "score_detalhes"
         ] = {
@@ -921,6 +1680,7 @@ def calcular_scores(ofertas):
                 )
         }
 
+
         oferta[
             "mediana_preco_feed"
         ] = round(
@@ -928,513 +1688,128 @@ def calcular_scores(ofertas):
             2
         )
 
+
     return ofertas
 
 
 # ============================================================
-# CLASSIFICAÇÃO
+# RANKING FINAL
 # ============================================================
-def validar_oferta_comercial(oferta):
-    """
-    Valida se uma oferta possui condicoes minimas
-    para ser utilizada comercialmente pela NEXORA.
-    """
-
-    motivos = []
-    alertas = []
-
-    # ============================================
-    # 1. PRECO
-    # ============================================
-
-    preco = oferta.get("preco")
-
-    if preco is None or preco <= 0:
-        motivos.append("preco_invalido")
-
-    # Preco extremamente baixo pode ser real,
-    # mas merece verificacao antes da publicacao.
-    elif preco < 10:
-        alertas.append("preco_muito_baixo")
-
-
-    # ============================================
-    # 2. ORIGEM E DESTINO
-    # ============================================
-
-    origem = (oferta.get("origem") or "").strip()
-    destino = (oferta.get("destino") or "").strip()
-
-    if not origem:
-        motivos.append("origem_ausente")
-
-    if not destino:
-        motivos.append("destino_ausente")
-
-    if (
-        origem
-        and destino
-        and origem.lower() == destino.lower()
-    ):
-        motivos.append("origem_igual_destino")
-
-
-    # ============================================
-    # 3. DATAS
-    # ============================================
-
-    ida_texto = (oferta.get("ida") or "").strip()
-    volta_texto = (oferta.get("volta") or "").strip()
-
-    data_ida = None
-    data_volta = None
-
-    if not ida_texto or not volta_texto:
-
-        motivos.append("datas_incompletas")
-
-    else:
-
-        try:
-            data_ida = datetime.strptime(
-                ida_texto,
-                "%Y-%m-%d"
-            ).date()
-
-            data_volta = datetime.strptime(
-                volta_texto,
-                "%Y-%m-%d"
-            ).date()
-
-        except ValueError:
-            motivos.append("datas_invalidas")
-
-
-    # ============================================
-    # 4. VALIDACAO TEMPORAL
-    # ============================================
-
-    if data_ida and data_volta:
-
-        hoje = date.today()
-
-        if data_ida < hoje:
-            motivos.append("data_ida_passada")
-
-        if data_volta <= data_ida:
-            motivos.append("volta_anterior_ou_igual_ida")
-
-        else:
-
-            duracao_calculada = (
-                data_volta - data_ida
-            ).days
-
-            oferta["duracao_validada"] = (
-                duracao_calculada
-            )
-
-            # Menos de 1 dia nao faz sentido
-            if duracao_calculada < 1:
-                motivos.append("duracao_invalida")
-
-            # Viagens acima de 30 dias nao sao
-            # rejeitadas, mas recebem alerta
-            if duracao_calculada > 30:
-                alertas.append("duracao_muito_longa")
-
-
-    # ============================================
-    # 5. PRECO POR DIA
-    # ============================================
-
-    preco_dia = oferta.get(
-        "preco_por_dia"
-    )
-
-    if (
-        preco_dia is not None
-        and preco_dia <= 0
-    ):
-        motivos.append("preco_dia_invalido")
-
-    if (
-        preco_dia is not None
-        and 0 < preco_dia < 5
-    ):
-        alertas.append(
-            "preco_dia_muito_baixo"
-        )
-
-
-    # ============================================
-    # 6. LINK DE AFILIADO
-    # ============================================
-
-    link = (
-        oferta.get("link") or ""
-    ).strip()
-
-    if not link:
-
-        motivos.append("link_ausente")
-
-    elif (
-        "awin1.com" not in link.lower()
-        and "awin.com" not in link.lower()
-    ):
-
-        motivos.append(
-            "link_afiliado_invalido"
-        )
-
-
-    # ============================================
-    # 7. IMAGEM
-    # ============================================
-
-    imagem = (
-        oferta.get("imagem") or ""
-    ).strip()
-
-    # Nao rejeitamos uma boa oferta sem imagem,
-    # mas sinalizamos para revisao.
-    if not imagem:
-        alertas.append("imagem_ausente")
-
-
-    # ============================================
-    # RESULTADO
-    # ============================================
-
-    oferta["validacao_comercial"] = {
-
-        "aprovada": len(motivos) == 0,
-
-        "motivos": motivos,
-
-        "alertas": alertas,
-
-        "nivel": (
-            "APROVADA"
-            if len(motivos) == 0
-            and len(alertas) == 0
-
-            else "APROVADA_COM_ALERTA"
-            if len(motivos) == 0
-
-            else "REJEITADA"
-        )
-    }
-
-    return oferta
-
-def calcular_potencial_comercial(oferta):
-    """
-    Calcula o potencial comercial da oferta.
-
-    Nota independente do NEXORA SCORE.
-
-    Objetivo:
-    - evitar excesso de ofertas com 100/100
-    - diferenciar melhor ofertas muito semelhantes
-    - valorizar preço por dia
-    - valorizar duração comercial
-    - considerar antecedência
-    - reservar parte da nota para desconto real
-    """
-
-    pontos = 0
-    sinais = []
-
-    preco = oferta.get("preco") or 0
-    preco_dia = oferta.get("preco_por_dia")
-    duracao = oferta.get("duracao_validada")
-    desconto = oferta.get("desconto_percentual") or 0
-
-
-    # ============================================
-    # 1. PRECO TOTAL - ate 25 pontos
-    # ============================================
-
-    if preco <= 75:
-        pontos += 25
-        sinais.append("preco_excepcional")
-
-    elif preco <= 100:
-        pontos += 23
-        sinais.append("preco_muito_atrativo")
-
-    elif preco <= 125:
-        pontos += 21
-        sinais.append("preco_muito_atrativo")
-
-    elif preco <= 150:
-        pontos += 19
-        sinais.append("preco_atrativo")
-
-    elif preco <= 200:
-        pontos += 17
-        sinais.append("preco_atrativo")
-
-    elif preco <= 300:
-        pontos += 14
-
-    elif preco <= 450:
-        pontos += 10
-
-    elif preco <= 650:
-        pontos += 7
-
-    else:
-        pontos += 4
-
-
-    # ============================================
-    # 2. PRECO POR DIA - ate 30 pontos
-    # ============================================
-
-    if preco_dia is not None:
-
-        if preco_dia <= 20:
-            pontos += 30
-            sinais.append("preco_dia_excepcional")
-
-        elif preco_dia <= 25:
-            pontos += 28
-            sinais.append("excelente_preco_dia")
-
-        elif preco_dia <= 30:
-            pontos += 26
-            sinais.append("excelente_preco_dia")
-
-        elif preco_dia <= 35:
-            pontos += 24
-            sinais.append("bom_preco_dia")
-
-        elif preco_dia <= 45:
-            pontos += 21
-            sinais.append("bom_preco_dia")
-
-        elif preco_dia <= 60:
-            pontos += 17
-
-        elif preco_dia <= 80:
-            pontos += 12
-
-        elif preco_dia <= 100:
-            pontos += 8
-
-        else:
-            pontos += 4
-
-
-    # ============================================
-    # 3. DURACAO - ate 15 pontos
-    # ============================================
-
-    if duracao:
-
-        if duracao == 4:
-            pontos += 15
-            sinais.append("duracao_ideal")
-
-        elif duracao in (3, 5):
-            pontos += 14
-            sinais.append("duracao_atrativa")
-
-        elif duracao in (6, 7):
-            pontos += 12
-            sinais.append("duracao_atrativa")
-
-        elif duracao == 2:
-            pontos += 10
-
-        elif 8 <= duracao <= 10:
-            pontos += 9
-
-        elif 11 <= duracao <= 14:
-            pontos += 5
-
-        else:
-            pontos += 2
-
-
-    # ============================================
-    # 4. ANTECEDENCIA - ate 20 pontos
-    # ============================================
-
-    ida_texto = oferta.get("ida")
-
-    if ida_texto:
-
-        try:
-
-            data_ida = datetime.strptime(
-                ida_texto,
-                "%Y-%m-%d"
-            ).date()
-
-            dias_ate_viagem = (
-                data_ida - date.today()
-            ).days
-
-            oferta["dias_ate_viagem"] = dias_ate_viagem
-
-            if 14 <= dias_ate_viagem <= 45:
-                pontos += 20
-                sinais.append("janela_compra_forte")
-
-            elif 46 <= dias_ate_viagem <= 75:
-                pontos += 17
-                sinais.append("boa_antecedencia")
-
-            elif 7 <= dias_ate_viagem <= 13:
-                pontos += 16
-                sinais.append("oportunidade_curto_prazo")
-
-            elif 76 <= dias_ate_viagem <= 120:
-                pontos += 12
-
-            elif dias_ate_viagem > 120:
-                pontos += 8
-
-            elif 0 <= dias_ate_viagem <= 6:
-                pontos += 6
-                sinais.append("ultima_hora")
-
-        except ValueError:
-            pass
-
-
-    # ============================================
-    # 5. DESCONTO REAL - ate 10 pontos
-    # ============================================
-
-    if desconto >= 30:
-        pontos += 10
-        sinais.append("desconto_excepcional")
-
-    elif desconto >= 20:
-        pontos += 8
-        sinais.append("desconto_forte")
-
-    elif desconto >= 15:
-        pontos += 6
-        sinais.append("bom_desconto")
-
-    elif desconto >= 10:
-        pontos += 4
-
-    elif desconto >= 5:
-        pontos += 2
-
-
-    # ============================================
-    # RESULTADO
-    # ============================================
-
-    pontos = min(
-        pontos,
-        100
-    )
-
-    oferta["potencial_comercial"] = round(
-        pontos,
-        2
-    )
-
-    oferta["sinais_comerciais"] = sinais
-
-    return oferta
 
 def calcular_ranking_final(oferta):
-    """
-    Combina os tres sinais principais da NEXORA:
 
-    1. NEXORA SCORE
-    2. Potencial comercial
-    3. Anomalia de preco
-
-    Resultado final: 0 a 100.
-    """
-
-    nexora_score = oferta.get(
-        "nexora_score",
-        0
+    nexora_score = (
+        oferta.get(
+            "nexora_score",
+            0
+        )
     )
 
-    potencial = oferta.get(
-        "potencial_comercial",
-        0
+    potencial = (
+        oferta.get(
+            "potencial_comercial",
+            0
+        )
     )
 
-    anomalia = oferta.get(
-        "anomalia_preco_percentual",
-        0
+    anomalia = (
+        oferta.get(
+            "anomalia_preco_percentual",
+            0
+        )
     )
 
-    # --------------------------------------------
-    # ANOMALIA NORMALIZADA
-    # --------------------------------------------
-
-    # 40% ou mais abaixo da mediana
-    # recebe nota maxima neste componente.
 
     if anomalia <= 0:
+
         nota_anomalia = 0
 
     else:
+
         nota_anomalia = min(
-            anomalia / 40 * 100,
+            anomalia
+            / 40
+            * 100,
             100
         )
 
-    # --------------------------------------------
-    # RANKING FINAL
-    # --------------------------------------------
 
-    # 55% = qualidade geral da oferta
-    # 30% = potencial comercial
-    # 15% = oportunidade fora do padrao
+    # --------------------------------------------------------
+    # AJUSTE DE CONFIANCA
+    #
+    # Anomalias baseadas em grupos mais confiaveis
+    # recebem peso integral.
+    # --------------------------------------------------------
 
-    ranking = (
-        nexora_score * 0.55
-        + potencial * 0.30
-        + nota_anomalia * 0.15
+    confianca = oferta.get(
+        "confianca_anomalia"
     )
 
-    oferta["nota_anomalia"] = round(
+
+    if confianca == "ALTA":
+
+        fator_confianca = 1.00
+
+    elif confianca == "MEDIA":
+
+        fator_confianca = 0.80
+
+    else:
+
+        fator_confianca = 0.55
+
+
+    nota_anomalia_ajustada = (
+        nota_anomalia
+        * fator_confianca
+    )
+
+
+    # --------------------------------------------------------
+    # RANKING FINAL
+    #
+    # 55% NEXORA SCORE
+    # 30% potencial comercial
+    # 15% anomalia ajustada
+    # --------------------------------------------------------
+
+    ranking = (
+
+        nexora_score * 0.55
+        + potencial * 0.30
+        + nota_anomalia_ajustada * 0.15
+    )
+
+
+    oferta[
+        "nota_anomalia"
+    ] = round(
         nota_anomalia,
         2
     )
 
-    oferta["ranking_final"] = round(
+
+    oferta[
+        "nota_anomalia_ajustada"
+    ] = round(
+        nota_anomalia_ajustada,
+        2
+    )
+
+
+    oferta[
+        "ranking_final"
+    ] = round(
         ranking,
         2
     )
 
+
     return oferta
-    
-def classificar_oferta(score):
-
-    if score >= 90:
-        return "EXCEPCIONAL"
-
-    if score >= 82:
-        return "EXCELENTE"
-
-    if score >= 72:
-        return "MUITO BOA"
-
-    if score >= 60:
-        return "BOA"
-
-    return "REGULAR"
 
 
 # ============================================================
-# SELEÇÃO
+# SELECAO FINAL
 # ============================================================
 
 def selecionar_melhores(
@@ -1442,9 +1817,8 @@ def selecionar_melhores(
     quantidade=QUANTIDADE_DEALS
 ):
 
-    # Remove viagens vencidas
-
     ofertas_validas = []
+
 
     for oferta in ofertas:
 
@@ -1452,30 +1826,50 @@ def selecionar_melhores(
             oferta["ida"]
         )
 
-        if data_ida:
 
-            if data_ida < date.today():
-                continue
+        if (
+            data_ida
+            and data_ida
+            < date.today()
+        ):
+            continue
+
 
         ofertas_validas.append(
             oferta
         )
+
 
     ordenadas = sorted(
 
         ofertas_validas,
 
         key=lambda x: (
-            x.get("ranking_final", 0),
-            x["nexora_score"],
-            x.get("potencial_comercial", 0),
+
+            x.get(
+                "ranking_final",
+                0
+            ),
+
+            x.get(
+                "nexora_score",
+                0
+            ),
+
+            x.get(
+                "potencial_comercial",
+                0
+            ),
+
             -x["preco"]
         ),
 
-       reverse=True
+        reverse=True
     )
 
+
     resultado = []
+
 
     produtos_usados = defaultdict(
         int
@@ -1492,6 +1886,7 @@ def selecionar_melhores(
     rotas_usadas = defaultdict(
         int
     )
+
 
     for oferta in ordenadas:
 
@@ -1512,8 +1907,10 @@ def selecionar_melhores(
             destino
         )
 
+
         # Mesmo hotel/produto
-        # no máximo uma vez
+        # no maximo uma vez
+
         if (
             produto
             and produtos_usados[
@@ -1522,8 +1919,10 @@ def selecionar_melhores(
         ):
             continue
 
+
         # Mesmo destino
-        # no máximo 3 vezes
+        # no maximo 3
+
         if (
             destino
             and destinos_usados[
@@ -1532,8 +1931,10 @@ def selecionar_melhores(
         ):
             continue
 
+
         # Mesma rota
-        # no máximo 2 vezes
+        # no maximo 2
+
         if (
             rotas_usadas[
                 rota
@@ -1541,8 +1942,10 @@ def selecionar_melhores(
         ):
             continue
 
+
         # Mesma origem
-        # no máximo 7 ofertas
+        # no maximo 7
+
         if (
             origem
             and origens_usadas[
@@ -1551,17 +1954,20 @@ def selecionar_melhores(
         ):
             continue
 
+
         oferta[
             "categoria_score"
         ] = classificar_oferta(
             oferta[
-                "nexora_score"
+                "ranking_final"
             ]
         )
+
 
         resultado.append(
             oferta
         )
+
 
         if produto:
 
@@ -1569,11 +1975,13 @@ def selecionar_melhores(
                 produto
             ] += 1
 
+
         if destino:
 
             destinos_usados[
                 destino
             ] += 1
+
 
         if origem:
 
@@ -1581,9 +1989,11 @@ def selecionar_melhores(
                 origem
             ] += 1
 
+
         rotas_usadas[
             rota
         ] += 1
+
 
         if (
             len(resultado)
@@ -1591,19 +2001,34 @@ def selecionar_melhores(
         ):
             break
 
-    # Garante que o resultado final
-    # fique ordenado pelo NEXORA SCORE
 
     resultado = sorted(
+
         resultado,
+
         key=lambda x: (
-            x.get("ranking_final", 0),
-            x["nexora_score"],
-            x.get("potencial_comercial", 0),
+
+            x.get(
+                "ranking_final",
+                0
+            ),
+
+            x.get(
+                "nexora_score",
+                0
+            ),
+
+            x.get(
+                "potencial_comercial",
+                0
+            ),
+
             -x["preco"]
         ),
+
         reverse=True
     )
+
 
     return resultado
 
@@ -1629,7 +2054,7 @@ def salvar_json(ofertas):
 
 
 # ============================================================
-# EXECUÇÃO
+# EXECUCAO
 # ============================================================
 
 def executar():
@@ -1641,7 +2066,7 @@ def executar():
     )
 
     print(
-        "          NEXORA ROBOT 4.0"
+        "          NEXORA ROBOT 4.1"
     )
 
     print(
@@ -1654,104 +2079,178 @@ def executar():
         "Lendo feed REAL AWIN / lastminute.com..."
     )
 
+
     ofertas = carregar_ofertas()
+
 
     print(
         f"Ofertas carregadas: "
         f"{len(ofertas)}"
     )
 
+
     ofertas = remover_duplicados(
         ofertas
     )
+
 
     print(
         f"Ofertas apos limpeza: "
         f"{len(ofertas)}"
     )
 
+
+    # --------------------------------------------------------
+    # SCORE
+    # --------------------------------------------------------
+
     ofertas = calcular_scores(
         ofertas
     )
 
-    # ============================================
+
+    # --------------------------------------------------------
     # VALIDACAO COMERCIAL
-    # ============================================
+    # --------------------------------------------------------
 
     ofertas_validadas = []
 
     aprovadas = 0
     rejeitadas = 0
-    motivos_rejeicao = defaultdict(int)
+
+    motivos_rejeicao = defaultdict(
+        int
+    )
+
 
     for oferta in ofertas:
 
-        oferta = validar_oferta_comercial(
+        validar_oferta_comercial(
             oferta
         )
 
-        if oferta["validacao_comercial"]["aprovada"]:
+
+        if oferta[
+            "validacao_comercial"
+        ][
+            "aprovada"
+        ]:
+
             aprovadas += 1
+
             ofertas_validadas.append(
                 oferta
             )
+
         else:
+
             rejeitadas += 1
 
-            for motivo in oferta["validacao_comercial"]["motivos"]:
-                motivos_rejeicao[motivo] += 1
+
+            for motivo in oferta[
+                "validacao_comercial"
+            ][
+                "motivos"
+            ]:
+
+                motivos_rejeicao[
+                    motivo
+                ] += 1
+
 
     print()
-    print("======= VALIDACAO COMERCIAL =======")
-    print(
-        f"Ofertas analisadas: {len(ofertas)}"
-    )
-    print(
-        f"Ofertas aprovadas: {aprovadas}"
-    )
-    print(
-        f"Ofertas rejeitadas: {rejeitadas}"
-    )
-    print()
-    print("Motivos das rejeicoes:")
 
-    for motivo, quantidade in sorted(
-        motivos_rejeicao.items(),
-        key=lambda x: x[1],
-        reverse=True
-    ):
+    print(
+        "======= VALIDACAO COMERCIAL ======="
+    )
+
+    print(
+        f"Ofertas analisadas: "
+        f"{len(ofertas)}"
+    )
+
+    print(
+        f"Ofertas aprovadas: "
+        f"{aprovadas}"
+    )
+
+    print(
+        f"Ofertas rejeitadas: "
+        f"{rejeitadas}"
+    )
+
+
+    if motivos_rejeicao:
+
+        print()
+
         print(
-            f"- {motivo}: {quantidade}"
+            "Motivos das rejeicoes:"
         )
-    print("===================================")
-    print()
-    
-    # Calcula o potencial comercial
-    # de todas as ofertas aprovadas
 
-    for oferta in ofertas:
+
+        for (
+            motivo,
+            quantidade
+        ) in sorted(
+
+            motivos_rejeicao.items(),
+
+            key=lambda x: x[1],
+
+            reverse=True
+        ):
+
+            print(
+                f"- {motivo}: "
+                f"{quantidade}"
+            )
+
+
+    print(
+        "==================================="
+    )
+
+    print()
+
+
+    # --------------------------------------------------------
+    # POTENCIAL + RANKING FINAL
+    # --------------------------------------------------------
+
+    for oferta in ofertas_validadas:
 
         calcular_potencial_comercial(
             oferta
         )
 
         calcular_ranking_final(
-           oferta
+            oferta
         )
-        
+
+
+    # --------------------------------------------------------
+    # SELECAO
+    # --------------------------------------------------------
+
     melhores = selecionar_melhores(
         ofertas_validadas
     )
+
 
     salvar_json(
         melhores
     )
 
-    print()
+
+    # --------------------------------------------------------
+    # RESULTADO
+    # --------------------------------------------------------
 
     print(
         "========== NEXORA DEALS =========="
     )
+
 
     for posicao, oferta in enumerate(
         melhores,
@@ -1762,21 +2261,38 @@ def executar():
 
         print(
             f"{posicao}. "
-            f"NEXORA "
-            f"{oferta['nexora_score']}/100 "
+            f"RANKING FINAL "
+            f"{oferta['ranking_final']}/100 "
             f"- "
             f"{oferta['categoria_score']}"
         )
 
+
+        print(
+            f"NEXORA SCORE: "
+            f"{oferta['nexora_score']}/100"
+        )
+
+
+        print(
+            f"Potencial comercial: "
+            f"{oferta['potencial_comercial']}/100"
+        )
+
+
+        print()
+
         print(
             oferta["nome"]
         )
+
 
         print(
             f"Preco: "
             f"{oferta['moeda']} "
             f"{oferta['preco']:.2f}"
         )
+
 
         if oferta[
             "preco_por_dia"
@@ -1787,6 +2303,7 @@ def executar():
                 f"{oferta['preco_por_dia']:.2f}"
             )
 
+
         if oferta[
             "duracao_dias"
         ]:
@@ -1796,14 +2313,6 @@ def executar():
                 f"{oferta['duracao_dias']} dias"
             )
 
-        if oferta[
-            "desconto_percentual"
-        ] > 0:
-
-            print(
-                f"Desconto: "
-                f"{oferta['desconto_percentual']}%"
-            )
 
         print(
             f"Origem: "
@@ -1825,30 +2334,23 @@ def executar():
             f"{oferta['volta']}"
         )
 
-        print()
 
-        print(
-            f"Ranking final: "
-            f"{oferta.get('ranking_final', 0)}/100"
-        )
-
-        print(
-            f"Nota de anomalia: "
-            f"{oferta.get('nota_anomalia', 0)}/100"
-        )
-
-        print()
-
-        print(
-            "Composicao do NEXORA SCORE:"
-        )
+        # ----------------------------------------------------
+        # ANOMALIA
+        # ----------------------------------------------------
 
         if oferta.get(
             "mediana_preco_produto"
         ):
 
+            print()
+
             print(
-                f"Mediana do produto: EUR "
+                "Analise de preco:"
+            )
+
+            print(
+                f"Mediana de referencia: EUR "
                 f"{oferta['mediana_preco_produto']:.2f}"
             )
 
@@ -1856,6 +2358,22 @@ def executar():
                 f"Diferenca da mediana: "
                 f"{oferta['anomalia_preco_percentual']:.2f}%"
             )
+
+            print(
+                f"Confianca: "
+                f"{oferta['confianca_anomalia']}"
+            )
+
+            print(
+                f"Referencia: "
+                f"{oferta['tipo_referencia_preco']}"
+            )
+
+            print(
+                f"Amostra: "
+                f"{oferta['amostra_referencia']}"
+            )
+
 
             if oferta.get(
                 "sinal_anomalia_preco"
@@ -1866,27 +2384,47 @@ def executar():
                     f"{oferta['sinal_anomalia_preco']}"
                 )
 
+
+        print()
+
         print(
-            f"Potencial comercial: "
-            f"{oferta.get('potencial_comercial', 0)}/100"
+            f"Nota de anomalia: "
+            f"{oferta['nota_anomalia']}/100"
         )
+
+        print(
+            f"Nota ajustada por confianca: "
+            f"{oferta['nota_anomalia_ajustada']}/100"
+        )
+
 
         sinais = oferta.get(
             "sinais_comerciais",
             []
         )
 
+
         if sinais:
+
             print(
                 "Sinais comerciais: "
-                + ", ".join(sinais)
+                + ", ".join(
+                    sinais
+                )
             )
 
+
         print()
+
+        print(
+            "Composicao do NEXORA SCORE:"
+        )
+
 
         detalhes = oferta[
             "score_detalhes"
         ]
+
 
         print(
             f"  Preco global: "
@@ -1928,16 +2466,21 @@ def executar():
             f"{detalhes['duracao']}/7"
         )
 
+
         if oferta["link"]:
+
+            print()
 
             print(
                 f"Link afiliado: "
                 f"{oferta['link']}"
             )
 
+
         print(
             "------------------------------------"
         )
+
 
     print()
 
@@ -1954,7 +2497,7 @@ def executar():
     print()
 
     print(
-        "NEXORA Robot 3.2 finalizado."
+        "NEXORA Robot 4.1 finalizado."
     )
 
 
