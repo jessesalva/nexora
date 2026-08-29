@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 44,
+    "dias_ate_viagem": 43,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -256,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 113,
+    "dias_ate_viagem": 112,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -319,6 +319,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.15,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Venezia - Capo Testa - Santa Teresa di Gallura - Residence Le Pavoncelle",
+    "produto": "Residence Le Pavoncelle",
+    "origem": "Venezia",
+    "destino": "Capo Testa - Santa Teresa di Gallura",
+    "preco": 128.27,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-13",
+    "volta": "2026-10-17",
+    "imagem": "https://hotels.staticroot.com/gh/Bilo_living_room_1_oslc73.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45805485227&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 4,
+    "preco_por_dia": 32.07,
+    "mediana_preco_produto": 204.46,
+    "anomalia_preco_percentual": 37.26,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 6,
+    "desconto_percentual": 0,
+    "nexora_score": 87.11,
+    "score_detalhes": {
+      "preco_global": 19.34,
+      "preco_por_dia": 19.77,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 466.22,
+    "duracao_validada": 4,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 78,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "bom_preco_dia",
+      "duracao_ideal",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 93.15,
+    "nota_anomalia_ajustada": 74.52,
+    "ranking_final": 82.49,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -362,7 +416,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -416,7 +470,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 71,
+    "dias_ate_viagem": 70,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -470,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 74,
+    "dias_ate_viagem": 73,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -524,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -577,7 +631,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -631,7 +685,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 45,
+    "dias_ate_viagem": 44,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -685,7 +739,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 77,
+    "dias_ate_viagem": 76,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -737,7 +791,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 71,
+    "dias_ate_viagem": 70,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -791,7 +845,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 113,
+    "dias_ate_viagem": 112,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -801,60 +855,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.08,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Venezia - Capo Testa - Santa Teresa di Gallura - Residence Le Pavoncelle",
-    "produto": "Residence Le Pavoncelle",
-    "origem": "Venezia",
-    "destino": "Capo Testa - Santa Teresa di Gallura",
-    "preco": 128.27,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-13",
-    "volta": "2026-10-17",
-    "imagem": "https://hotels.staticroot.com/gh/Bilo_living_room_1_oslc73.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45805485227&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 32.07,
-    "mediana_preco_produto": 204.46,
-    "anomalia_preco_percentual": 37.26,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 6,
-    "desconto_percentual": 0,
-    "nexora_score": 86.11,
-    "score_detalhes": {
-      "preco_global": 19.34,
-      "preco_por_dia": 19.77,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 466.22,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 75,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_ideal",
-      "boa_antecedencia"
-    ],
-    "nota_anomalia": 93.15,
-    "nota_anomalia_ajustada": 74.52,
-    "ranking_final": 81.04,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -898,7 +898,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -952,7 +952,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1005,7 +1005,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -1058,7 +1058,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 72,
     "sinais_comerciais": [
       "preco_atrativo",
