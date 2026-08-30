@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 88,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -51,6 +51,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 86.76,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Bari - Roma - Seven Hills Camping Village",
+    "produto": "Seven Hills Camping Village",
+    "origem": "Bari",
+    "destino": "Roma",
+    "preco": 63.74,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-14",
+    "volta": "2026-10-17",
+    "imagem": "https://hotels.staticroot.com/c53xzo9otnpaqi95diir.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45818513983&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 21.25,
+    "mediana_preco_produto": 136.8,
+    "anomalia_preco_percentual": 53.41,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 87.97,
+    "score_detalhes": {
+      "preco_global": 19.99,
+      "preco_por_dia": 19.98,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 465.35,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 86.48,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -94,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -148,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -202,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -213,60 +267,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 85.29,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Bari - Roma - Seven Hills Camping Village",
-    "produto": "Seven Hills Camping Village",
-    "origem": "Bari",
-    "destino": "Roma",
-    "preco": 63.74,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-14",
-    "volta": "2026-10-17",
-    "imagem": "https://hotels.staticroot.com/c53xzo9otnpaqi95diir.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45818513983&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 21.25,
-    "mediana_preco_produto": 136.8,
-    "anomalia_preco_percentual": 53.41,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 86.97,
-    "score_detalhes": {
-      "preco_global": 19.99,
-      "preco_por_dia": 19.98,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 465.35,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 84,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "boa_antecedencia"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 85.03,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -310,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -364,7 +364,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -418,7 +418,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -472,7 +472,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 88,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -526,7 +526,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -580,7 +580,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -634,7 +634,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -688,7 +688,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -742,7 +742,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 112,
+    "dias_ate_viagem": 111,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -795,7 +795,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 112,
+    "dias_ate_viagem": 111,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -848,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 22,
+    "dias_ate_viagem": 21,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -859,6 +859,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.78,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Bologna - Himarë - Mema Rooms",
+    "produto": "Mema Rooms",
+    "origem": "Bologna",
+    "destino": "Himarë",
+    "preco": 151.65,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-14",
+    "volta": "2026-10-21",
+    "imagem": "https://hotels.staticroot.com/zw2ucwm7zkj8x04m2g3n.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45805486697&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 7,
+    "preco_por_dia": 21.66,
+    "mediana_preco_produto": 277.53,
+    "anomalia_preco_percentual": 45.36,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 83.89,
+    "score_detalhes": {
+      "preco_global": 18.65,
+      "preco_por_dia": 19.98,
+      "destino": 13.26,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 465.35,
+    "duracao_validada": 7,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 77,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 81.24,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -902,7 +956,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -913,60 +967,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.22,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Roma - Corfù, Isole Greche - Hotel Miami Sea View",
-    "produto": "Hotel Miami Sea View",
-    "origem": "Roma",
-    "destino": "Corfù, Isole Greche",
-    "preco": 92.51,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-14",
-    "volta": "2026-09-17",
-    "imagem": "https://hotels.staticroot.com/tuypgfkydhhk64356cs9.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45418803288&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 30.84,
-    "mediana_preco_produto": 148.83,
-    "anomalia_preco_percentual": 37.84,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 6,
-    "desconto_percentual": 0,
-    "nexora_score": 82.67,
-    "score_detalhes": {
-      "preco_global": 19.86,
-      "preco_por_dia": 19.82,
-      "destino": 15.0,
-      "rota": 5,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 465.35,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 81,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "bom_preco_dia",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 94.6,
-    "nota_anomalia_ajustada": 75.68,
-    "ranking_final": 81.12,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -1010,7 +1010,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1064,7 +1064,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 112,
+    "dias_ate_viagem": 111,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
