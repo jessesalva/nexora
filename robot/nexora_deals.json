@@ -1,59 +1,5 @@
 [
   {
-    "nome": "Bari - Roma - Seven Hills Camping Village",
-    "produto": "Seven Hills Camping Village",
-    "origem": "Bari",
-    "destino": "Roma",
-    "preco": 67.79,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-18",
-    "volta": "2026-09-21",
-    "imagem": "https://hotels.staticroot.com/c53xzo9otnpaqi95diir.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45859319071&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 22.6,
-    "mediana_preco_produto": 119.1,
-    "anomalia_preco_percentual": 43.08,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 87.76,
-    "score_detalhes": {
-      "preco_global": 19.98,
-      "preco_por_dia": 19.98,
-      "destino": 14.8,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 439.28,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 87,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 86.37,
-    "categoria_score": "EXCELENTE"
-  },
-  {
     "nome": "Pisa - Castelsardo - Residence Il Borgo di Badesi",
     "produto": "Residence Il Borgo di Badesi",
     "origem": "Pisa",
@@ -94,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -148,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -256,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -267,6 +213,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 84.84,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Bari - Roma - Seven Hills Camping Village",
+    "produto": "Seven Hills Camping Village",
+    "origem": "Bari",
+    "destino": "Roma",
+    "preco": 67.79,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-09-18",
+    "volta": "2026-09-21",
+    "imagem": "https://hotels.staticroot.com/c53xzo9otnpaqi95diir.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45859319071&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 22.6,
+    "mediana_preco_produto": 119.1,
+    "anomalia_preco_percentual": 43.08,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
+    "desconto_percentual": 0,
+    "nexora_score": 84.76,
+    "score_detalhes": {
+      "preco_global": 19.98,
+      "preco_por_dia": 19.98,
+      "destino": 14.8,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 439.28,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 84.72,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -310,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -364,7 +364,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 107,
+    "dias_ate_viagem": 106,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -417,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 66,
+    "dias_ate_viagem": 65,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -524,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -577,7 +577,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -631,7 +631,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -685,7 +685,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -739,7 +739,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 107,
+    "dias_ate_viagem": 106,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -792,7 +792,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 90,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -846,7 +846,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -900,7 +900,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 50,
+    "dias_ate_viagem": 49,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -954,7 +954,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 47,
+    "dias_ate_viagem": 46,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1008,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1062,7 +1062,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 47,
+    "dias_ate_viagem": 46,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
