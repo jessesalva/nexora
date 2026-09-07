@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 32,
+    "dias_ate_viagem": 31,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -105,60 +105,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 85.18,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Torino - Costa albanese - Rezidenca Pahumi 2",
-    "produto": "Rezidenca Pahumi 2",
-    "origem": "Torino",
-    "destino": "Costa albanese",
-    "preco": 90.96,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-22",
-    "volta": "2026-09-25",
-    "imagem": "https://hotels.staticroot.com/hotels/hrawcakngjn49fneeqkr.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45914529571&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 30.32,
-    "mediana_preco_produto": 155.48,
-    "anomalia_preco_percentual": 41.5,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 87.34,
-    "score_detalhes": {
-      "preco_global": 19.91,
-      "preco_por_dia": 19.82,
-      "destino": 14.62,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 452.71,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 81,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "bom_preco_dia",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.34,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -202,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -255,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -309,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 90,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -363,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -417,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 15,
+    "dias_ate_viagem": 14,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -428,6 +374,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.16,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Torino - Costa albanese - Rezidenca Pahumi 2",
+    "produto": "Rezidenca Pahumi 2",
+    "origem": "Torino",
+    "destino": "Costa albanese",
+    "preco": 90.96,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-09-22",
+    "volta": "2026-09-25",
+    "imagem": "https://hotels.staticroot.com/hotels/hrawcakngjn49fneeqkr.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45914529571&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 30.32,
+    "mediana_preco_produto": 155.48,
+    "anomalia_preco_percentual": 41.5,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
+    "desconto_percentual": 0,
+    "nexora_score": 84.34,
+    "score_detalhes": {
+      "preco_global": 19.91,
+      "preco_por_dia": 19.82,
+      "destino": 14.62,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 452.71,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 81,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 82.69,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -471,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -525,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 47,
+    "dias_ate_viagem": 46,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -579,7 +579,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -633,7 +633,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -687,7 +687,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -741,7 +741,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -795,7 +795,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -849,7 +849,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -903,7 +903,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -957,7 +957,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -971,31 +971,31 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Milano - Cala D'Or - SOL by Meliá Cala d'Or Apartamentos",
-    "produto": "SOL by Meliá Cala d'Or Apartamentos",
+    "nome": "Milano - Magaluf - Playas del Rey",
+    "produto": "Playas del Rey",
     "origem": "Milano",
-    "destino": "Cala D'Or",
-    "preco": 158.39,
+    "destino": "Magaluf",
+    "preco": 156.75,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-19",
-    "volta": "2026-10-23",
-    "imagem": "https://hotels.staticroot.com/hotels/axhbwedmiqouxrdwmp3z.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45110873294&a=3043221&m=12374",
+    "ida": "2026-10-22",
+    "volta": "2026-10-26",
+    "imagem": "https://hotels.staticroot.com/gh/joseagamez_hrc_c2t_playas_del_rey_palace-8753_1_lbka2y.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45859320802&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
-    "preco_por_dia": 39.6,
-    "mediana_preco_produto": 332.21,
-    "anomalia_preco_percentual": 52.32,
+    "preco_por_dia": 39.19,
+    "mediana_preco_produto": 328.06,
+    "anomalia_preco_percentual": 52.22,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 9,
     "desconto_percentual": 0,
-    "nexora_score": 86.08,
+    "nexora_score": 86.15,
     "score_detalhes": {
-      "preco_global": 18.67,
-      "preco_por_dia": 19.41,
+      "preco_global": 18.72,
+      "preco_por_dia": 19.43,
       "destino": 15.0,
       "rota": 10.0,
       "desconto": 0.0,
@@ -1011,7 +1011,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 45,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1021,7 +1021,7 @@
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.24,
+    "ranking_final": 81.28,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -1065,7 +1065,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 66,
+    "dias_ate_viagem": 65,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
