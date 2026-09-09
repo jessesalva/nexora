@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 88,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -256,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -310,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -320,6 +320,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.27,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Milano - Sicilia Est - Catania, Taormina, Siracusa, Noto, Mare Italia - Plaza Hotel Catania",
+    "produto": "Plaza Hotel Catania",
+    "origem": "Milano",
+    "destino": "Sicilia Est - Catania, Taormina, Siracusa, Noto, Mare Italia",
+    "preco": 77.02,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-23",
+    "volta": "2026-11-26",
+    "imagem": "https://hotels.staticroot.com/hotels/esr0zofxzaxplrx1983b.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45930790081&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 25.67,
+    "mediana_preco_produto": 128.73,
+    "anomalia_preco_percentual": 40.17,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 85.89,
+    "score_detalhes": {
+      "preco_global": 19.96,
+      "preco_por_dia": 19.93,
+      "destino": 14.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 7,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 441.22,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 80,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "boa_antecedencia"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 83.24,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -363,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -417,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -525,7 +579,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 63,
+    "dias_ate_viagem": 62,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -579,7 +633,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -633,7 +687,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 48,
+    "dias_ate_viagem": 47,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -687,7 +741,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -741,7 +795,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 101,
+    "dias_ate_viagem": 100,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -794,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 102,
+    "dias_ate_viagem": 101,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -847,7 +901,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 63,
+    "dias_ate_viagem": 62,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -858,59 +912,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.77,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Milano - Sicilia Est - Catania, Taormina, Siracusa, Noto, Mare Italia - Plaza Hotel Catania",
-    "produto": "Plaza Hotel Catania",
-    "origem": "Milano",
-    "destino": "Sicilia Est - Catania, Taormina, Siracusa, Noto, Mare Italia",
-    "preco": 77.02,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-23",
-    "volta": "2026-11-26",
-    "imagem": "https://hotels.staticroot.com/hotels/esr0zofxzaxplrx1983b.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45930790081&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 25.67,
-    "mediana_preco_produto": 128.73,
-    "anomalia_preco_percentual": 40.17,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 85.89,
-    "score_detalhes": {
-      "preco_global": 19.96,
-      "preco_por_dia": 19.93,
-      "destino": 14.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 441.22,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 76,
-    "potencial_comercial": 75,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_atrativa"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.74,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -954,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -1007,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1061,7 +1062,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 102,
+    "dias_ate_viagem": 101,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
