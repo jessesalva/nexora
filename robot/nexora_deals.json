@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 90,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -105,60 +105,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 85.06,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Bologna - Orosei - Hotel Gli Ontani",
-    "produto": "Hotel Gli Ontani",
-    "origem": "Bologna",
-    "destino": "Orosei",
-    "preco": 91.83,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-26",
-    "volta": "2026-09-30",
-    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45294732696&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 22.96,
-    "mediana_preco_produto": 260.06,
-    "anomalia_preco_percentual": 64.69,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 84.84,
-    "score_detalhes": {
-      "preco_global": 19.88,
-      "preco_por_dia": 19.97,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 442.54,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 14,
-    "potencial_comercial": 86,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.46,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -202,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -215,36 +161,90 @@
     "categoria_score": "EXCELENTE"
   },
   {
-    "nome": "Torino - St. Julianʼs - Coral Hotel",
+    "nome": "Trapani - Malta - Coral Hotel",
     "produto": "Coral Hotel",
-    "origem": "Torino",
-    "destino": "St. Julianʼs",
-    "preco": 90.27,
+    "origem": "Trapani",
+    "destino": "Malta",
+    "preco": 64.71,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-11-23",
-    "volta": "2026-11-27",
+    "ida": "2026-11-27",
+    "volta": "2026-11-30",
     "imagem": "https://hotels.staticroot.com/hotels/k7hoaautwz1cgl4ajg9w.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45971398317&a=3043221&m=12374",
+    "link": "https://www.awin1.com/pclick.php?p=45939599705&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 21.57,
+    "mediana_preco_produto": 101.3,
+    "anomalia_preco_percentual": 36.12,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 86.76,
+    "score_detalhes": {
+      "preco_global": 20.0,
+      "preco_por_dia": 19.97,
+      "destino": 14.79,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 7,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 442.54,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 84,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "boa_antecedencia"
+    ],
+    "nota_anomalia": 90.3,
+    "nota_anomalia_ajustada": 72.24,
+    "ranking_final": 83.75,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Bologna - Orosei - Hotel Gli Ontani",
+    "produto": "Hotel Gli Ontani",
+    "origem": "Bologna",
+    "destino": "Orosei",
+    "preco": 91.83,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-09-26",
+    "volta": "2026-09-30",
+    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45294732696&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
-    "preco_por_dia": 22.57,
-    "mediana_preco_produto": 140.7,
-    "anomalia_preco_percentual": 35.84,
+    "preco_por_dia": 22.96,
+    "mediana_preco_produto": 260.06,
+    "anomalia_preco_percentual": 64.69,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 4,
     "desconto_percentual": 0,
-    "nexora_score": 86.6,
+    "nexora_score": 84.84,
     "score_detalhes": {
-      "preco_global": 19.89,
+      "preco_global": 19.88,
       "preco_por_dia": 19.97,
-      "destino": 14.75,
+      "destino": 15.0,
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
-      "data": 7,
+      "data": 5,
       "duracao": 7
     },
     "mediana_preco_feed": 442.54,
@@ -255,17 +255,17 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
-    "potencial_comercial": 83,
+    "dias_ate_viagem": 13,
+    "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
       "excelente_preco_dia",
       "duracao_ideal",
-      "boa_antecedencia"
+      "oportunidade_curto_prazo"
     ],
-    "nota_anomalia": 89.6,
-    "nota_anomalia_ajustada": 71.68,
-    "ranking_final": 83.28,
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 83.26,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -363,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 37,
+    "dias_ate_viagem": 36,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -417,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -525,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -579,7 +579,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -633,7 +633,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
+    "dias_ate_viagem": 71,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -687,7 +687,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 59,
+    "dias_ate_viagem": 58,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -741,7 +741,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 37,
+    "dias_ate_viagem": 36,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -794,7 +794,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -848,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -902,7 +902,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -955,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1009,7 +1009,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1063,7 +1063,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
+    "dias_ate_viagem": 71,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
