@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 90,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 89,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -256,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 73,
+    "dias_ate_viagem": 72,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -310,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -364,7 +364,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -418,7 +418,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -471,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -525,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -579,7 +579,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -633,7 +633,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 56,
+    "dias_ate_viagem": 55,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -687,7 +687,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 55,
+    "dias_ate_viagem": 54,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -741,7 +741,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -752,60 +752,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.15,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Torino - Castelsardo - Residence Il Borgo di Badesi",
-    "produto": "Residence Il Borgo di Badesi",
-    "origem": "Torino",
-    "destino": "Castelsardo",
-    "preco": 109.82,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-29",
-    "volta": "2026-10-03",
-    "imagem": "https://hotels.staticroot.com/hotels/pil0amznyaznwxd6x7yk.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45995055095&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 27.45,
-    "mediana_preco_produto": 203.64,
-    "anomalia_preco_percentual": 46.07,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 84.54,
-    "score_detalhes": {
-      "preco_global": 19.64,
-      "preco_por_dia": 19.9,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 438.45,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 14,
-    "potencial_comercial": 82,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 83.1,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -849,7 +795,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -860,6 +806,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.09,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Milano - Casablanca - Hotel Majestic",
+    "produto": "Hotel Majestic",
+    "origem": "Milano",
+    "destino": "Casablanca",
+    "preco": 113.83,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-31",
+    "volta": "2026-11-03",
+    "imagem": "https://hotels.staticroot.com/hotels/s2czvksk3fdbdehok7me.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45985500001&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 37.94,
+    "mediana_preco_produto": 257.05,
+    "anomalia_preco_percentual": 55.72,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 87.07,
+    "score_detalhes": {
+      "preco_global": 19.56,
+      "preco_por_dia": 19.51,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 438.45,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 76,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 82.69,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -903,7 +903,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -957,7 +957,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 62,
+    "dias_ate_viagem": 61,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1011,7 +1011,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1065,7 +1065,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
