@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -51,59 +51,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 86.1,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Trieste - Sardegna Est - Costa Smeralda, San Teodoro - Hotel Gli Ontani",
-    "produto": "Hotel Gli Ontani",
-    "origem": "Trieste",
-    "destino": "Sardegna Est - Costa Smeralda, San Teodoro",
-    "preco": 44.75,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-04",
-    "volta": "2026-10-06",
-    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46026510711&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 22.38,
-    "mediana_preco_produto": 83.91,
-    "anomalia_preco_percentual": 46.67,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 86.97,
-    "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 19.97,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 441.1,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 83,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.73,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -147,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 45,
+    "dias_ate_viagem": 44,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -161,56 +108,111 @@
     "categoria_score": "EXCELENTE"
   },
   {
-    "nome": "Trieste - Sardegna, Mare Italia - Residence Il Borgo di Badesi",
-    "produto": "Residence Il Borgo di Badesi",
-    "origem": "Trieste",
-    "destino": "Sardegna, Mare Italia",
-    "preco": 54.87,
+    "nome": "Milano - Costa albanese - Hotel Vila Alvin & Apartments",
+    "produto": "Hotel Vila Alvin & Apartments",
+    "origem": "Milano",
+    "destino": "Costa albanese",
+    "preco": 74.18,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-04",
-    "volta": "2026-10-06",
-    "imagem": "https://hotels.staticroot.com/hotels/pil0amznyaznwxd6x7yk.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46026510712&a=3043221&m=12374",
+    "ida": "2026-11-03",
+    "volta": "2026-11-06",
+    "imagem": "https://hotels.staticroot.com/hotels/usymgkehsbx3mempajfg.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46002917008&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 27.43,
-    "mediana_preco_produto": 93.45,
-    "anomalia_preco_percentual": 41.28,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "duracao_dias": 3,
+    "preco_por_dia": 24.73,
+    "mediana_preco_produto": 108.81,
+    "anomalia_preco_percentual": 31.83,
+    "sinal_anomalia_preco": "preco_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
+    "amostra_referencia": 4,
     "desconto_percentual": 0,
-    "nexora_score": 86.87,
+    "nexora_score": 87.89,
     "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 19.87,
+      "preco_global": 19.96,
+      "preco_por_dia": 19.93,
       "destino": 15.0,
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
       "data": 8,
-      "duracao": 6
+      "duracao": 7
     },
     "mediana_preco_feed": 441.1,
-    "duracao_validada": 2,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 81,
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
       "excelente_preco_dia",
+      "duracao_atrativa",
       "janela_compra_forte"
     ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.08,
+    "nota_anomalia": 79.57,
+    "nota_anomalia_ajustada": 63.66,
+    "ranking_final": 83.99,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Milano - Castelsardo - Residence Il Borgo di Badesi",
+    "produto": "Residence Il Borgo di Badesi",
+    "origem": "Milano",
+    "destino": "Castelsardo",
+    "preco": 96.86,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-12",
+    "volta": "2026-10-17",
+    "imagem": "https://hotels.staticroot.com/hotels/pil0amznyaznwxd6x7yk.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45922772318&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 5,
+    "preco_por_dia": 19.37,
+    "mediana_preco_produto": 139.73,
+    "anomalia_preco_percentual": 30.68,
+    "sinal_anomalia_preco": "preco_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 87.79,
+    "score_detalhes": {
+      "preco_global": 19.8,
+      "preco_por_dia": 19.99,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 441.1,
+    "duracao_validada": 5,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 23,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "preco_dia_excepcional",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 76.7,
+    "nota_anomalia_ajustada": 61.36,
+    "ranking_final": 83.59,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -254,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 92,
+    "dias_ate_viagem": 91,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -307,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 92,
+    "dias_ate_viagem": 91,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -360,12 +362,65 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 92,
+    "dias_ate_viagem": 91,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
       "excelente_preco_dia",
       "duracao_ideal"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 83.08,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Trieste - Sardegna Est - Costa Smeralda, San Teodoro - Hotel Gli Ontani",
+    "produto": "Hotel Gli Ontani",
+    "origem": "Trieste",
+    "destino": "Sardegna Est - Costa Smeralda, San Teodoro",
+    "preco": 44.75,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-04",
+    "volta": "2026-10-06",
+    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46026510711&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 22.38,
+    "mediana_preco_produto": 83.91,
+    "anomalia_preco_percentual": 46.67,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 83.97,
+    "score_detalhes": {
+      "preco_global": 20.0,
+      "preco_por_dia": 19.97,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 441.1,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 83,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "janela_compra_forte"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
@@ -413,7 +468,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 49,
+    "dias_ate_viagem": 48,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -467,7 +522,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -481,36 +536,36 @@
     "categoria_score": "EXCELENTE"
   },
   {
-    "nome": "Milano - Costa albanese - Hotel Vila Alvin & Apartments",
-    "produto": "Hotel Vila Alvin & Apartments",
+    "nome": "Milano - Riviera Albanese - New Donantelo Hotel",
+    "produto": "New Donantelo Hotel",
     "origem": "Milano",
-    "destino": "Costa albanese",
-    "preco": 74.18,
+    "destino": "Riviera Albanese",
+    "preco": 82.29,
     "preco_original": null,
     "moeda": "EUR",
     "ida": "2026-11-03",
     "volta": "2026-11-06",
-    "imagem": "https://hotels.staticroot.com/hotels/usymgkehsbx3mempajfg.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46002917008&a=3043221&m=12374",
+    "imagem": "https://hotels.staticroot.com/hotels/hubea3aqoikrz9fmv2r1.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46002917029&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 3,
-    "preco_por_dia": 24.73,
-    "mediana_preco_produto": 108.81,
-    "anomalia_preco_percentual": 31.83,
-    "sinal_anomalia_preco": "preco_fora_do_padrao",
+    "preco_por_dia": 27.43,
+    "mediana_preco_produto": 127.0,
+    "anomalia_preco_percentual": 35.21,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 4,
     "desconto_percentual": 0,
-    "nexora_score": 86.89,
+    "nexora_score": 85.41,
     "score_detalhes": {
-      "preco_global": 19.96,
-      "preco_por_dia": 19.93,
-      "destino": 15.0,
-      "rota": 10.0,
+      "preco_global": 19.92,
+      "preco_por_dia": 19.87,
+      "destino": 14.29,
+      "rota": 8.33,
       "desconto": 0.0,
       "dados": 8,
-      "data": 7,
+      "data": 8,
       "duracao": 7
     },
     "mediana_preco_feed": 441.1,
@@ -521,17 +576,17 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 84,
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 83,
     "sinais_comerciais": [
-      "preco_excepcional",
+      "preco_muito_atrativo",
       "excelente_preco_dia",
       "duracao_atrativa",
-      "boa_antecedencia"
+      "janela_compra_forte"
     ],
-    "nota_anomalia": 79.57,
-    "nota_anomalia_ajustada": 63.66,
-    "ranking_final": 82.54,
+    "nota_anomalia": 88.02,
+    "nota_anomalia_ajustada": 70.42,
+    "ranking_final": 82.44,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -575,7 +630,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -629,7 +684,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 75,
+    "dias_ate_viagem": 74,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -683,7 +738,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -737,7 +792,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 77,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -791,7 +846,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 92,
+    "dias_ate_viagem": 91,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -844,7 +899,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -897,7 +952,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -951,7 +1006,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1004,7 +1059,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1014,59 +1069,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.45,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Pisa - Maiorca, Isole Baleari - Africamar",
-    "produto": "Africamar",
-    "origem": "Pisa",
-    "destino": "Maiorca, Isole Baleari",
-    "preco": 81.49,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-14",
-    "volta": "2026-10-16",
-    "imagem": "https://hotels.staticroot.com/gh/Africa_Mar_1_plgi5r.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46002917013&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 40.74,
-    "mediana_preco_produto": 135.7,
-    "anomalia_preco_percentual": 39.95,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 85.91,
-    "score_detalhes": {
-      "preco_global": 19.93,
-      "preco_por_dia": 19.19,
-      "destino": 14.8,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 441.1,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 26,
-    "potencial_comercial": 74,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "bom_preco_dia",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 99.88,
-    "nota_anomalia_ajustada": 79.9,
-    "ranking_final": 81.44,
     "categoria_score": "MUITO BOA"
   }
 ]
