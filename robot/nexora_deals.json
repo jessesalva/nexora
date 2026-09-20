@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -105,60 +105,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 84.79,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Milano - Orosei - Hotel Gli Ontani",
-    "produto": "Hotel Gli Ontani",
-    "origem": "Milano",
-    "destino": "Orosei",
-    "preco": 68.81,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-09-26",
-    "volta": "2026-09-30",
-    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46012124474&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 17.2,
-    "mediana_preco_produto": 156.08,
-    "anomalia_preco_percentual": 55.91,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 84.98,
-    "score_detalhes": {
-      "preco_global": 19.98,
-      "preco_por_dia": 20.0,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 455.68,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 86,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "preco_dia_excepcional",
-      "duracao_ideal",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.54,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -202,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -256,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -310,7 +256,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 45,
+    "dias_ate_viagem": 44,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -364,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -418,7 +364,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 91,
+    "dias_ate_viagem": 90,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -525,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 91,
+    "dias_ate_viagem": 90,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -578,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 91,
+    "dias_ate_viagem": 90,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -631,7 +577,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -685,7 +631,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
+    "dias_ate_viagem": 71,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -739,7 +685,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 22,
+    "dias_ate_viagem": 21,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -793,7 +739,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 22,
+    "dias_ate_viagem": 21,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -847,7 +793,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -901,7 +847,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -912,6 +858,60 @@
     "nota_anomalia": 89.77,
     "nota_anomalia_ajustada": 49.38,
     "ranking_final": 81.8,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Verona - Sardegna Est - Costa Smeralda, San Teodoro - Hotel Gli Ontani",
+    "produto": "Hotel Gli Ontani",
+    "origem": "Verona",
+    "destino": "Sardegna Est - Costa Smeralda, San Teodoro",
+    "preco": 96.38,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-08",
+    "volta": "2026-10-11",
+    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46002917070&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 32.13,
+    "mediana_preco_produto": 177.36,
+    "anomalia_preco_percentual": 45.66,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 82.35,
+    "score_detalhes": {
+      "preco_global": 19.84,
+      "preco_por_dia": 19.76,
+      "destino": 9.75,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 455.68,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 18,
+    "potencial_comercial": 81,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 81.59,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -955,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 37,
+    "dias_ate_viagem": 36,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1008,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1022,36 +1022,36 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Venezia - St Paul's Bay - Xemxija Bay Hotel",
-    "produto": "Xemxija Bay Hotel",
-    "origem": "Venezia",
-    "destino": "St Paul's Bay",
-    "preco": 132.44,
+    "nome": "Milano - Kos - Angela",
+    "produto": "Angela",
+    "origem": "Milano",
+    "destino": "Kos",
+    "preco": 103.82,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-11-08",
-    "volta": "2026-11-12",
-    "imagem": "https://hotels.staticroot.com/hotels/qnmuatjopsb6zzrohj84.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=45724589163&a=3043221&m=12374",
+    "ida": "2026-10-11",
+    "volta": "2026-10-15",
+    "imagem": "https://hotels.staticroot.com/gh/01_Dining_Area_x5sk2n.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46026510890&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 4,
-    "preco_por_dia": 33.11,
-    "mediana_preco_produto": 284.23,
-    "anomalia_preco_percentual": 53.4,
+    "preco_por_dia": 25.95,
+    "mediana_preco_produto": 718.63,
+    "anomalia_preco_percentual": 85.55,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 9,
+    "confianca_anomalia": "BAIXA",
+    "tipo_referencia_preco": "produto",
+    "amostra_referencia": 6,
     "desconto_percentual": 0,
-    "nexora_score": 84.52,
+    "nexora_score": 87.66,
     "score_detalhes": {
-      "preco_global": 19.19,
-      "preco_por_dia": 19.72,
-      "destino": 13.62,
+      "preco_global": 19.75,
+      "preco_por_dia": 19.91,
+      "destino": 15.0,
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
-      "data": 7,
+      "data": 8,
       "duracao": 7
     },
     "mediana_preco_feed": 455.68,
@@ -1062,17 +1062,17 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 50,
-    "potencial_comercial": 75,
+    "dias_ate_viagem": 21,
+    "potencial_comercial": 82,
     "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
       "duracao_ideal",
-      "boa_antecedencia"
+      "janela_compra_forte"
     ],
     "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 80.99,
+    "nota_anomalia_ajustada": 55.0,
+    "ranking_final": 81.06,
     "categoria_score": "MUITO BOA"
   }
 ]
