@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -105,60 +105,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 85.11,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Verona - Sardegna Est - Costa Smeralda, San Teodoro - Hotel Gli Ontani",
-    "produto": "Hotel Gli Ontani",
-    "origem": "Verona",
-    "destino": "Sardegna Est - Costa Smeralda, San Teodoro",
-    "preco": 88.48,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-07",
-    "volta": "2026-10-10",
-    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46059722013&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 29.49,
-    "mediana_preco_produto": 195.94,
-    "anomalia_preco_percentual": 54.84,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 87.33,
-    "score_detalhes": {
-      "preco_global": 19.9,
-      "preco_por_dia": 19.88,
-      "destino": 14.55,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 453.66,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 83,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.93,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -202,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -255,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -266,6 +212,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.98,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Verona - Sardegna Est - Costa Smeralda, San Teodoro - Hotel Gli Ontani",
+    "produto": "Hotel Gli Ontani",
+    "origem": "Verona",
+    "destino": "Sardegna Est - Costa Smeralda, San Teodoro",
+    "preco": 88.48,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-07",
+    "volta": "2026-10-10",
+    "imagem": "https://hotels.staticroot.com/hotels/geas7ijvvxj8zjg923ca.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46059722013&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 29.49,
+    "mediana_preco_produto": 195.94,
+    "anomalia_preco_percentual": 54.84,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 84.33,
+    "score_detalhes": {
+      "preco_global": 19.9,
+      "preco_por_dia": 19.88,
+      "destino": 14.55,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 453.66,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 83,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 83.28,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 89,
+    "dias_ate_viagem": 88,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -362,7 +362,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 89,
+    "dias_ate_viagem": 88,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -415,7 +415,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 89,
+    "dias_ate_viagem": 88,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -468,7 +468,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -522,7 +522,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -576,7 +576,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -590,33 +590,33 @@
     "categoria_score": "EXCELENTE"
   },
   {
-    "nome": "Verona - Sardegna Nord - Alghero area - Residence Il Borgo di Badesi",
-    "produto": "Residence Il Borgo di Badesi",
-    "origem": "Verona",
-    "destino": "Sardegna Nord - Alghero area",
-    "preco": 104.71,
+    "nome": "Trapani - Malta - The Windsor Hotel",
+    "produto": "The Windsor Hotel",
+    "origem": "Trapani",
+    "destino": "Malta",
+    "preco": 89.05,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-07",
-    "volta": "2026-10-10",
-    "imagem": "https://hotels.staticroot.com/hotels/pil0amznyaznwxd6x7yk.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46059722121&a=3043221&m=12374",
+    "ida": "2026-11-06",
+    "volta": "2026-11-09",
+    "imagem": "https://hotels.staticroot.com/hotels/bdphzlwsn7xmk8jv7enc.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46059722014&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 3,
-    "preco_por_dia": 34.9,
-    "mediana_preco_produto": 158.38,
-    "anomalia_preco_percentual": 33.89,
-    "sinal_anomalia_preco": "preco_fora_do_padrao",
+    "preco_por_dia": 29.68,
+    "mediana_preco_produto": 195.98,
+    "anomalia_preco_percentual": 54.56,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
+    "amostra_referencia": 5,
     "desconto_percentual": 0,
-    "nexora_score": 86.61,
+    "nexora_score": 81.13,
     "score_detalhes": {
-      "preco_global": 19.74,
-      "preco_por_dia": 19.73,
-      "destino": 14.14,
-      "rota": 10.0,
+      "preco_global": 19.9,
+      "preco_por_dia": 19.88,
+      "destino": 9.47,
+      "rota": 8.89,
       "desconto": 0.0,
       "dados": 8,
       "data": 8,
@@ -630,17 +630,17 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 79,
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
-      "bom_preco_dia",
+      "excelente_preco_dia",
       "duracao_atrativa",
       "janela_compra_forte"
     ],
-    "nota_anomalia": 84.73,
-    "nota_anomalia_ajustada": 67.78,
-    "ranking_final": 81.5,
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 81.52,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -684,7 +684,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -738,7 +738,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 50,
+    "dias_ate_viagem": 49,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -792,7 +792,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -803,6 +803,60 @@
     "nota_anomalia": 99.7,
     "nota_anomalia_ajustada": 79.76,
     "ranking_final": 81.16,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Trapani - Malta - Cardor Holiday Complex",
+    "produto": "Cardor Holiday Complex",
+    "origem": "Trapani",
+    "destino": "Malta",
+    "preco": 67.59,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-06",
+    "volta": "2026-11-09",
+    "imagem": "https://hotels.staticroot.com/hotels/q6ir1jweqewfqtgovcx4.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=45738497315&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 22.53,
+    "mediana_preco_produto": 87.92,
+    "anomalia_preco_percentual": 23.12,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 87.24,
+    "score_detalhes": {
+      "preco_global": 19.99,
+      "preco_por_dia": 19.98,
+      "destino": 14.27,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 453.66,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 57.8,
+    "nota_anomalia_ajustada": 46.24,
+    "ranking_final": 81.02,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -846,7 +900,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 89,
+    "dias_ate_viagem": 88,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -899,7 +953,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -953,7 +1007,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1007,7 +1061,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1018,60 +1072,6 @@
     "nota_anomalia": 94.85,
     "nota_anomalia_ajustada": 75.88,
     "ranking_final": 80.33,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Roma - Cala Ratjada - Petit Garden Hotel by Flacalco",
-    "produto": "Petit Garden Hotel by Flacalco",
-    "origem": "Roma",
-    "destino": "Cala Ratjada",
-    "preco": 151.56,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-20",
-    "volta": "2026-10-24",
-    "imagem": "https://hotels.staticroot.com/hotels/zo2cnn4dju6bcpvmw589.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46012125497&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 37.89,
-    "mediana_preco_produto": 240.94,
-    "anomalia_preco_percentual": 37.1,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 8,
-    "desconto_percentual": 0,
-    "nexora_score": 85.91,
-    "score_detalhes": {
-      "preco_global": 18.71,
-      "preco_por_dia": 19.56,
-      "destino": 14.63,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 453.66,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 29,
-    "potencial_comercial": 73,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 92.75,
-    "nota_anomalia_ajustada": 74.2,
-    "ranking_final": 80.28,
     "categoria_score": "MUITO BOA"
   }
 ]
