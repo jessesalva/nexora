@@ -1,55 +1,56 @@
 [
   {
-    "nome": "Milano - Sardegna Settentrionale - Residence Le Pavoncelle",
-    "produto": "Residence Le Pavoncelle",
-    "origem": "Milano",
-    "destino": "Sardegna Settentrionale",
-    "preco": 59.39,
+    "nome": "Trieste - Malta - Coral Hotel",
+    "produto": "Coral Hotel",
+    "origem": "Trieste",
+    "destino": "Malta",
+    "preco": 73.46,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-12",
-    "volta": "2026-10-14",
-    "imagem": "https://hotels.staticroot.com/gh/Bilo_living_room_1_oslc73.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46108676179&a=3043221&m=12374",
+    "ida": "2026-12-11",
+    "volta": "2026-12-14",
+    "imagem": "https://hotels.staticroot.com/hotels/k7hoaautwz1cgl4ajg9w.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46095418365&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 29.7,
-    "mediana_preco_produto": 240.64,
-    "anomalia_preco_percentual": 75.32,
+    "duracao_dias": 3,
+    "preco_por_dia": 24.49,
+    "mediana_preco_produto": 292.05,
+    "anomalia_preco_percentual": 74.85,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
+    "amostra_referencia": 5,
     "desconto_percentual": 0,
-    "nexora_score": 86.86,
+    "nexora_score": 85.42,
     "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 19.86,
-      "destino": 15.0,
-      "rota": 10.0,
+      "preco_global": 19.97,
+      "preco_por_dia": 19.97,
+      "destino": 14.01,
+      "rota": 9.47,
       "desconto": 0.0,
       "dados": 8,
-      "data": 8,
-      "duracao": 6
+      "data": 7,
+      "duracao": 7
     },
     "mediana_preco_feed": 453.98,
-    "duracao_validada": 2,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 81,
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
       "excelente_preco_dia",
-      "janela_compra_forte"
+      "duracao_atrativa",
+      "boa_antecedencia"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.07,
+    "ranking_final": 84.18,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -93,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 18,
+    "dias_ate_viagem": 17,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -147,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 62,
+    "dias_ate_viagem": 61,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -201,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -211,59 +212,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 82.74,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Trieste - Malta - Coral Hotel",
-    "produto": "Coral Hotel",
-    "origem": "Trieste",
-    "destino": "Malta",
-    "preco": 73.46,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-12-11",
-    "volta": "2026-12-14",
-    "imagem": "https://hotels.staticroot.com/hotels/k7hoaautwz1cgl4ajg9w.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46095418365&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 24.49,
-    "mediana_preco_produto": 292.05,
-    "anomalia_preco_percentual": 74.85,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 85.42,
-    "score_detalhes": {
-      "preco_global": 19.97,
-      "preco_por_dia": 19.97,
-      "destino": 14.01,
-      "rota": 9.47,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 453.98,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 76,
-    "potencial_comercial": 79,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 82.68,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -307,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -361,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 68,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -370,6 +318,59 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 82.43,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Milano - Sardegna Settentrionale - Residence Le Pavoncelle",
+    "produto": "Residence Le Pavoncelle",
+    "origem": "Milano",
+    "destino": "Sardegna Settentrionale",
+    "preco": 59.39,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-12",
+    "volta": "2026-10-14",
+    "imagem": "https://hotels.staticroot.com/gh/Bilo_living_room_1_oslc73.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46108676179&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 29.7,
+    "mediana_preco_produto": 240.64,
+    "anomalia_preco_percentual": 75.32,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 83.86,
+    "score_detalhes": {
+      "preco_global": 20.0,
+      "preco_por_dia": 19.86,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 453.98,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 81,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 82.42,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -413,7 +414,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -467,7 +468,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -481,57 +482,111 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Milano - Cala Millor - Sol y Mar Apartments",
-    "produto": "Sol y Mar Apartments",
+    "nome": "Milano - Cairo - pyramids grand museum inn",
+    "produto": "pyramids grand museum inn",
     "origem": "Milano",
-    "destino": "Cala Millor",
-    "preco": 138.8,
+    "destino": "Cairo",
+    "preco": 123.4,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-10",
-    "volta": "2026-10-14",
-    "imagem": "https://hotels.staticroot.com/hotels/mnlgxeh7pryjii5ba83o.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46125081857&a=3043221&m=12374",
+    "ida": "2026-12-11",
+    "volta": "2026-12-14",
+    "imagem": "https://hotels.staticroot.com/hotels/y6usvcbwqbustjlom1pb.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46095418845&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 34.7,
-    "mediana_preco_produto": 248.71,
-    "anomalia_preco_percentual": 44.19,
+    "duracao_dias": 3,
+    "preco_por_dia": 41.13,
+    "mediana_preco_produto": 252.14,
+    "anomalia_preco_percentual": 51.06,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 6,
+    "amostra_referencia": 4,
     "desconto_percentual": 0,
-    "nexora_score": 83.81,
+    "nexora_score": 85.83,
     "score_detalhes": {
-      "preco_global": 19.08,
-      "preco_por_dia": 19.73,
+      "preco_global": 19.41,
+      "preco_por_dia": 19.42,
       "destino": 15.0,
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
-      "data": 5,
+      "data": 7,
       "duracao": 7
     },
     "mediana_preco_feed": 453.98,
-    "duracao_validada": 4,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 14,
-    "potencial_comercial": 78,
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 73,
     "sinais_comerciais": [
-      "preco_atrativo",
+      "preco_muito_atrativo",
       "bom_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
+      "duracao_atrativa",
+      "boa_antecedencia"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.5,
+    "ranking_final": 81.11,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Bologna - Malta - The St. George’s Park Hotel",
+    "produto": "The St. George’s Park Hotel",
+    "origem": "Bologna",
+    "destino": "Malta",
+    "preco": 86.29,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-12-11",
+    "volta": "2026-12-14",
+    "imagem": "https://hotels.staticroot.com/hotels/q6le7lfojgjuvzvhlpf7.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46125081316&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 28.76,
+    "mediana_preco_produto": 202.28,
+    "anomalia_preco_percentual": 57.34,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 6,
+    "desconto_percentual": 0,
+    "nexora_score": 81.57,
+    "score_detalhes": {
+      "preco_global": 19.9,
+      "preco_por_dia": 19.89,
+      "destino": 12.41,
+      "rota": 7.37,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 7,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 453.98,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 80,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "boa_antecedencia"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 80.86,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -575,7 +630,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 18,
+    "dias_ate_viagem": 17,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -629,7 +684,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -683,7 +738,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 72,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -737,7 +792,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -791,7 +846,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -845,7 +900,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 69,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -898,7 +953,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -908,6 +963,59 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 79.97,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Torino - Sicilia Occidentale - Hotel Villa d'Amato",
+    "produto": "Hotel Villa d'Amato",
+    "origem": "Torino",
+    "destino": "Sicilia Occidentale",
+    "preco": 85.73,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-11",
+    "volta": "2026-11-13",
+    "imagem": "https://hotels.staticroot.com/gh/HM-patio_jfme6m.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46125081315&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 42.87,
+    "mediana_preco_produto": 142.66,
+    "anomalia_preco_percentual": 39.91,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
+    "desconto_percentual": 0,
+    "nexora_score": 83.06,
+    "score_detalhes": {
+      "preco_global": 19.91,
+      "preco_por_dia": 19.31,
+      "destino": 14.06,
+      "rota": 7.78,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 453.98,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 74,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 99.77,
+    "nota_anomalia_ajustada": 79.82,
+    "ranking_final": 79.86,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -951,7 +1059,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -961,114 +1069,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 79.86,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Napoli - Maiorca - Ona Luna Park - Adults Friendly 16 Years Plus",
-    "produto": "Adults Friendly 16 Years Plus",
-    "origem": "Napoli",
-    "destino": "Maiorca",
-    "preco": 170.6,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-20",
-    "volta": "2026-10-24",
-    "imagem": "https://hotels.staticroot.com/hotels/r4hrulup00khuy82k1vn.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46083742062&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 42.65,
-    "mediana_preco_produto": 340.99,
-    "anomalia_preco_percentual": 49.97,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 83.47,
-    "score_detalhes": {
-      "preco_global": 18.15,
-      "preco_por_dia": 19.33,
-      "destino": 14.22,
-      "rota": 8.77,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 453.98,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 24,
-    "potencial_comercial": 73,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 79.81,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Venezia - Bruxelles - greet Brussels Airport Zaventem",
-    "produto": "greet Brussels Airport Zaventem",
-    "origem": "Venezia",
-    "destino": "Bruxelles",
-    "preco": 134.46,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-12-02",
-    "volta": "2026-12-05",
-    "imagem": "https://hotels.staticroot.com/gh/image-1789049532998_WmGpE7RF3q.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46108676790&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 44.82,
-    "mediana_preco_produto": 319.94,
-    "anomalia_preco_percentual": 57.97,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 7,
-    "desconto_percentual": 0,
-    "nexora_score": 84.34,
-    "score_detalhes": {
-      "preco_global": 19.17,
-      "preco_por_dia": 19.2,
-      "destino": 13.97,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 453.98,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 67,
-    "potencial_comercial": 71,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_atrativa",
-      "boa_antecedencia"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 79.69,
     "categoria_score": "MUITO BOA"
   }
 ]
