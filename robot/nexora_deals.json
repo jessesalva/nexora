@@ -21,7 +21,7 @@
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 9,
     "desconto_percentual": 0,
-    "nexora_score": 86.96,
+    "nexora_score": 87.96,
     "score_detalhes": {
       "preco_global": 19.98,
       "preco_por_dia": 19.98,
@@ -29,7 +29,7 @@
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
-      "data": 7,
+      "data": 8,
       "duracao": 7
     },
     "mediana_preco_feed": 459.46,
@@ -40,17 +40,17 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 84,
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
       "excelente_preco_dia",
       "duracao_atrativa",
-      "boa_antecedencia"
+      "janela_compra_forte"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 85.03,
+    "ranking_final": 86.48,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 45,
+    "dias_ate_viagem": 44,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -159,6 +159,59 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.48,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Catania - Venezia - Club Hotel",
+    "produto": "Club Hotel",
+    "origem": "Catania",
+    "destino": "Venezia",
+    "preco": 68.62,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-17",
+    "volta": "2026-11-19",
+    "imagem": "https://hotels.staticroot.com/hotels/dxrshvtpez3sssiimzqn.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46202101664&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 34.31,
+    "mediana_preco_produto": 129.39,
+    "anomalia_preco_percentual": 46.97,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 86.72,
+    "score_detalhes": {
+      "preco_global": 19.98,
+      "preco_por_dia": 19.74,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 459.46,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 79,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "bom_preco_dia",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 83.4,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -202,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 71,
+    "dias_ate_viagem": 70,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -256,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -310,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -364,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -418,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 49,
+    "dias_ate_viagem": 48,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -472,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 69,
+    "dias_ate_viagem": 68,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -526,7 +579,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -580,7 +633,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 70,
+    "dias_ate_viagem": 69,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -633,7 +686,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -644,59 +697,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.97,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Catania - Venezia - Club Hotel",
-    "produto": "Club Hotel",
-    "origem": "Catania",
-    "destino": "Venezia",
-    "preco": 68.62,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-17",
-    "volta": "2026-11-19",
-    "imagem": "https://hotels.staticroot.com/hotels/dxrshvtpez3sssiimzqn.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46202101664&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 34.31,
-    "mediana_preco_produto": 129.39,
-    "anomalia_preco_percentual": 46.97,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 85.72,
-    "score_detalhes": {
-      "preco_global": 19.98,
-      "preco_por_dia": 19.74,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 459.46,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 76,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "bom_preco_dia",
-      "boa_antecedencia"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.95,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -740,7 +740,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -754,33 +754,33 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Milano - Maiorca - Africamar",
-    "produto": "Africamar",
+    "nome": "Milano - Londra - PremierLux Serviced Apartments",
+    "produto": "PremierLux Serviced Apartments",
     "origem": "Milano",
-    "destino": "Maiorca",
-    "preco": 78.32,
+    "destino": "Londra",
+    "preco": 81.59,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-26",
-    "volta": "2026-10-28",
-    "imagem": "https://hotels.staticroot.com/gh/Africa_Mar_1_plgi5r.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46202101692&a=3043221&m=12374",
+    "ida": "2026-11-17",
+    "volta": "2026-11-19",
+    "imagem": "https://hotels.staticroot.com/hotels/blltr1fbpgohhcq4o16t.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46202101703&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
     "duracao_dias": 2,
-    "preco_por_dia": 39.16,
-    "mediana_preco_produto": 148.59,
-    "anomalia_preco_percentual": 47.29,
+    "preco_por_dia": 40.8,
+    "mediana_preco_produto": 171.0,
+    "anomalia_preco_percentual": 52.29,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 5,
     "desconto_percentual": 0,
-    "nexora_score": 85.73,
+    "nexora_score": 86.31,
     "score_detalhes": {
-      "preco_global": 19.91,
-      "preco_por_dia": 19.5,
-      "destino": 14.92,
-      "rota": 9.4,
+      "preco_global": 19.89,
+      "preco_por_dia": 19.42,
+      "destino": 15.0,
+      "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
       "data": 8,
@@ -794,7 +794,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 45,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -803,7 +803,60 @@
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.35,
+    "ranking_final": 81.67,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Catania - Venezia - hu Venezia Camping in Town",
+    "produto": "hu Venezia Camping in Town",
+    "origem": "Catania",
+    "destino": "Venezia",
+    "preco": 69.5,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-17",
+    "volta": "2026-11-19",
+    "imagem": "https://hotels.staticroot.com/gh/bungalow-superior_16634579922_o_w1cjs2.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46202101665&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 34.75,
+    "mediana_preco_produto": 256.82,
+    "anomalia_preco_percentual": 72.94,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 82.84,
+    "score_detalhes": {
+      "preco_global": 19.97,
+      "preco_por_dia": 19.72,
+      "destino": 14.48,
+      "rota": 6.67,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 459.46,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 79,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "bom_preco_dia",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 81.26,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -847,7 +900,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 71,
+    "dias_ate_viagem": 70,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -901,7 +954,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 75,
+    "dias_ate_viagem": 74,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -955,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 72,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1009,7 +1062,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 56,
+    "dias_ate_viagem": 55,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1020,58 +1073,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 80.08,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Venezia - Nanterre - Appart'hôtel Odalys City Campus - Paris Rueil Malmaison",
-    "produto": "Paris Rueil Malmaison",
-    "origem": "Venezia",
-    "destino": "Nanterre",
-    "preco": 97.03,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-06",
-    "volta": "2026-11-08",
-    "imagem": "https://hotels.staticroot.com/hotels/mexesyd3dqaoz6tadaah.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46202101794&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 48.52,
-    "mediana_preco_produto": 221.2,
-    "anomalia_preco_percentual": 56.13,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 11,
-    "desconto_percentual": 0,
-    "nexora_score": 85.49,
-    "score_detalhes": {
-      "preco_global": 19.75,
-      "preco_por_dia": 18.74,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 459.46,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 35,
-    "potencial_comercial": 70,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 80.02,
     "categoria_score": "MUITO BOA"
   }
 ]
