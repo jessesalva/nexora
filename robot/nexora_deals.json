@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -93,7 +93,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -147,7 +147,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -201,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 59,
+    "dias_ate_viagem": 58,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -308,7 +308,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -362,7 +362,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 67,
+    "dias_ate_viagem": 66,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -416,7 +416,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 67,
+    "dias_ate_viagem": 66,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -470,7 +470,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -524,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 44,
+    "dias_ate_viagem": 43,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -577,7 +577,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -631,7 +631,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -684,7 +684,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -738,7 +738,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -792,7 +792,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -846,7 +846,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 45,
+    "dias_ate_viagem": 44,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -899,7 +899,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -951,7 +951,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1005,7 +1005,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1018,57 +1018,57 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Catania - Riviera Albanese - Hotel Vila Alvin & Apartments",
-    "produto": "Hotel Vila Alvin & Apartments",
-    "origem": "Catania",
-    "destino": "Riviera Albanese",
-    "preco": 95.5,
+    "nome": "Bologna - Costa Nord-Orientale, Tunisia - Hotel Le Khalife",
+    "produto": "Hotel Le Khalife",
+    "origem": "Bologna",
+    "destino": "Costa Nord-Orientale, Tunisia",
+    "preco": 179.99,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-10-28",
-    "volta": "2026-11-02",
-    "imagem": "https://hotels.staticroot.com/hotels/usymgkehsbx3mempajfg.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46312671470&a=3043221&m=12374",
+    "ida": "2026-10-31",
+    "volta": "2026-11-07",
+    "imagem": "https://hotels.staticroot.com/hotels/wnsfnxxcszxtxvg3zufh.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46312673664&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 5,
-    "preco_por_dia": 19.1,
-    "mediana_preco_produto": 151.42,
-    "anomalia_preco_percentual": 36.93,
+    "duracao_dias": 7,
+    "preco_por_dia": 25.71,
+    "mediana_preco_produto": 303.61,
+    "anomalia_preco_percentual": 40.72,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "BAIXA",
-    "tipo_referencia_preco": "produto",
-    "amostra_referencia": 10,
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
     "desconto_percentual": 0,
-    "nexora_score": 84.32,
+    "nexora_score": 82.77,
     "score_detalhes": {
-      "preco_global": 19.82,
-      "preco_por_dia": 20.0,
-      "destino": 14.5,
-      "rota": 10.0,
+      "preco_global": 17.78,
+      "preco_por_dia": 19.94,
+      "destino": 14.55,
+      "rota": 8.5,
       "desconto": 0.0,
       "dados": 8,
-      "data": 5,
-      "duracao": 7
+      "data": 8,
+      "duracao": 6
     },
     "mediana_preco_feed": 490.78,
-    "duracao_validada": 5,
+    "duracao_validada": 7,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 14,
-    "potencial_comercial": 87,
+    "dias_ate_viagem": 16,
+    "potencial_comercial": 75,
     "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "preco_dia_excepcional",
+      "preco_atrativo",
+      "excelente_preco_dia",
       "duracao_atrativa",
       "janela_compra_forte"
     ],
-    "nota_anomalia": 92.33,
-    "nota_anomalia_ajustada": 50.78,
-    "ranking_final": 80.09,
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 80.02,
     "categoria_score": "MUITO BOA"
   }
 ]
