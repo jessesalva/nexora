@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 64,
+    "dias_ate_viagem": 63,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -363,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -417,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -470,7 +470,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -524,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -578,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -632,7 +632,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 61,
+    "dias_ate_viagem": 60,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -686,7 +686,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -740,7 +740,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -794,7 +794,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -805,60 +805,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.02,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Roma - Letojanni - Dolce Casa n41",
-    "produto": "Dolce Casa n41",
-    "origem": "Roma",
-    "destino": "Letojanni",
-    "preco": 171.51,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-31",
-    "volta": "2026-11-04",
-    "imagem": "https://hotels.staticroot.com/hotels/mhlizqonllpsx7m79coi.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46083742203&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 42.88,
-    "mediana_preco_produto": 291.14,
-    "anomalia_preco_percentual": 41.09,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 85.51,
-    "score_detalhes": {
-      "preco_global": 18.18,
-      "preco_por_dia": 19.33,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 505.55,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 73,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_ideal",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 80.93,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -902,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -956,7 +902,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1009,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1063,7 +1009,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 64,
+    "dias_ate_viagem": 63,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1074,6 +1020,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 55.0,
     "ranking_final": 79.98,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Pisa - Charenton-le-Pont - Campanile Créteil Centre",
+    "produto": "Campanile Créteil Centre",
+    "origem": "Pisa",
+    "destino": "Charenton-le-Pont",
+    "preco": 125.91,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-12-19",
+    "volta": "2026-12-22",
+    "imagem": "https://hotels.staticroot.com/gh/fnc4x5uj78ple6eygxpw.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46320503160&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 41.97,
+    "mediana_preco_produto": 205.74,
+    "anomalia_preco_percentual": 38.8,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 8,
+    "desconto_percentual": 0,
+    "nexora_score": 85.49,
+    "score_detalhes": {
+      "preco_global": 19.37,
+      "preco_por_dia": 19.4,
+      "destino": 14.73,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 7,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 505.55,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 64,
+    "potencial_comercial": 71,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
+      "boa_antecedencia"
+    ],
+    "nota_anomalia": 97.0,
+    "nota_anomalia_ajustada": 77.6,
+    "ranking_final": 79.96,
     "categoria_score": "MUITO BOA"
   }
 ]
