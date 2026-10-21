@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 37,
+    "dias_ate_viagem": 36,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 24,
+    "dias_ate_viagem": 23,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -254,7 +254,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -308,7 +308,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -362,7 +362,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -416,7 +416,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -428,59 +428,6 @@
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 82.19,
     "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Torino - Riviera Albanese - New Donantelo Hotel",
-    "produto": "New Donantelo Hotel",
-    "origem": "Torino",
-    "destino": "Riviera Albanese",
-    "preco": 46.47,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-27",
-    "volta": "2026-10-29",
-    "imagem": "https://hotels.staticroot.com/hotels/hubea3aqoikrz9fmv2r1.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46385736878&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 23.23,
-    "mediana_preco_produto": 84.41,
-    "anomalia_preco_percentual": 44.95,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 83.95,
-    "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 19.95,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 496.92,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 79,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.87,
-    "categoria_score": "MUITO BOA"
   },
   {
     "nome": "Milano - Sicilia Orientale - Modica Inn Centro, BW Premier Collection",
@@ -523,7 +470,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -577,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -631,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -685,7 +632,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 41,
+    "dias_ate_viagem": 40,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -738,7 +685,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 51,
+    "dias_ate_viagem": 50,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -749,6 +696,114 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.42,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Bologna - Costa Nord-Orientale, Tunisia - Treehouse Hotel",
+    "produto": "Treehouse Hotel",
+    "origem": "Bologna",
+    "destino": "Costa Nord-Orientale, Tunisia",
+    "preco": 156.64,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-12-05",
+    "volta": "2026-12-09",
+    "imagem": "https://hotels.staticroot.com/hotels/vogoftobxo8upheob5dn.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46385738159&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 4,
+    "preco_por_dia": 39.16,
+    "mediana_preco_produto": 313.81,
+    "anomalia_preco_percentual": 50.08,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 85.55,
+    "score_detalhes": {
+      "preco_global": 18.69,
+      "preco_por_dia": 19.53,
+      "destino": 14.84,
+      "rota": 9.5,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 496.92,
+    "duracao_validada": 4,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 73,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "bom_preco_dia",
+      "duracao_ideal",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 80.95,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Bologna - Costa Nord-Orientale, Tunisia - Residence Boujaafar",
+    "produto": "Residence Boujaafar",
+    "origem": "Bologna",
+    "destino": "Costa Nord-Orientale, Tunisia",
+    "preco": 159.14,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-12-05",
+    "volta": "2026-12-09",
+    "imagem": "https://hotels.staticroot.com/hotels/r3uhtkevyrzaranko0n1.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46385738198&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 4,
+    "preco_por_dia": 39.78,
+    "mediana_preco_produto": 316.32,
+    "anomalia_preco_percentual": 49.69,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 85.12,
+    "score_detalhes": {
+      "preco_global": 18.62,
+      "preco_por_dia": 19.5,
+      "destino": 14.76,
+      "rota": 9.25,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 496.92,
+    "duracao_validada": 4,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 73,
+    "sinais_comerciais": [
+      "preco_atrativo",
+      "bom_preco_dia",
+      "duracao_ideal",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 80.72,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -792,7 +847,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -846,7 +901,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -899,7 +954,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -953,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 61,
+    "dias_ate_viagem": 60,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1007,65 +1062,11 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 68,
     "sinais_comerciais": [
       "preco_muito_atrativo",
       "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 79.5,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Bologna - Costa Nord-Orientale, Tunisia - Treehouse Hotel",
-    "produto": "Treehouse Hotel",
-    "origem": "Bologna",
-    "destino": "Costa Nord-Orientale, Tunisia",
-    "preco": 156.64,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-12-05",
-    "volta": "2026-12-09",
-    "imagem": "https://hotels.staticroot.com/hotels/vogoftobxo8upheob5dn.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46385738159&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 4,
-    "preco_por_dia": 39.16,
-    "mediana_preco_produto": 313.81,
-    "anomalia_preco_percentual": 50.08,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 84.55,
-    "score_detalhes": {
-      "preco_global": 18.69,
-      "preco_por_dia": 19.53,
-      "destino": 14.84,
-      "rota": 9.5,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 7,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 496.92,
-    "duracao_validada": 4,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 46,
-    "potencial_comercial": 70,
-    "sinais_comerciais": [
-      "preco_atrativo",
-      "bom_preco_dia",
-      "duracao_ideal",
-      "boa_antecedencia"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
