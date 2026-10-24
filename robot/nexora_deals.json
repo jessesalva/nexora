@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 20,
+    "dias_ate_viagem": 19,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -93,7 +93,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -147,7 +147,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -201,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 32,
+    "dias_ate_viagem": 31,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 50,
+    "dias_ate_viagem": 49,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 48,
+    "dias_ate_viagem": 47,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -363,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 35,
+    "dias_ate_viagem": 34,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -417,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -470,7 +470,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -524,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -578,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 32,
+    "dias_ate_viagem": 31,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -632,7 +632,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -686,7 +686,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 52,
+    "dias_ate_viagem": 51,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -698,59 +698,6 @@
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 82.18,
     "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Palermo - Firenze - hu Firenze Camping in Town",
-    "produto": "hu Firenze Camping in Town",
-    "origem": "Palermo",
-    "destino": "Firenze",
-    "preco": 81.15,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-08",
-    "volta": "2026-11-10",
-    "imagem": "https://hotels.staticroot.com/gh/212061365_qlrbtl.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46394328810&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 40.58,
-    "mediana_preco_produto": 302.26,
-    "anomalia_preco_percentual": 73.15,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 86.31,
-    "score_detalhes": {
-      "preco_global": 19.87,
-      "preco_por_dia": 19.44,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 6
-    },
-    "mediana_preco_feed": 512.17,
-    "duracao_validada": 2,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 74,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "bom_preco_dia",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 81.67,
-    "categoria_score": "MUITO BOA"
   },
   {
     "nome": "Venezia - Parigi - Campanile NATURE - Paris Ouest Gennevilliers Port",
@@ -793,7 +740,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -847,7 +794,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -901,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 10,
+    "dias_ate_viagem": 9,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -955,7 +902,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 106,
+    "dias_ate_viagem": 105,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -1007,7 +954,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 18,
+    "dias_ate_viagem": 17,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1059,7 +1006,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 13,
+    "dias_ate_viagem": 12,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1070,6 +1017,59 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 80.25,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Venezia - Costa di Valencia - Flag Hotel Valencia",
+    "produto": "Flag Hotel Valencia",
+    "origem": "Venezia",
+    "destino": "Costa di Valencia",
+    "preco": 79.64,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-24",
+    "volta": "2026-11-26",
+    "imagem": "https://hotels.staticroot.com/hotels/t3ryoptvgmm6nkqmajs3.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46413967658&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 39.82,
+    "mediana_preco_produto": 122.67,
+    "anomalia_preco_percentual": 35.08,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 86.36,
+    "score_detalhes": {
+      "preco_global": 19.89,
+      "preco_por_dia": 19.47,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 512.17,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 31,
+    "potencial_comercial": 74,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 87.7,
+    "nota_anomalia_ajustada": 70.16,
+    "ranking_final": 80.22,
     "categoria_score": "MUITO BOA"
   }
 ]
