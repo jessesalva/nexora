@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -93,7 +93,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 48,
+    "dias_ate_viagem": 47,
     "potencial_comercial": 84,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -147,7 +147,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -200,7 +200,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 34,
+    "dias_ate_viagem": 33,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -211,60 +211,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 83.23,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Catania - Riviera Albanese - New Donantelo Hotel",
-    "produto": "New Donantelo Hotel",
-    "origem": "Catania",
-    "destino": "Riviera Albanese",
-    "preco": 60.76,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-31",
-    "volta": "2026-11-03",
-    "imagem": "https://hotels.staticroot.com/hotels/hubea3aqoikrz9fmv2r1.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46421805204&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 20.25,
-    "mediana_preco_produto": 93.93,
-    "anomalia_preco_percentual": 35.31,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 6,
-    "desconto_percentual": 0,
-    "nexora_score": 84.68,
-    "score_detalhes": {
-      "preco_global": 19.99,
-      "preco_por_dia": 19.99,
-      "destino": 14.7,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 506.44,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 83,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 88.28,
-    "nota_anomalia_ajustada": 70.62,
-    "ranking_final": 82.07,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -308,7 +254,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 29,
+    "dias_ate_viagem": 28,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -318,60 +264,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.77,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Catania - Riviera Albanese - Grace Corner",
-    "produto": "Grace Corner",
-    "origem": "Catania",
-    "destino": "Riviera Albanese",
-    "preco": 65.98,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-10-31",
-    "volta": "2026-11-03",
-    "imagem": "https://hotels.staticroot.com/hotels/jhfg8p5uqraztflyunrd.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46421805214&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 21.99,
-    "mediana_preco_produto": 99.8,
-    "anomalia_preco_percentual": 33.88,
-    "sinal_anomalia_preco": "preco_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 6,
-    "desconto_percentual": 0,
-    "nexora_score": 83.63,
-    "score_detalhes": {
-      "preco_global": 19.97,
-      "preco_por_dia": 19.98,
-      "destino": 14.6,
-      "rota": 9.09,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 506.44,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 83,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 84.7,
-    "nota_anomalia_ajustada": 67.76,
-    "ranking_final": 81.06,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -415,7 +307,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -469,7 +361,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -523,7 +415,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 77,
+    "dias_ate_viagem": 76,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -576,7 +468,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -630,7 +522,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -684,7 +576,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 105,
+    "dias_ate_viagem": 104,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -693,6 +585,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 80.48,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Venezia - Barcellona - Hotel El Castell",
+    "produto": "Hotel El Castell",
+    "origem": "Venezia",
+    "destino": "Barcellona",
+    "preco": 105.05,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2027-01-08",
+    "volta": "2027-01-11",
+    "imagem": "https://hotels.staticroot.com/hotels/mnq4dqsdyjaqivlmtglp.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46413967810&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 35.02,
+    "mediana_preco_produto": 168.37,
+    "anomalia_preco_percentual": 37.61,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
+    "desconto_percentual": 0,
+    "nexora_score": 85.89,
+    "score_detalhes": {
+      "preco_global": 19.67,
+      "preco_por_dia": 19.71,
+      "destino": 14.52,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 7,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 506.44,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 75,
+    "potencial_comercial": 73,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
+      "boa_antecedencia"
+    ],
+    "nota_anomalia": 94.03,
+    "nota_anomalia_ajustada": 75.22,
+    "ranking_final": 80.42,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -736,7 +682,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 48,
+    "dias_ate_viagem": 47,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -789,7 +735,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -841,7 +787,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 15,
+    "dias_ate_viagem": 14,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -894,7 +840,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -948,7 +894,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -959,6 +905,60 @@
     "nota_anomalia": 75.15,
     "nota_anomalia_ajustada": 60.12,
     "ranking_final": 79.16,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Catania - Riviera Albanese - New Donantelo Hotel",
+    "produto": "New Donantelo Hotel",
+    "origem": "Catania",
+    "destino": "Riviera Albanese",
+    "preco": 60.76,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-10-31",
+    "volta": "2026-11-03",
+    "imagem": "https://hotels.staticroot.com/hotels/hubea3aqoikrz9fmv2r1.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46421805204&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 20.25,
+    "mediana_preco_produto": 93.93,
+    "anomalia_preco_percentual": 35.31,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 6,
+    "desconto_percentual": 0,
+    "nexora_score": 84.68,
+    "score_detalhes": {
+      "preco_global": 19.99,
+      "preco_por_dia": 19.99,
+      "destino": 14.7,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 506.44,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 6,
+    "potencial_comercial": 73,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "ultima_hora"
+    ],
+    "nota_anomalia": 88.28,
+    "nota_anomalia_ajustada": 70.62,
+    "ranking_final": 79.07,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -1002,7 +1002,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 48,
+    "dias_ate_viagem": 47,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1015,56 +1015,55 @@
     "categoria_score": "MUITO BOA"
   },
   {
-    "nome": "Venezia - Barcellona - Hotel El Castell",
-    "produto": "Hotel El Castell",
+    "nome": "Venezia - Praga - a&o Prague Rhea",
+    "produto": "a&o Prague Rhea",
     "origem": "Venezia",
-    "destino": "Barcellona",
-    "preco": 105.05,
+    "destino": "Praga",
+    "preco": 94.31,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2027-01-08",
-    "volta": "2027-01-11",
-    "imagem": "https://hotels.staticroot.com/hotels/mnq4dqsdyjaqivlmtglp.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46413967810&a=3043221&m=12374",
+    "ida": "2026-12-09",
+    "volta": "2026-12-11",
+    "imagem": "https://hotels.staticroot.com/hotels/bbhxypora7ia7zvydqz1.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46421805294&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 35.02,
-    "mediana_preco_produto": 168.37,
-    "anomalia_preco_percentual": 37.61,
+    "duracao_dias": 2,
+    "preco_por_dia": 47.16,
+    "mediana_preco_produto": 231.87,
+    "anomalia_preco_percentual": 59.33,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
+    "amostra_referencia": 4,
     "desconto_percentual": 0,
-    "nexora_score": 85.89,
+    "nexora_score": 83.53,
     "score_detalhes": {
-      "preco_global": 19.67,
-      "preco_por_dia": 19.71,
-      "destino": 14.52,
-      "rota": 10.0,
+      "preco_global": 19.79,
+      "preco_por_dia": 19.16,
+      "destino": 13.69,
+      "rota": 8.89,
       "desconto": 0.0,
       "dados": 8,
-      "data": 7,
-      "duracao": 7
+      "data": 8,
+      "duracao": 6
     },
     "mediana_preco_feed": 506.44,
-    "duracao_validada": 3,
+    "duracao_validada": 2,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 76,
-    "potencial_comercial": 68,
+    "dias_ate_viagem": 45,
+    "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
-      "bom_preco_dia",
-      "duracao_atrativa"
+      "janela_compra_forte"
     ],
-    "nota_anomalia": 94.03,
-    "nota_anomalia_ajustada": 75.22,
-    "ranking_final": 78.92,
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 78.94,
     "categoria_score": "MUITO BOA"
   }
 ]
