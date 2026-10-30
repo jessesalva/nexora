@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 32,
+    "dias_ate_viagem": 31,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -201,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -320,60 +320,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 100.0,
     "ranking_final": 84.37,
-    "categoria_score": "EXCELENTE"
-  },
-  {
-    "nome": "Torino - Riviera Albanese - Villa Gaudium",
-    "produto": "Villa Gaudium",
-    "origem": "Torino",
-    "destino": "Riviera Albanese",
-    "preco": 59.41,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-05",
-    "volta": "2026-11-08",
-    "imagem": "https://hotels.staticroot.com/hotels/xo5bqvtqstf3ezql39wx.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46500474379&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 19.8,
-    "mediana_preco_produto": 157.94,
-    "anomalia_preco_percentual": 62.38,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 5,
-    "desconto_percentual": 0,
-    "nexora_score": 84.58,
-    "score_detalhes": {
-      "preco_global": 19.99,
-      "preco_por_dia": 19.98,
-      "destino": 14.96,
-      "rota": 9.66,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 485.6,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 85,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "preco_dia_excepcional",
-      "duracao_atrativa",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.02,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -417,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 88,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
+    "dias_ate_viagem": 71,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -525,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 42,
+    "dias_ate_viagem": 41,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -579,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 106,
+    "dias_ate_viagem": 105,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -632,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 72,
+    "dias_ate_viagem": 71,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -686,7 +632,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -740,7 +686,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -794,7 +740,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -848,7 +794,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -902,7 +848,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -912,6 +858,60 @@
     "nota_anomalia": 76.25,
     "nota_anomalia_ajustada": 61.0,
     "ranking_final": 81.15,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Torino - Riviera Albanese - Villa Gaudium",
+    "produto": "Villa Gaudium",
+    "origem": "Torino",
+    "destino": "Riviera Albanese",
+    "preco": 59.41,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-05",
+    "volta": "2026-11-08",
+    "imagem": "https://hotels.staticroot.com/hotels/xo5bqvtqstf3ezql39wx.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46500474379&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 19.8,
+    "mediana_preco_produto": 157.94,
+    "anomalia_preco_percentual": 62.38,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 5,
+    "desconto_percentual": 0,
+    "nexora_score": 84.58,
+    "score_detalhes": {
+      "preco_global": 19.99,
+      "preco_por_dia": 19.98,
+      "destino": 14.96,
+      "rota": 9.66,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 485.6,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 6,
+    "potencial_comercial": 75,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "preco_dia_excepcional",
+      "duracao_atrativa",
+      "ultima_hora"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 81.02,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -955,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -1008,7 +1008,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 71,
+    "dias_ate_viagem": 70,
     "potencial_comercial": 71,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1062,7 +1062,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 75,
+    "dias_ate_viagem": 74,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
