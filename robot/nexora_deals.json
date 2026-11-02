@@ -1,59 +1,5 @@
 [
   {
-    "nome": "Venezia - Marrakech - Le Relais De Marrakech",
-    "produto": "Le Relais De Marrakech",
-    "origem": "Venezia",
-    "destino": "Marrakech",
-    "preco": 71.34,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-17",
-    "volta": "2026-11-20",
-    "imagem": "https://hotels.staticroot.com/gh/piscine_relais_xoc7x7.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46541301937&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 23.78,
-    "mediana_preco_produto": 128.67,
-    "anomalia_preco_percentual": 44.56,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 87.89,
-    "score_detalhes": {
-      "preco_global": 19.93,
-      "preco_por_dia": 19.95,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 496.63,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 87,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 100,
-    "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 86.44,
-    "categoria_score": "EXCELENTE"
-  },
-  {
     "nome": "Milano - Sicilia Occidentale - Residence Garibaldi",
     "produto": "Residence Garibaldi",
     "origem": "Milano",
@@ -94,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -105,6 +51,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 85.02,
+    "categoria_score": "EXCELENTE"
+  },
+  {
+    "nome": "Venezia - Marrakech - Le Relais De Marrakech",
+    "produto": "Le Relais De Marrakech",
+    "origem": "Venezia",
+    "destino": "Marrakech",
+    "preco": 71.34,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-17",
+    "volta": "2026-11-20",
+    "imagem": "https://hotels.staticroot.com/gh/piscine_relais_xoc7x7.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46541301937&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 23.78,
+    "mediana_preco_produto": 128.67,
+    "anomalia_preco_percentual": 44.56,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 84.89,
+    "score_detalhes": {
+      "preco_global": 19.93,
+      "preco_por_dia": 19.95,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 496.63,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 87,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "excelente_preco_dia",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 84.79,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 21,
+    "dias_ate_viagem": 20,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -308,7 +308,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 47,
+    "dias_ate_viagem": 46,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -361,7 +361,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 43,
+    "dias_ate_viagem": 42,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -415,7 +415,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -467,7 +467,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -521,7 +521,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 39,
+    "dias_ate_viagem": 38,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -532,60 +532,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.75,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Venezia - Riviera Albanese - HotelStina",
-    "produto": "HotelStina",
-    "origem": "Venezia",
-    "destino": "Riviera Albanese",
-    "preco": 89.19,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-08",
-    "volta": "2026-11-11",
-    "imagem": "https://hotels.staticroot.com/hotels/vn7y5dfirdam9g27fevr.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46541302032&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 29.73,
-    "mediana_preco_produto": 147.62,
-    "anomalia_preco_percentual": 39.58,
-    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 3,
-    "desconto_percentual": 0,
-    "nexora_score": 83.61,
-    "score_detalhes": {
-      "preco_global": 19.79,
-      "preco_por_dia": 19.83,
-      "destino": 13.99,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 5,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 496.63,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 7,
-    "potencial_comercial": 79,
-    "sinais_comerciais": [
-      "preco_muito_atrativo",
-      "excelente_preco_dia",
-      "duracao_atrativa",
-      "oportunidade_curto_prazo"
-    ],
-    "nota_anomalia": 98.95,
-    "nota_anomalia_ajustada": 79.16,
-    "ranking_final": 81.56,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -629,7 +575,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 95,
+    "dias_ate_viagem": 94,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -682,7 +628,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 79,
+    "dias_ate_viagem": 78,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -735,7 +681,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 38,
+    "dias_ate_viagem": 37,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -788,7 +734,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 26,
+    "dias_ate_viagem": 25,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -841,7 +787,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 79,
+    "dias_ate_viagem": 78,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -894,7 +840,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 95,
+    "dias_ate_viagem": 94,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -947,7 +893,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 22,
+    "dias_ate_viagem": 21,
     "potencial_comercial": 75,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1001,7 +947,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -1054,7 +1000,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 72,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1065,6 +1011,58 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 79.31,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Venezia - Costa di Barcellona - Hotel 153",
+    "produto": "Hotel 153",
+    "origem": "Venezia",
+    "destino": "Costa di Barcellona",
+    "preco": 101.81,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-12-16",
+    "volta": "2026-12-18",
+    "imagem": "https://hotels.staticroot.com/hotels/rjoubqmq3zmm2ykrhjri.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46541302135&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 2,
+    "preco_por_dia": 50.91,
+    "mediana_preco_produto": 185.73,
+    "anomalia_preco_percentual": 45.18,
+    "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 3,
+    "desconto_percentual": 0,
+    "nexora_score": 85.16,
+    "score_detalhes": {
+      "preco_global": 19.62,
+      "preco_por_dia": 18.67,
+      "destino": 14.88,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 8,
+      "duracao": 6
+    },
+    "mediana_preco_feed": 496.63,
+    "duracao_validada": 2,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 44,
+    "potencial_comercial": 68,
+    "sinais_comerciais": [
+      "preco_muito_atrativo",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 100,
+    "nota_anomalia_ajustada": 80.0,
+    "ranking_final": 79.24,
     "categoria_score": "MUITO BOA"
   }
 ]
