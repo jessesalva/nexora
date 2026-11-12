@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 114,
+    "dias_ate_viagem": 113,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -201,7 +201,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -255,7 +255,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 59,
+    "dias_ate_viagem": 58,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -309,7 +309,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -363,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 22,
+    "dias_ate_viagem": 21,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -417,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -471,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -525,7 +525,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -578,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -632,7 +632,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 36,
+    "dias_ate_viagem": 35,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -686,7 +686,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 61,
+    "dias_ate_viagem": 60,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -739,7 +739,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 65,
+    "dias_ate_viagem": 64,
     "potencial_comercial": 80,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -750,60 +750,6 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 81.72,
-    "categoria_score": "MUITO BOA"
-  },
-  {
-    "nome": "Bari - Malta - Cardor Holiday Complex",
-    "produto": "Cardor Holiday Complex",
-    "origem": "Bari",
-    "destino": "Malta",
-    "preco": 56.46,
-    "preco_original": null,
-    "moeda": "EUR",
-    "ida": "2026-11-27",
-    "volta": "2026-11-30",
-    "imagem": "https://hotels.staticroot.com/hotels/q6ir1jweqewfqtgovcx4.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46695040701&a=3043221&m=12374",
-    "fornecedor": "lastminute.com",
-    "duracao_dias": 3,
-    "preco_por_dia": 18.82,
-    "mediana_preco_produto": 71.23,
-    "anomalia_preco_percentual": 20.74,
-    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
-    "confianca_anomalia": "MEDIA",
-    "tipo_referencia_preco": "produto_duracao",
-    "amostra_referencia": 4,
-    "desconto_percentual": 0,
-    "nexora_score": 88.0,
-    "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 20.0,
-      "destino": 15.0,
-      "rota": 10.0,
-      "desconto": 0.0,
-      "dados": 8,
-      "data": 8,
-      "duracao": 7
-    },
-    "mediana_preco_feed": 484.03,
-    "duracao_validada": 3,
-    "validacao_comercial": {
-      "aprovada": true,
-      "nivel": "APROVADA",
-      "motivos": [],
-      "alertas": []
-    },
-    "dias_ate_viagem": 16,
-    "potencial_comercial": 89,
-    "sinais_comerciais": [
-      "preco_excepcional",
-      "preco_dia_excepcional",
-      "duracao_atrativa",
-      "janela_compra_forte"
-    ],
-    "nota_anomalia": 51.85,
-    "nota_anomalia_ajustada": 41.48,
-    "ranking_final": 81.32,
     "categoria_score": "MUITO BOA"
   },
   {
@@ -847,7 +793,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 30,
+    "dias_ate_viagem": 29,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -901,7 +847,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 40,
+    "dias_ate_viagem": 39,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -954,7 +900,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 74,
+    "dias_ate_viagem": 73,
     "potencial_comercial": 72,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1008,7 +954,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1060,7 +1006,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 33,
+    "dias_ate_viagem": 32,
     "potencial_comercial": 70,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -1069,6 +1015,60 @@
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
     "ranking_final": 79.77,
+    "categoria_score": "MUITO BOA"
+  },
+  {
+    "nome": "Bari - Malta - Cardor Holiday Complex",
+    "produto": "Cardor Holiday Complex",
+    "origem": "Bari",
+    "destino": "Malta",
+    "preco": 56.46,
+    "preco_original": null,
+    "moeda": "EUR",
+    "ida": "2026-11-27",
+    "volta": "2026-11-30",
+    "imagem": "https://hotels.staticroot.com/hotels/q6ir1jweqewfqtgovcx4.jpg",
+    "link": "https://www.awin1.com/pclick.php?p=46695040701&a=3043221&m=12374",
+    "fornecedor": "lastminute.com",
+    "duracao_dias": 3,
+    "preco_por_dia": 18.82,
+    "mediana_preco_produto": 71.23,
+    "anomalia_preco_percentual": 20.74,
+    "sinal_anomalia_preco": "preco_abaixo_da_mediana",
+    "confianca_anomalia": "MEDIA",
+    "tipo_referencia_preco": "produto_duracao",
+    "amostra_referencia": 4,
+    "desconto_percentual": 0,
+    "nexora_score": 85.0,
+    "score_detalhes": {
+      "preco_global": 20.0,
+      "preco_por_dia": 20.0,
+      "destino": 15.0,
+      "rota": 10.0,
+      "desconto": 0.0,
+      "dados": 8,
+      "data": 5,
+      "duracao": 7
+    },
+    "mediana_preco_feed": 484.03,
+    "duracao_validada": 3,
+    "validacao_comercial": {
+      "aprovada": true,
+      "nivel": "APROVADA",
+      "motivos": [],
+      "alertas": []
+    },
+    "dias_ate_viagem": 15,
+    "potencial_comercial": 89,
+    "sinais_comerciais": [
+      "preco_excepcional",
+      "preco_dia_excepcional",
+      "duracao_atrativa",
+      "janela_compra_forte"
+    ],
+    "nota_anomalia": 51.85,
+    "nota_anomalia_ajustada": 41.48,
+    "ranking_final": 79.67,
     "categoria_score": "MUITO BOA"
   }
 ]
