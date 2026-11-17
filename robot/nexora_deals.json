@@ -40,7 +40,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 23,
+    "dias_ate_viagem": 22,
     "potencial_comercial": 83,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -94,7 +94,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -148,7 +148,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -202,7 +202,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 82,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -216,56 +216,57 @@
     "categoria_score": "EXCELENTE"
   },
   {
-    "nome": "Bari - Roma - Seven Hills Camping Village",
+    "nome": "Cagliari - Roma - Seven Hills Camping Village",
     "produto": "Seven Hills Camping Village",
-    "origem": "Bari",
+    "origem": "Cagliari",
     "destino": "Roma",
-    "preco": 58.47,
+    "preco": 90.07,
     "preco_original": null,
     "moeda": "EUR",
-    "ida": "2026-12-11",
-    "volta": "2026-12-13",
+    "ida": "2027-01-01",
+    "volta": "2027-01-04",
     "imagem": "https://hotels.staticroot.com/hotels/c53xzo9otnpaqi95diir.jpg",
-    "link": "https://www.awin1.com/pclick.php?p=46219112245&a=3043221&m=12374",
+    "link": "https://www.awin1.com/pclick.php?p=46812433875&a=3043221&m=12374",
     "fornecedor": "lastminute.com",
-    "duracao_dias": 2,
-    "preco_por_dia": 29.23,
-    "mediana_preco_produto": 165.26,
-    "anomalia_preco_percentual": 64.62,
+    "duracao_dias": 3,
+    "preco_por_dia": 30.02,
+    "mediana_preco_produto": 204.59,
+    "anomalia_preco_percentual": 55.98,
     "sinal_anomalia_preco": "preco_muito_fora_do_padrao",
     "confianca_anomalia": "MEDIA",
     "tipo_referencia_preco": "produto_duracao",
     "amostra_referencia": 7,
     "desconto_percentual": 0,
-    "nexora_score": 86.9,
+    "nexora_score": 87.22,
     "score_detalhes": {
-      "preco_global": 20.0,
-      "preco_por_dia": 19.9,
-      "destino": 15.0,
+      "preco_global": 19.83,
+      "preco_por_dia": 19.88,
+      "destino": 14.51,
       "rota": 10.0,
       "desconto": 0.0,
       "dados": 8,
       "data": 8,
-      "duracao": 6
+      "duracao": 7
     },
     "mediana_preco_feed": 504.67,
-    "duracao_validada": 2,
+    "duracao_validada": 3,
     "validacao_comercial": {
       "aprovada": true,
       "nivel": "APROVADA",
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 45,
     "potencial_comercial": 81,
     "sinais_comerciais": [
-      "preco_excepcional",
-      "excelente_preco_dia",
+      "preco_muito_atrativo",
+      "bom_preco_dia",
+      "duracao_atrativa",
       "janela_compra_forte"
     ],
     "nota_anomalia": 100,
     "nota_anomalia_ajustada": 80.0,
-    "ranking_final": 84.1,
+    "ranking_final": 84.27,
     "categoria_score": "EXCELENTE"
   },
   {
@@ -309,7 +310,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -362,7 +363,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 78,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -416,7 +417,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 76,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -470,7 +471,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 32,
+    "dias_ate_viagem": 31,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -523,7 +524,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 27,
+    "dias_ate_viagem": 26,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -577,7 +578,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 17,
+    "dias_ate_viagem": 16,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -630,7 +631,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -684,7 +685,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 31,
+    "dias_ate_viagem": 30,
     "potencial_comercial": 86,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -738,7 +739,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 87,
     "sinais_comerciais": [
       "preco_excepcional",
@@ -792,7 +793,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 53,
+    "dias_ate_viagem": 52,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -846,7 +847,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 53,
+    "dias_ate_viagem": 52,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -900,7 +901,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 81,
     "sinais_comerciais": [
       "preco_muito_atrativo",
@@ -954,7 +955,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 19,
+    "dias_ate_viagem": 18,
     "potencial_comercial": 74,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1008,7 +1009,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 28,
+    "dias_ate_viagem": 27,
     "potencial_comercial": 73,
     "sinais_comerciais": [
       "preco_atrativo",
@@ -1062,7 +1063,7 @@
       "motivos": [],
       "alertas": []
     },
-    "dias_ate_viagem": 25,
+    "dias_ate_viagem": 24,
     "potencial_comercial": 79,
     "sinais_comerciais": [
       "preco_excepcional",
